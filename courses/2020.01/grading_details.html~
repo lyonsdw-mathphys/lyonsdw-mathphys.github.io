@@ -1,0 +1,145 @@
+<html>
+
+<title>Grading Details Spring 2020</title>
+
+<body>
+
+<h1 align=center>
+Course Syllabus, Part 5
+</h1>
+<h2 align=center>
+Grade Calculation Details
+</h2>
+<h2 align=center>
+David W. Lyons<br>
+Spring 2020
+</h2>
+<h4 align=center>updated 7 December 2019</h4>
+
+<i>Grading policies and procedures
+are subject to adjustment at any time at the discretion of the
+instructor.</i>
+
+<p>
+  
+Each item of graded work receives a <i>raw point score</i>.  The
+numerical grade, or simply the <i>score</i>, for an item of graded work
+is the raw point score divided by the total number of possible points
+for that item.
+<pre>
+               raw point score
+   score =  ---------------------
+            total possible points
+</pre>
+For example, if Joe Student has a raw point score of 18 on a quiz that has
+20 total possible points, then Joe's grade for that quiz is 18/20 = .9
+= 90%.  Most of the remainder of this document is devoted to the
+procedure used to compute an overall cumulative average from the
+individual graded items.
+
+<h4>  Weighted Averages </h4>
+
+The <b><i>weighted average</i></b> of a list of numbers 
+<pre align>
+   x<sub>1</sub>, x<sub>2</sub>, x<sub>3</sub>, ..., x<sub>n</sub> 
+</pre>
+
+with <b><i>weights</i></b> given by the list of nonnegative numbers
+<pre>
+   w<sub>1</sub>, w<sub>2</sub>, w<sub>3</sub>, ..., w<sub>n</sub> 
+</pre>
+
+not all of which are zero, is the quantity 
+<pre>
+   x<sub>1</sub>w<sub>1</sub> + x<sub>2</sub>w<sub>2</sub> + x<sub>3</sub>w<sub>3</sub> + ... + x<sub>n</sub>w<sub>n</sub> 
+   ------------------------------ .
+      w<sub>1</sub> + w<sub>2</sub> + w<sub>3</sub> + ... + w<sub>n</sub>
+</pre>
+
+<h4>Example</h4>
+Joe Student has test scores of 79%, 86%, and 73%.  The tests
+have weights 25/100, 40/100, and 35/100, respectively.  The weighted
+average of the three test scores is
+<pre>
+   (.79)(25/100) + (.86)(40/100) + (.73)(35/100)
+   ---------------------------------------------  = .797 = 79.7%.
+            25/100 + 40/100 + 35/100
+</pre>
+If the weights are changed to 1, 3, and 2, the new weighted average
+becomes
+<pre>
+   (.79)(1) + (.86)(3) + (.73)(2)
+   ------------------------------  = .805 = 80.5%.
+             1 + 3 + 2 
+</pre>
+
+
+<p>
+
+
+
+<h4>Excused missed assignments or exams</h4>
+  
+Missed assignments or exams may be excused, at the discretion of the
+instructor. An excused graded item is dropped from your grade record by
+resetting its weight to zero. 
+
+<p>
+
+If a missed assignment or exam is not excused, it receives a score of
+zero. 
+
+  
+<h4>Forgiveness of one low score</h4>
+
+At the end of the semester, the grading software will automatically
+drop one graded item (but not your final exam score) from your
+cumulative average by resetting its weight to zero; the
+grading software will determine which of your graded items to
+drop by choosing the one that most increases your overall
+cumulative average by dropping it. If there is no item that increases
+your cumulative average by dropping it, then no dropping will occur.
+
+<p>
+  
+<i>Note: grade dropping is only applied in courses that have a final
+  exam.</i>
+
+<h4>Meaning of letter grades</h4>
+
+According to the College Catalog, letter grades have the following
+meanings.
+
+<pre>
+   Letter Grade     Meaning
+   ------------     ------
+        A           excellent
+        B           good
+        C           satisfactory
+        D           requirements and standards met at a minimum level
+        F           course requirements not met
+</pre>
+
+Standards for ``excellent'' and ``good'' (letter grades A and B) are high.
+In this course, your grade reflects your mastery of the material.  A good
+grade is not guaranteed by class attendance and performing the motions of
+homework; to earn an A or a B, you must demonstrate understanding that
+transcends mere rote familiarity.
+
+<h4>Determination of letter grade</h4>
+
+At the end of the semester, your final cumulative average is used to
+assign a letter grade.  The scale used to convert cumulative averages to
+letter grades is based on the ``standard 10 point scale'' (A-,A,A+ for
+90 to 100 percent range, B-,B,B+ for percentages in the 80's, C-,C,C+
+for the 70's, etc.), but the scale may be adjusted, at the discretion of
+the instructor, so that the meanings of the letter grades fit the
+descriptions given in the previous section. Pluses and minuses are used
+to distinguish between the low, middle and high achievers within each
+letter grade category.
+
+<p>
+<i>Note on mid-term grades:</i> Pluses and minuses are not used for
+midterm grades.  
+</body>
+</html>
