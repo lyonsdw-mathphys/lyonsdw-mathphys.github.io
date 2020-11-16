@@ -7,7 +7,7 @@
 
 <body>
 
-<h2>Spring 2021 Course Information<br>David W. Lyons</h2>
+<h2>Spring 2020 Course Information<br>David W. Lyons</h2>
 
 <i>These pages are periodically updated.  Course policies are subject to
   change at the discretion of the instructor.</i>
@@ -71,9 +71,9 @@ Zoom Meeting Schedule (starting 3/18)<br>
 
 <!--<h3>Documents and information for specific courses</h3>-->
 
-<h3>MAS 100 Concepts of Mathematics</h3>
+<h3>MAS 170 Elementary Statistics</h3>
     <ul>
-      <li><a href="mas100/syl.html">Syllabus Part 1</a>: Course Description
+      <li><a href="mas170/syl.html">Syllabus Part 1</a>: Course Description
 		<li><a href="graded_work_1XX.html">Syllabus Part 2:</a>
 	  Graded Work 
 <!--      <li><a href="https://calendar.google.com/calendar/embed?src=31kv5nv93bsp70c7it9m6gd3nk%40group.calendar.google.com&ctz=America%2FNew_York">
@@ -95,9 +95,9 @@ Zoom Meeting Schedule (starting 3/18)<br>
 <!--	  <li><a href="mas162/whiteboard_slides/">Whiteboard Slides</a>-->
     </ul>
 
-<h3>MAS 323 Introduction to Modern Algebra and Geometry</h3>
+<h3>MAS 390 Quantum Information and Computation</h3>
     <ul>
-      <li><a href="mas323/syl.html">Syllabus Parts 1 and 2</a>: Course
+      <li><a href="mas390/syl.html">Syllabus Parts 1 and 2</a>: Course
 	Description and Graded Work
 <!--	<li><a href="https://calendar.google.com/calendar/embed?src=npdu4hj98dudm75r5piiiusn9o%40group.calendar.google.com&ctz=America%2FNew_York">Course Calendar</a>-->
     </ul>
