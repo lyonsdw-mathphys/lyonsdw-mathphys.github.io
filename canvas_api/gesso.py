@@ -71,11 +71,7 @@ for line in Lines:
         if (line_discussion_flag == 1):
             for section in sections:
                new_discussion_topic=course.create_discussion_topic()
-               new_discussion_topic.update(title=title_string)
-               new_discussion_topic.update(message=message_string)
-               new_discussion_topic.update(specific_sections=section.id)
-               new_discussion_topic.update(discussion_type='threaded')
-               new_discussion_topic.update(delayed_post_at=delayed_post_date )
+               new_discussion_topic.update(title=title_string, message=message_string,specific_sections=section.id,discussion_type='threaded',delayed_post_at=delayed_post_date)
 
         # construct and post assignments
             #   restrict allowed file extensions ???
