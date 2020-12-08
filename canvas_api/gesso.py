@@ -81,7 +81,8 @@ for line in Lines:
             #   restrict allowed file extensions ???
             #      'allowed_extensions': ['pdf'],
         if (line_hw_flag==1):
-            assnmt_name = "Homework " + line_title + " " + line_date
+            assnmt_date = (datetime.strptime(line_date, '%Y-%m-%d') + timedelta(days=-1)).strftime("%Y-%m-%d")
+            assnmt_name = "Homework " + line_title + " " + assnmt_date
             due_date = start_date + timedelta(seconds=-1)
             assignment_dict = {
             'name': assnmt_name,
