@@ -1,55 +1,92 @@
-<http>
+<HTML>
 
-<head>
-<title>David W. Lyons, Research</title>
-</head>
+<!-- 
+keywords: canvas api python calendar events assignments discussions create delete
+-->
+
+<HEAD>
+   <TITLE>Canvas API calendar events, assignments, discussions </TITLE>
+</HEAD>
 
 <body>
 
-<h1>Research </h1>
+<h2>Canvas API: calendar events, assignments, discussions</h2>
 
-<b>David W. Lyons</b><br>
-<a href="mailto:lyons@lvc.edu"> lyons@lvc.edu </a>
+<pre>
+  David W. Lyons
+  lyons (at) lvc.edu
+</pre>
 
-<p>
-
-My current research is in quantum information
-science--an interdisciplinary area involving mathematics, physics, 
-computer science, and engineering.  
-
-<p>
-
-My thesis work, under the direction of Shrawan Kumar, was in algebraic
-topology of Lie Groups.
+These pages share some code and some notes on using the Canvas API to
+create and delete calendar events, assignments, and discussions.
 
 <p>
 
-My pedagogical scholarship is driven by a longstanding interest in
-the use of geometry and visualization for teaching mathematical
-concepts.
+  <b>Disclaimer:</b> The codes is <b>slow</b>
+  and crude. It can probably be
+  improved. The code is <b>quirky</b> and specific to my course
+  design. Real programmers will probably run screaming.
+
+<p>
+  
+  I will be happy to discuss and collaborate with anyone who
+  thinks they can make this work better. I can offer limited or
+  nonexistent support to anyone who wants to modify my quirky code for a
+  different course set-up.
 
 <p>
 
-I am a regular participant and webmaster for the Tetrahedral
-Geometry-Topology Seminar, of which Lebanon Valley College is a joint
-sponsor with Millersville University, Elizabethtown College, and
-Franklin and Marshall College.  I am co-Principal Investigator for our Mathematical
-Physics Research Group here at LVC.
+  <h3>Files</h3>
 
-<p>
+  <ul>
+    <li><a href="gesso.py">Input file for <b>creating</b>
+      </a> Canvas calendar
+      events, assignments, and discussions
+      <li><a href="sample_creation_input.txt">Plain text data file for <b>creating</b>
+      </a> Canvas calendar events, assignments, and discussions
+    <li><a href="palimpsest.py">Input file for <b>deleting</b>
+      </a> Canvas calendar
+      events, assignments, and discussions
+      <li><a href="sample_deletion_input.txt">Plain text data file for <b>deleting</b>
+      </a> Canvas calendar events, assignments, and discussions      
+  </ul>
 
-<ul>
-<li><a href="../pubs">Publications</a>
-<li><a href="http://scholar.google.com/citations?hl=en&user=ZcjVtVEAAAAJ">Google
-    Scholar profile</a>
-<li><a href ="http://quantum.lvc.edu/mathphys/grants.html">Grants</a>
-<li><a href="http://quantum.lvc.edu/mathphys">LVC Mathematical Physics Research
-Group</a>
-<li><a href="http://quantum.lvc.edu/tgts/">Tetrahedral Geometry-Topology
-Seminar</a>
-</ul>
+  
+  
+  <h3>Course set-up scheme</h3>
 
+  <ul>
+    <li>Each class day is labelled by a title like "2.1" or "Review Chapter 2"
+      or "Exam Chapter 2".
+      <li>  Each class meeting either has a homework
+  assignment or not. If a homework assignment is due for a class
+  meeting, it is due before midnight on the day preceding the class
+	meeting.
+	<li> Each class meeting either has a Canvas discussion
+	associated to it or
+	not. Discussions are posted at 5pm two days before the class
+	meeting.
+  </ul>
 
-</body> 
+  <h3>Usage</h3>
 
-</http>
+  <ul>
+    <li>Edit the text input file "sample_creation_input.txt". Get your
+    Canvas course id number by logging in to Canvas. Navigate to the
+    course you want to work on and look at the address bar in your
+    browser to see the course code. That goes in the top line of the
+      input file.
+    <li>Each row after the top row has a date and title. These are
+    required. Optional elements in each row are flags for homework
+    assignments and discussions. See the file for how to format. Blank
+    lines or lines that do not contain dates and titles are ignored, so
+      you can put in comments or blank lines for your own convenience.
+      <li>Run the creation script with "python3 gesso.py input_filename"
+	at the command line.
+	<li>See the file "sample_deletion_input.txt" and make the
+	obvious edits. Run the deletion script with "python3
+	palimpsest.py input_filename".
+  </ul>
+
+</BODY>
+</HTML>

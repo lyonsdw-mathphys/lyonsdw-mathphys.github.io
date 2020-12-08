@@ -1,0 +1,3 @@
+<course_id>123456</course_id>
+<delete_from_date>2021-01-01</delete_from_date>
+<delete_to_date>2021-01-31</delete_to_date>
