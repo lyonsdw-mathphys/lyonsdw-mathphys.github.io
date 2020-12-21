@@ -1,0 +1,57 @@
+         David W. Lyons                            Office: Lynch 283H
+         Mathematical Sciences                      Phone: 717-867-6081
+         Lebanon Valley College                     Email: lyons@lvc.edu
+
+			  Spring 2021 Schedule
+			last updated: 18 Dec 2020
+
+      ---------------------------------------------------------------------
+     |   Monday    |   Tuesday   |  Wednesday  |  Thursday   |    Friday   |
+ 9:30|-------------|-------------|-------------|-------------|-------------|
+10:00|  Teaching   |  Algebra    |  Teaching   |  Algebra    |  Teaching   |
+10:30|    and      |  and Geom.  |    and      |  and Geom.  |    and      |
+11:00|  Research   |-------------|  Research   |-------------|  Research   |
+11:30|             |             |             |  Fac. Mtg.  |             |
+12:00|-------------|-------------|-------------|-------------|-------------|
+12:30|   Lunch     |   Lunch     |   Lunch     |   Lunch     |   Lunch     |
+13:00|-------------|-------------|-------------|-------------|-------------|
+13:30|  Calc 2     |             |  Calc 2     |             |  Calc 2     |
+14:00|-------------|-------------|-------------|-------------|-------------|
+14:30|  Concepts   |   Office  	 |  Concepts   |   Office    |  Concepts   |
+15:00|-------------|    Hours    |-------------|    Hours    |-------------|
+15:30|  Concepts   |             |  Concepts   |             |  Concepts   |
+16:00|-------------|-------------|-------------|-------------|-------------|
+16:30| Dept. Mtg.  |        	 |             |             | 		   |
+17:00 ---------------------------------------------------------------------
+
+Office Hours  TTh 14:00--16:00  LYN 283H 
+========================================
+  Additional office hours are available by appointment. Office hours are
+  occasionally preempted by special events.
+
+Courses   
+=======
+  MAS 100-01 Concepts of Math.      MWF 14:00--14:50  LYN 189 (2 groups)
+  MAS 100-02 Concepts of Math.      MWF 15:00--15:50  LYN 189 (1 group)
+  MAS 162-01 Calculus 2             MWF 13:00--13:50  LYN 189 (1 group)
+  MAS 323-01 Algebra and Geom.      TTh  9:30--10:50  N-G 212 (1 group)
+  
+Regular Meetings
+================
+  Math Department Meeting           M   16:00--17:00  Math Library
+  Faculty Meeting                   Th  11:00--12:00  Chapel 101
+  CETL Book Group                   TBA
+  Math/Physics Seminar              TBA
+
+Geometry-Topology Seminar
+=========================
+  Fridays  TBA          leave campus 15:30
+
+Final Exams 
+===========
+  course     mtg. time     final exam date and time
+  ------     ---------     ------------------------
+  MAS 100-01 (MWF2pm)      Wed 19 May 15:30--18:00
+  MAS 100-02 (MWF3pm)      Mon 17 May 15:30--18:00
+  MAS 162    (MWF1pm)      Thu 20 May 12:30--15:00
+  MAS 323    (TTh9:30am)   Tue 18 May  8:30--11:00

@@ -1,0 +1,71 @@
+<html> 
+<head>
+  <title>MAS 100 Concepts of Mathematics Spring 2021 Syllabus</title>
+  <style>
+    /* Switch numbering on by adding class "countheads" to h1 */
+    /* Prevent numbering for a single heading via class "nocount" */
+    
+    body {
+        counter-reset: h2counter;
+    }
+    h1 {
+        counter-reset: h2counter;
+    }
+    
+    .countheads ~ h2:before {
+        content: counter(h2counter) ".\0000a0\0000a0";
+        counter-increment: h2counter;
+    }
+    h2.nocount:before {
+        content: none;
+        counter-increment: none;
+    }
+    h2 {
+        counter-reset: h3counter;
+    }
+    
+    .countheads ~ h3:before {
+        content: counter(h2counter) "." counter(h3counter) ".\0000a0\0000a0";
+        counter-increment: h3counter;
+    }
+    h3.nocount:before {
+        content: none;
+        counter-increment: none;
+    }
+  </style>
+
+</head>
+
+<body>
+
+<h2 align=center>
+  MAS 100 Concepts of Mathematics Spring 2021<br>
+  Course Syllabus<br>
+</h2>
+
+<!--@include "class_meetings.html"-->
+
+<!--@include "../../syllabus_common/office_hours.html"-->
+
+<!--@include "../../syllabus_common/instructor.html"-->
+
+<!--@include "description.html"-->
+
+<!--@include "prerequisites.html"-->
+
+<!--@include "requirements_met.html"-->
+
+<!--@include "materials.html"-->
+
+<!--@include "../../syllabus_common/course_calendar.html"-->
+
+<!--@include "../../syllabus_common/grade_categories_1XX.html"-->
+
+<!--@include "../../syllabus_common/grading_details_pointer.html"-->
+
+<!--@include "reading_and_problems.html"-->
+
+
+</body>
+</html>
+
