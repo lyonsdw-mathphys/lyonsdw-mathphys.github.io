@@ -1,46 +1,61 @@
-2021 spring mwf
-Mon  <date>2021-02-01</date> <title></title> <hw/> <discuss/>  
-Wed  <date>2021-02-03</date> <title></title> <hw/> <discuss/>  
-Fri  <date>2021-02-05</date> <title></title> <hw/> <discuss/>  
-Mon  <date>2021-02-08</date> <title></title> <hw/> <discuss/>  
-Wed  <date>2021-02-10</date> <title></title> <hw/> <discuss/>  
-Fri  <date>2021-02-12</date> <title></title> <hw/> <discuss/>  
-Mon  <date>2021-02-15</date> <title></title> <hw/> <discuss/>  
-Wed  <date>2021-02-17</date> <title></title> <hw/> <discuss/>  
-Fri  <date>2021-02-19</date> <title></title> <hw/> <discuss/>  
-Mon  <date>2021-02-22</date> <title></title> <hw/> <discuss/>  
-Wed  <date>2021-02-24</date> <title></title> <hw/> <discuss/>  
-Fri  <date>2021-02-26</date> <title></title> <hw/> <discuss/>  
-Mon  <date>2021-03-01</date> <title></title> <hw/> <discuss/>  
-Wed  <date>2021-03-03</date> <title></title> <hw/> <discuss/>  
-Fri  <date>2021-03-05</date> <title></title> <hw/> <discuss/>  
-Mon  <date>2021-03-08</date> <title></title> <hw/> <discuss/>  
-Wed  <date>2021-03-10</date> <title></title> <hw/> <discuss/>  
-Fri  <date>2021-03-12</date> <title></title> <hw/> <discuss/>  
-Mon  <date>2021-03-15</date> <title></title> <hw/> <discuss/>  
-Wed  <date>2021-03-17</date> <title></title> <hw/> <discuss/>  
-Fri  <date>2021-03-19</date> <title></title> <hw/> <discuss/>  
-Mon  <date>2021-03-22</date> <title></title> <hw/> <discuss/>  
-Wed  <date>2021-03-24</date> <title></title> <hw/> <discuss/>  
-Fri  <date>2021-03-26</date> <title></title> <hw/> <discuss/>  
-Mon  <date>2021-03-29</date> <title></title> <hw/> <discuss/>  
-Wed  <date>2021-03-31</date> <title></title> <hw/> <discuss/>  
-Fri  <date>2021-04-02</date> <title></title> <hw/> <discuss/>  
-Mon  <date>2021-04-05</date> <title></title> <hw/> <discuss/>  
-Wed  <date>2021-04-07</date> <title></title> <hw/> <discuss/>  
-Fri  <date>2021-04-09</date> <title></title> <hw/> <discuss/>  
-Mon  <date>2021-04-12</date> <title></title> <hw/> <discuss/>  
-Wed  <date>2021-04-14</date> <title></title> <hw/> <discuss/>  
-Fri  <date>2021-04-16</date> <title></title> <hw/> <discuss/>  
-Mon  <date>2021-04-19</date> <title></title> <hw/> <discuss/>  
-Wed  <date>2021-04-21</date> <title></title> <hw/> <discuss/>  
-Fri  <date>2021-04-23</date> <title></title> <hw/> <discuss/>  
-Mon  <date>2021-04-26</date> <title></title> <hw/> <discuss/>  
-Wed  <date>2021-04-28</date> <title></title> <hw/> <discuss/>  
-Fri  <date>2021-04-30</date> <title></title> <hw/> <discuss/>  
-Mon  <date>2021-05-03</date> <title></title> <hw/> <discuss/>  
-Wed  <date>2021-05-05</date> <title></title> <hw/> <discuss/>  
-Fri  <date>2021-05-07</date> <title></title> <hw/> <discuss/>  
-Mon  <date>2021-05-10</date> <title></title> <hw/> <discuss/>  
-Wed  <date>2021-05-12</date> <title></title> <hw/> <discuss/>  
-Fri  <date>2021-05-14</date> <title></title> <hw/> <discuss/>  
+MAS 162 Spring 2021 <course_id>13008</course_id>
+
+Mon  <date>2021-02-01</date> <title>Introduction</title>
+Wed  <date>2021-02-03</date> <title>Background</title> <hw/> <discuss/>  
+Fri  <date>2021-02-05</date> <title>5.1</title> <hw/> <discuss/>  
+
+Mon  <date>2021-02-08</date> <title>5.2</title> <hw/> <discuss/>  
+Wed  <date>2021-02-10</date> <title>5.3</title> <hw/> <discuss/>  
+Fri  <date>2021-02-12</date> <title>5.4</title> <hw/> <discuss/>  
+
+Mon  <date>2021-02-15</date> <title>5.5</title> <hw/> <discuss/>  
+Wed  <date>2021-02-17</date> <title>5.6</title> <hw/> <discuss/>  
+Fri  <date>2021-02-19</date> <title>Workshop</title>  <discuss/>  
+
+Mon  <date>2021-02-22</date> <title>Review Ch 5</title> <discuss/>  
+Wed  <date>2021-02-24</date> <title>Exam Ch 5</title>   
+Fri  <date>2021-02-26</date> <title>6.1</title> <hw/> <discuss/>  
+
+Mon  <date>2021-03-01</date> <title>6.2</title> <hw/> <discuss/>  
+Wed  <date>2021-03-03</date> <title>6.3</title> <hw/> <discuss/>  
+Fri  <date>2021-03-05</date> <title>6.4</title> <hw/> <discuss/>  
+
+Mon  <date>2021-03-08</date> <title>6.5</title> <hw/> <discuss/>  
+Wed  <date>2021-03-10</date> <title>Workshop</title> <discuss/>  
+Fri  <date>2021-03-12</date> <title>Review Ch 6</title> <discuss/>  
+
+Mon  <date>2021-03-15</date> <title>Exam Ch 6</title>
+Wed  <date>2021-03-17</date> <title>7.1</title> <hw/> <discuss/>  
+Fri  <date>2021-03-19</date> <title>7.2</title> <hw/> <discuss/>  
+
+Mon  <date>2021-03-22</date> <title>7.3</title> <hw/> <discuss/>  
+Wed  <date>2021-03-24</date> <title>7.4</title> <hw/> <discuss/>  
+Fri  <date>2021-03-26</date> <title>7.5</title> <hw/> <discuss/>  
+
+Mon  <date>2021-03-29</date> <title>7.6</title> <hw/> <discuss/>  
+Wed  <date>2021-03-31</date> <title>Workshop</title> <discuss/>  
+Fri  <date>2021-04-02</date> <title>NO CLASS</title>
+
+Mon  <date>2021-04-05</date> <title>NO CLASS</title>
+Wed  <date>2021-04-07</date> <title>Review Ch 7</title> <discuss/>  
+Fri  <date>2021-04-09</date> <title>Exam Ch 7</title> 
+
+Mon  <date>2021-04-12</date> <title>8.1</title> <hw/> <discuss/>  
+Wed  <date>2021-04-14</date> <title>8.2</title> <hw/> <discuss/>  
+Fri  <date>2021-04-16</date> <title>Workshop</title> <discuss/>  
+
+Mon  <date>2021-04-19</date> <title>8.3</title> <hw/> <discuss/>  
+Wed  <date>2021-04-21</date> <title>8.4</title> <hw/> <discuss/>  
+Fri  <date>2021-04-23</date> <title>Workshop</title>
+
+Mon  <date>2021-04-26</date> <title>8.5</title> <hw/> <discuss/>  
+Wed  <date>2021-04-28</date> <title>8.6</title> <hw/> <discuss/>  
+Fri  <date>2021-04-30</date> <title>Workshop</title> <discuss/>  
+
+Mon  <date>2021-05-03</date> <title>Workshop</title> 
+Wed  <date>2021-05-05</date> <title>Review Ch 8</title>  <discuss/>  
+Fri  <date>2021-05-07</date> <title>Exam Ch 8</title> 
+
+Mon  <date>2021-05-10</date> <title>Review</title> <discuss/>  
+Wed  <date>2021-05-12</date> <title>NO CLASS</title>
+Fri  <date>2021-05-14</date> <title>Review</title> <discuss/>  
