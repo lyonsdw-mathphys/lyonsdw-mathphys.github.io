@@ -16,6 +16,8 @@ Mon  <date>2021-02-22</date> <title>Review Ch 5</title> <discuss/>
 Wed  <date>2021-02-24</date> <title>Exam Ch 5</title>   
 Fri  <date>2021-02-26</date> <title>6.1</title> <hw/> <discuss/>  
 
+Note:12/22/2020 built to the end of feb 2021 on Canvas
+
 Mon  <date>2021-03-01</date> <title>6.2</title> <hw/> <discuss/>  
 Wed  <date>2021-03-03</date> <title>6.3</title> <hw/> <discuss/>  
 Fri  <date>2021-03-05</date> <title>6.4</title> <hw/> <discuss/>  
@@ -46,15 +48,15 @@ Fri  <date>2021-04-16</date> <title>Workshop</title> <discuss/>
 
 Mon  <date>2021-04-19</date> <title>8.3</title> <hw/> <discuss/>  
 Wed  <date>2021-04-21</date> <title>8.4</title> <hw/> <discuss/>  
-Fri  <date>2021-04-23</date> <title>Workshop</title>
+Fri  <date>2021-04-23</date> <title>Workshop</title> <discuss/>  
 
 Mon  <date>2021-04-26</date> <title>8.5</title> <hw/> <discuss/>  
 Wed  <date>2021-04-28</date> <title>8.6</title> <hw/> <discuss/>  
 Fri  <date>2021-04-30</date> <title>Workshop</title> <discuss/>  
 
-Mon  <date>2021-05-03</date> <title>Workshop</title> 
-Wed  <date>2021-05-05</date> <title>Review Ch 8</title>  <discuss/>  
-Fri  <date>2021-05-07</date> <title>Exam Ch 8</title> 
+Mon  <date>2021-05-03</date> <title>Review Ch 8</title> <discuss/>  
+Wed  <date>2021-05-05</date> <title>Exam Ch 8</title>
+Fri  <date>2021-05-07</date> <title>Review</title> <discuss/>  
 
 Mon  <date>2021-05-10</date> <title>Review</title> <discuss/>  
 Wed  <date>2021-05-12</date> <title>NO CLASS</title>

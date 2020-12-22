@@ -56,11 +56,15 @@ for line in Lines:
         start_date = datetime.strptime(line_date, '%Y-%m-%d')
         calendar_event_dict = {
             'title': line_title,
-            'context_code': 'course_12996',
+            'context_code': COURSE_ID,
             'start_at': start_date,
             'all_day': True
         }
-        canvas.create_calendar_event(calendar_event_dict)
+        command_string = "curl 'https://lvc.instructure.com/api/v1/calendar_events.json'  -X POST -F 'calendar_event[context_code]=course_" + COURSE_ID + "' -F 'calendar_event[title]=" + line_title + "' -F 'calendar_event[start_at]="+line_date+"' -F 'calendar_event[end_at]="+line_date+ "' -H 'Authorization: Bearer " + API_KEY + "'"
+        os.system(command_string)
+
+#        canvas.create_calendar_event(calendar_event_dict)
+
         # put up discussion boards, one for each section
         #  need to remove absolute reference to section numbers below
 
