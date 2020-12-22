@@ -54,14 +54,12 @@ body {
 <!--@include "../../syllabus_common/collaboration.html"-->
 <!--@include "../../syllabus_common/honor_policy.html"-->
 
-<!--
 <h2>LVC Institutional Policies</h2>
 
 (Official LVC institutional policies</a> from the office of the Dean of
 the Faculty)
--->
 
-<!--@include "../../syllabus_common/lvc_official_statements/lvc_official_statements_pointer.html"-->
+<!--@include "../../syllabus_common/lvc_official_statements/lvc_official_statements.html"-->
 
 </body>
 </html>
