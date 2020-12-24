@@ -1,0 +1,12 @@
+Production Notes
+for LVC official syllabus statements
+
+Notes 12/2020 for spring 2021
+
+* download the zip file with all the syllabus material sent by the
+  admins
+* upload the "syllabus essentials" .docx to google docs
+* edit the .docx in google docs, put a title and semster on it
+* download that edited file as a "html zipped" format
+* extract the html file from the downloaded zip
+
