@@ -1,74 +1,33 @@
 <HTML>
 
 <HEAD>
-   <TITLE>David Lyons (Mathematics, LVC) Course Information </TITLE>
+   <TITLE>David Lyons (Mathematics, LVC) Course Information</TITLE>
 </HEAD>
 
 
 <body>
-
-<h2>Spring 2021 Course Information<br>David W. Lyons</h2>
-
+  <h2>Spring 2021 Course Information<br>David W. Lyons</h2>
+  
 <i>These pages are periodically updated.  Course policies are subject to
   change at the discretion of the instructor.</i>
 
-<p>
-
-  <h3>Instructor</h3>
-  <ul>
-  <li><a href="../../contactinfo.html">Contact Information</a>
-<li><a href="../../sched/2021.spring.sched.pdf">Schedule</a>
-  including office hours
-  <li><a href="http://quantum.lvc.edu/lyons">Academic website</a>
-  </ul>
-  
-  <h3>Documents and information for all courses</h3>
-
-  <!--
-  <i>Log into Canvas for announcements, course calendars, for submitting assignments,
-    and for taking exams.</i>
-  -->
-  
+<h3>Course Syllabi</h3>
 <ul>
-	        <li><a href="course_policies.html">Syllabus Part 3:</a> Course Policies and
-    Information
-  <li><a href="lvc_official_statements.html">Syllabus Part 4:</a> LVC Policy Statements
-  <li><a href="grading_details.html">Syllabus Part 5:</a> Grade Calculation
-    Details
-	          <li><a href="sample_notecards.pdf">Sample Vocabulary
-	              Notecards</a>
-    		  <li><a href="writing_guidelines.pdf">Sample Written Solutions</a>
-		  <li><a href="study_advice.html">Study Advice</a>
-
+  <li><a href="mas100/syllabus/syl.html">MAS 100</a> Concepts of
+    Mathematics
+  <li><a href="mas162/syllabus/syl.html">MAS 162</a> Calculus 2
+  <li><a href="mas323/syllabus/syl.html">MAS 323</a> Introduction to Modern Algebra and Geometry
 </ul>
 
-<!--<h3>Documents and information for specific courses</h3>-->
-
-<h3>MAS 100 Concepts of Mathematics</h3>
-    <ul>
-      <li><a href="mas100/syl.html">Syllabus Part 1</a>: Course Description
-		<li><a href="graded_work_1XX.html">Syllabus Part 2:</a>
-	  Graded Work 
-    </ul>
+<h3>Learning and Study</h3>
+<ul>
+  <li><a href="study/study_strategies.html">Study Strategies</a>
+  <li><a href="study/sample_notecards.pdf">Sample Vocabulary Notecards</a>
+ <li><a href="study/writing_guidelines.pdf">Sample Written Solutions</a>
+</ul>
 
 
-<h3>MAS 162 Calculus 2</h3>
-    <ul>
-      <li><a href="mas162/syl.html">Syllabus Part 1</a>: Course Description
-	<li><a href="graded_work_1XX.html">Syllabus Part 2:</a>
-	  Graded Work
-	<li><a href="https://activecalculus.org">Course Textbook</a>
-    </ul>
-
-<h3>MAS 323 Introduction to Modern Algebra and Geometry</h3>
-    <ul>
-      <li><a href="mas323/syl.html">Syllabus Parts 1 and 2</a>: Course
-	Description and Graded Work
-	<li><a href="https://mathvista.org/algeom_text_files/frontmatter.html">Course Textbook</a>
-    </ul>
-
-
-</BODY>
-</HTML>
+</body>
+</html>
 
 
