@@ -1,20 +1,29 @@
 MAS 100 Sections 1 and 2 Spring 2021 <course_id>12996</course_id>
 
 Mon  <date>2021-02-01</date> <title>Introduction</title>
-Wed  <date>2021-02-03</date> <title>9.1,9.2</title> <hw/> <discuss/>  
-Fri  <date>2021-02-05</date> <title>9.3</title> <hw/> <discuss/>  
+Wed  <date>2021-02-03</date> <title>9.1,9.2</title> <hw/> <discuss/>
+Wed  <date>2021-02-03</date> <title>(A)</title> <hw/> 
+Fri  <date>2021-02-05</date> <title>9.3</title> <hw/> <discuss/>
+Fri  <date>2021-02-05</date> <title>(Z)</title> <hw/>  
 
-Mon  <date>2021-02-08</date> <title>9.4</title> <hw/> <discuss/>  
-Wed  <date>2021-02-10</date> <title>9.5</title> <hw/> <discuss/>  
+Mon  <date>2021-02-08</date> <title>9.4</title> <hw/> <discuss/>
+Mon  <date>2021-02-08</date> <title>(A)</title> <hw/> 
+Wed  <date>2021-02-10</date> <title>9.5</title> <hw/> <discuss/>
+Wed  <date>2021-02-10</date> <title>(Z)</title> <hw/> 
 Fri  <date>2021-02-12</date> <title>Review Ch 9</title> <discuss/>  
 
 Mon  <date>2021-02-15</date> <title>Exam Ch 9</title>
-Wed  <date>2021-02-17</date> <title>10.1</title> <hw/> <discuss/>  
-Fri  <date>2021-02-19</date> <title>10.2</title> <hw/> <discuss/>  
+Wed  <date>2021-02-17</date> <title>10.1</title> <hw/> <discuss/>
+Wed  <date>2021-02-17</date> <title>(A)</title> <hw/> 
+Fri  <date>2021-02-19</date> <title>10.2</title> <hw/> <discuss/>
+Fri  <date>2021-02-19</date> <title>(Z)</title> <hw/> 
 
-Mon  <date>2021-02-22</date> <title>10.3</title> <hw/> <discuss/>  
-Wed  <date>2021-02-24</date> <title>10.4</title> <hw/> <discuss/>  
-Fri  <date>2021-02-26</date> <title>10.5</title> <hw/> <discuss/>  
+Mon  <date>2021-02-22</date> <title>10.3</title> <hw/> <discuss/>
+Mon  <date>2021-02-22</date> <title>(A)</title> <hw/> 
+Wed  <date>2021-02-24</date> <title>10.4</title> <hw/> <discuss/>
+Wed  <date>2021-02-24</date> <title>(Z)</title> <hw/> 
+Fri  <date>2021-02-26</date> <title>10.5</title> <hw/> <discuss/>
+Fri  <date>2021-02-26</date> <title>(A)</title> <hw/> 
 
 Note:12/22/2020 built to the end of feb 2021 on Canvas
 
