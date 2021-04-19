@@ -38,6 +38,8 @@ Mon  <date>2021-03-29</date> <title>7.6</title> <hw/> <discuss/>
 Wed  <date>2021-03-31</date> <title>Workshop</title> <discuss/>  
 Fri  <date>2021-04-02</date> <title>NO CLASS</title>
 
+Note:2/22/2021 built to the end of March 2021 on Canvas
+
 Mon  <date>2021-04-05</date> <title>NO CLASS</title>
 Wed  <date>2021-04-07</date> <title>Review Ch 7</title> <discuss/>  
 Fri  <date>2021-04-09</date> <title>Exam Ch 7</title> 
@@ -61,3 +63,5 @@ Fri  <date>2021-05-07</date> <title>Review</title> <discuss/>
 Mon  <date>2021-05-10</date> <title>Review</title> <discuss/>  
 Wed  <date>2021-05-12</date> <title>NO CLASS</title>
 Fri  <date>2021-05-14</date> <title>Review</title> <discuss/>  
+
+Note: 03/22/2021 built to 5/14/2021 on Canvas

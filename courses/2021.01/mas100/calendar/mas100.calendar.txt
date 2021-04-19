@@ -52,6 +52,8 @@ Wed  <date>2021-03-31</date> <title>12.5</title> <hw/> <discuss/>
 Wed  <date>2021-03-31</date> <title>Group Z</title>  
 Fri  <date>2021-04-02</date> <title>NO CLASS</title>
 
+Note 2/22/2021: canvas calendar built through 3/2021
+
 Mon  <date>2021-04-05</date> <title>NO CLASS</title>
 Wed  <date>2021-04-07</date> <title>Review Ch 12</title><discuss/>  
 Fri  <date>2021-04-09</date> <title>Exam Ch 12</title> 
@@ -83,4 +85,6 @@ Fri  <date>2021-05-07</date> <title>Exam Ch 14</title>
 Mon  <date>2021-05-10</date> <title>Review</title> <discuss/>  
 Wed  <date>2021-05-12</date> <title>NO CLASS</title>
 Fri  <date>2021-05-14</date> <title>Review</title> <discuss/>  
+
+Note 3/22/2021: canvas calendar built through 5/14/2021
 
