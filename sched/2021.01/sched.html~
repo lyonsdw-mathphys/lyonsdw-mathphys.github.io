@@ -1,33 +1,107 @@
 <html> 
-<title>MAS 100 Concepts of Mathematics Spring 2021 Syllabus</title>
+<title>David W. Lyon Spring 2021 Schedule</title>
 <body>
 
-<h2 align=center>
-  MAS 100 Concepts of Mathematics Spring 2021<br>
-  Course Syllabus<br>
+<h2 align=left>
+  Spring 2021 Schedule
 </h2>
 
-<!--@include "class_meetings.html"-->
+<pre>
+  <a href="http://quantum.lvc.edu/lyons">David W. Lyons</a>, Professor                   
+  Department of Mathematical Sciences
+  Lebanon Valley College
+  Email: <a href="mailto:lyons@lvc.edu">lyons@lvc.edu</a>
+  Phone: 717-867-6081
+  Office: LYN 283G
+</pre>
 
-<!--@include "../../syllabus_common/office_hours.html"-->
+<!--@include "classes.html"-->
+<h3>Courses</h3>
 
-<!--@include "../../syllabus_common/instructor.html"-->
+<table border=1 cellpadding=10>
+  <tr>
+    <td>Number</td>
+    <td>Title</td>
+    <td>Meeting Time(s)</td>
+    <td>Location(s)</td>
+  </tr>
 
-<!--@include "description.html"-->
+  <tr>
+    <td>MAS 100-01</td>
+    <td>Concepts of Mathematics</td>
+    <td>MWF 14:00--14:50</td>
+    <td>LYN 189 and Zoom</td>
+  </tr>
 
-<!--@include "prerequisites.html"-->
+  <tr>
+    <td>MAS 100-02</td>
+    <td>Concepts of Mathematics</td>
+    <td>MWF 15:00--15:50</td>
+    <td>LYN 189 and Zoom</td>
+  </tr>
 
-<!--@include "requirements_met.html"-->
+  <tr>
+    <td>MAS 162</td>
+    <td>Calculus 2</td>
+    <td>MWF 13:00--13:50</td>
+    <td>LYN 189 and Zoom</td>
+  </tr>
 
-<!--@include "materials.html"-->
+  <tr>
+    <td>MAS 323</td>
+    <td>Introduction to Modern Algebra and Geometry</td>
+    <td>TTh 9:30--10:50</td>
+    <td>N-G 212</td>
+  </tr>
+  
+  
+  
+</table>
+<!--@include "office_hours.html"-->
+<h3>Office Hours</h3>
 
-<!--@include "../../syllabus_common/course_calendar.html"-->
 
-<!--@include "../../syllabus_common/grade_categories_1XX.html"-->
+<pre>
+  TTh 14:00--16:00 on Zoom
 
-<!--@include "../../syllabus_common/grading_details_pointer.html"-->
+  Additional office hours are available by appointment. Office hours are
+  occasionally preempted by special events.
 
-<!--@include "reading_and_problems.html"-->
+</pre>
+<!--@include "regular_meetings.html"-->
+<h3>Regular Meetings</h3>
+
+<table border=1 cellpadding=10>
+  <tr>
+    <td>Meeting</td>
+    <td>Time(s)</td>
+    <td>Location(s)</td>
+  </tr>
+
+  <tr>
+    <td>Math Department Meeting</td>
+    <td>M 16:00--17:00</td>
+    <td>LYN 182</td>
+  </tr>
+
+  <tr>
+    <td>Faculty Meeting</td>
+    <td>Th 11:00--12:00</td>
+    <td>Webex</td>
+  </tr>
+
+  <tr>
+    <td>CETL Book Group</td>
+    <td>TBA</td>
+    <td>TBA</td>
+  </tr>
+
+  <tr>
+    <td>Math/Physics Seminar</td>
+    <td>TBA</td>
+    <td>TBA</td>
+  </tr>
+</table>
 
 
 </body>
