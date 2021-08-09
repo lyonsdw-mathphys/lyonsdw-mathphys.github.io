@@ -1,0 +1,132 @@
+    <frontmatter xml:id="frontmatter">
+      <!--
+	  Items typically on the main title page of a book,
+	              but here as an article they are handled more
+		      compactly
+      -->
+
+      <titlepage>
+
+	<!-- There can be several authors here -->
+	<author>
+	  <personname>David W. Lyons</personname>
+          <department>Department of Mathematical Sciences</department>
+	  <!-- institution uses two lines, so structured as such -->
+          <institution>
+        	  <line>Lebanon Valley College </line>
+                  <line>Annville, PA, USA</line>
+	  </institution>
+	  <email>lyons@lvc.edu</email>
+	</author>
+
+        <!-- Can set date manually or use the "today" element -->
+	<date><line><copyright/>2021 David W. Lyons</line>
+	  <line>May 2021 Edition, revised: <today /></line>
+	</date>
+
+      </titlepage>
+
+      <!--
+      <abstract>
+	<p>Comments, discussion, error reports, and so on, are welcome.</p>
+      </abstract>
+-->
+
+      
+      <preface>
+        <title>Preface</title>
+
+<p>The central concept of differential calculus is that of the <i>local
+    linearization</i>. Most introductory multivariable calculus texts define
+and utilize vectors and vector operations, but stop short of defining
+  <i>linear transformations</i>. The purpose of these notes is to fill that
+gap. By developing the basic properties and vocabulary of linear
+transformations and the corresponding matrix algebra, the aim is to
+provide a natural, unifying, and useful language for understanding the
+definition of the derivative and facts including the chain rule.
+</p>
+
+<p>The material in these notes is not meant to be a short version of a full
+semester linear algebra course. It is designed to provide enough basic
+linear algebra and matrix algebra to work effectively with the material
+in a standard introductory multivariable calculus course.
+</p>
+
+<p>A secondary purpose of these notes is to address the common practice in
+undergraduate textbooks (even in courses on linear algebra!) of
+introducing matrix multiplication as a "voodoo" practice, that is, a
+complicated operation on boxes of numbers given without
+motivation. Here, we develop matrix multiplication as the natural
+consequence of the fact that matrices represent linear transformations:
+the product of matrices that represent two linear transformations is the
+matrix that represents their composition. For this development alone,
+the first three sections of these notes could be of use in a linear
+algebra course.
+</p>
+
+ <p>Here is an example of a possible schedule for integrating these
+   notes into a multivariate calculus course in a total of 3 to 5
+   50-minute class meetings.
+   <ul>
+     <li>Sections 1,2,3: Add two or three days to the end of the multivariate
+       calculus text's chapter on vectors in <m>\R^2</m> and <m>\R^3</m>
+       (material on dot products and cross products, etc)
+     </li>
+     <li>Section 4: Add one or two days at the end of the multivariate
+     calculus text's chapter on partial derivatives (material on
+     tangent planes, chain rule, etc)</li>
+   </ul>
+ </p>
+
+ <!--
+ <p>
+	    <tabular top="minor"
+		     left="minor" halign="center">
+	      <col right="minor"/><col right="minor"/><col right="minor"/>
+
+       	      <row bottom="minor"><cell>Vectors, linear transformations,
+       	      and matrix algebra
+		</cell>
+		<cell>Sections 1,2,3</cell>
+		<cell>at the end of 
+		</cell>
+	      </row>
+
+       	      <row bottom="minor"><cell>Ch. 2 Groups
+		</cell>
+		<cell>2.1  2.5, Ch 2 exam</cell>
+		<cell>6 weeks
+		</cell>
+	      </row>
+
+       	      <row bottom="minor"><cell>Ch. 3 Geometries
+		</cell>
+		<cell>3.1  3.5, Ch 3 exam</cell>
+		<cell>6 weeks
+		</cell>
+	      </row>	      
+
+	      </tabular>
+
+	    </p>
+
+ <p>Variations on this basic course are supported by "Additional Exercises"
+	    sections in Chapters 2 and 3, and a "Further Topics"
+  section at the end of the text.</p>
+-->
+
+ <p>
+   <commentary><title><em>Intructor's Solutions</em>
+       edition</title>
+     <p>Instructor's solutions are intended for the instructor
+     only. Please do not give copies of instructor's solutions to
+     students. Student's learn by constructing their own derivations,
+     explanations, and proofs. Student access to complete solutions
+     undermines the goals of the course.
+     </p>
+   </commentary>
+ </p>
+
+      </preface>
+
+    </frontmatter>

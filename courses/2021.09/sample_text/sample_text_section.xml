@@ -1,0 +1,85 @@
+<section xml:id="sample_text_section"  xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>
+  Sample Textbook Section
+</title>
+
+<p>
+  An ordered list of numbers
+<me>s_1,s_2,s_3,\ldots</me>
+is called a <term>sequence</term>. The numbers in the list are called the
+<term>entries</term>
+or <term>terms</term> in the sequence.
+</p>
+
+<p>
+  A <term>linear</term>
+sequence is a sequence
+that has the form
+<me>a,\; a+d,\; a+d+d,\; a+d+d+d, \ldots</me>
+for some constants <m>a</m>
+and <m>d</m>, so that each
+entry is equal to <m>d</m>
+plus the previous entry. A linear sequence can be
+written in the simplified form
+<me>a,\; a+d,\; a+2d,\; a+3d,\ldots .</me>
+For example, the positive odd numbers
+<me>1,3,5,7,\ldots</me>
+is a linear sequence with <m>a=1</m>
+and <m>d=2</m>.
+</p>
+
+<p>
+An <term>exponential</term>
+sequence is a sequence that has the form
+<me>a, ar, arr, arrr, \ldots</me>
+for some constants <m>a</m>
+and <m>r</m>, so that each
+entry is equal to <m>r</m>
+times the previous entry. An exponential sequence can be
+written in the simplified form
+<me>a,ar,ar^2,ar^3,\ldots .</me>
+For example, the doubling sequence
+<me>1,2,4,8,16,\ldots</me>
+is an exponential sequence with <m>a=1</m>
+and <m>r=2</m>.
+</p>
+
+<exercises>
+
+  <exercise><statement><p>The first few terms of each of the following sequences fits a
+	linear pattern, an exponential pattern, or neither. Say which,
+	and explain.</p>
+  <ol>
+    <li><m>2,6,10,\ldots</m></li>
+    <li><m>2,6,18,\ldots</m></li>
+    <li><m>2,6,18,20,\ldots</m></li>
+  </ol>
+    </statement>
+    <answer>
+      <ol> <li>linear</li>
+	<li>exponential</li>
+	<li>neither</li>
+ </ol>
+    </answer>
+</exercise>
+
+
+<exercise><statement><p>Find the 10th terms in the linear and exponential sequences
+      below.</p>
+<ol>
+  <li><m>2,\frac{2}{3},\frac{4}{9},\ldots</m></li>
+  <li><m>2,-1,-4,\ldots</m></li>
+</ol>
+  </statement>
+  <answer>
+    <ol>
+      <li> <m>2/3^9 \approx 1.02 \times 10^{-4} = 0.000102</m></li>
+      <li><m>-25</m></li>
+    </ol>
+  </answer>
+</exercise>
+  
+</exercises>
+
+</section>
+

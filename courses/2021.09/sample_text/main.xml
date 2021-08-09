@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<mathbook>-->
+<pretext>
+  <docinfo>
+    <latex-preamble>
+<!--      <package>tikz</package>
+            <package>graphicx</package>
+-->
+    </latex-preamble>
+    <latex-image-preamble>
+      \usepackage{pgfplots}               % loads tikz package
+              \usepackage{smartdiagram}           % for a circular diagram
+      \pgfplotsset{axis x line = middle, axis y line = middle}
+      \usetikzlibrary{backgrounds}
+      \usetikzlibrary{arrows,matrix}
+              \usetikzlibrary{positioning}        % for Dave R's worksheet
+              \usepackage{circuitikz}             % for Virgil P's  worksheet
+              </latex-image-preamble>
+<!--
+    <brandlogo url="http://quantum.lvc.edu/lyons"
+	       source="images/durerperspective.jpg" />
+    -->
+    
+    <macros>
+      \DeclareMathOperator{\Inn}{Inn}
+      \DeclareMathOperator{\lcm}{lcm}            
+\DeclareMathOperator{\Aut}{Aut}      
+\DeclareMathOperator{\Perm}{Perm}
+\DeclareMathOperator{\Stab}{Stab}
+\DeclareMathOperator{\Orb}{Orb}
+\DeclareMathOperator{\Rot}{Rot}
+\DeclareMathOperator{\re}{Re}
+\DeclareMathOperator{\im}{Im}
+\DeclareMathOperator{\img}{image}
+\DeclareMathOperator{\conj}{conj}
+\DeclareMathOperator{\Id}{Id}
+\newcommand{\C}{\mathbb{C}} <!-- complex numbers -->
+\newcommand{\Quat}{\mathbb{H}} <!-- quaternions -->
+\newcommand{\extC}{\hat{\C}} <!-- extended complex plane -->
+\newcommand{\R}{\mathbb{R}} <!-- real numbers -->
+\newcommand{\extR}{\hat{\R}} <!-- extended real line -->
+\newcommand{\F}{\mathbb{F}} <!-- field F -->
+\newcommand{\extF}{\hat{\F}} <!-- extended field  -->
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Proj}{\mathbb{P}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\M}{{\rm \bf M}} <!-- group of Möbius transformations -->
+\newcommand{\E}{{\rm \bf E}} <!-- group of Euclidean Möbius transformations -->
+\renewcommand{\H}{{\rm \bf H}} <!-- group of hyperbolic geometry transformations -->
+\newcommand{\HU}{\H_{\U}} <!-- group of upper half plane hyperbolic geometry transformations -->
+\renewcommand{\S}{{\rm \bf S}} <!-- group of elliptic geometry transformations -->
+\newcommand{\D}{\mathbb{D}} <!-- open unit disk -->
+\newcommand{\closedD}{\hat{\D}} <!-- closed unit disk -->
+\newcommand{\U}{\mathbb{U}} <!-- upper half plane -->
+\newcommand{\spacer}{\rule[0cm]{0cm}{0cm}}
+\newcommand{\MOD}{\mathbin{\text{MOD}}}
+\newcommand{\twotwo}[4]{\left[ \begin{array}{cc} #1 \amp #2 \\
+                        #3 \amp #4 \end{array} \right]}
+<!--\newcommand{\Mob}{Möbius}-->
+    </macros>
+  </docinfo>
+
+  <article xml:id="linmatalg"  xmlns:xi="http://www.w3.org/2001/XInclude">
+
+    <!-- switch titles (comment/uncomment) 
+    for printed Instructor's  Solutions version -->
+
+    <title>Sample Textbook</title>
+
+
+<!-- Chapters of the text, Front and Back Matter -->
+
+    <xi:include href="front_matter.xml"/>
+    <xi:include href="sample_text_section.xml"/>
+    <xi:include href="back_matter.xml"/>    
+
+
+  </article>
+</pretext>
+<!--</mathbook>-->
+
+

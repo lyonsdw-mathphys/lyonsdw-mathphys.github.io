@@ -1,0 +1,320 @@
+<section xml:id="rnvects_section"  xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>
+  The vector space <m>\R^n</m>
+</title>
+
+<subsection>
+  <title>Vectors and vector operations</title>
+
+
+  <p>A
+    list <m>(x_1,x_2,\ldots,x_n)</m><notation><usage>(x_1,x_2,\ldots,x_n)</usage>
+      <description><m>n</m>-tuple of real numbers 
+      </description>
+    </notation>
+of real
+numbers, separated by commas and delimited by parentheses, denotes an
+    <term><m>n</m>-tuple of real numbers</term><idx><h><m>n</m>-tuple</h></idx>.
+    The set of all <m>n</m>-tuples of real
+    numbers,
+    denoted <m>\R^n</m><notation><usage><m>\R^n</m></usage><description><m>n</m>-dimensional
+    real space</description></notation>, is
+    called <term><m>n</m>-dimensional (real)
+      space</term><idx><h><m>n</m>-dimensional real space</h></idx>.
+    <me>\R^n=\{(x_1,x_2,\ldots,x_n)\colon x_i\in \R, 1\leq i\leq n\}
+    </me>
+  </p>
+
+  <p>
+    The operation of <term>vector addition</term>
+    <idx><h>vector addition</h></idx>
+    <idx><h>vector operations</h> <h>vector addition</h></idx>
+    of two <m>n</m>-tuples is defined by
+    <me>(x_1,x_2,\ldots,x_n) + (y_1,y_2,\ldots,y_n) = (x_1+y_1,x_2+y_2,\ldots,x_n+y_n)</me>
+    and <term>scalar multiplication</term>
+        <idx><h>scalar multiplication</h></idx>
+    <idx><h>vector operations</h> <h>scalar multiplication</h></idx>
+    of an <m>n</m>-tuple <m>(x_1,x_2,\ldots,x_n)</m> by a
+    real number (or <term>scalar</term>) <m>\alpha</m>
+    is defined by
+    <me>\alpha(x_1,x_2,\ldots,x_n) = (\alpha x_1,\alpha x_2,\ldots,\alpha x_n).</me>
+    With the operations of addition and scalar multiplication,
+    called <term>vector operations</term><idx><h>vector operations</h></idx>, the set 
+    <m>\R^n</m>
+    is a <term>vector space</term><idx><h>vector space</h>
+    </idx>
+    and <m>n</m>-tuples are <term>vectors</term><idx><h>vector</h>
+    </idx>. 
+  </p>
+
+  <p>
+Vectors are often denoted by lowercase letters in bold Roman font
+(better for typing), and
+sometimes italic font decorated with arrows (better for handwriting).
+Here are examples.
+    <md>
+    <mrow>\mathbf{x} \amp= (x_1,x_2,\ldots,x_n)
+    </mrow>  
+    <mrow>  \vec{x} \amp = (x_1,x_2,\ldots,x_n)
+      </mrow>
+    </md>
+The vector <m>(0,0,\ldots,0)</m> with all entries equal to 0 is called the
+    <term>zero vector</term><idx><h>zero vector</h></idx> and is
+	denoted <m>\mathbf{0}</m><notation><usage>\mathbf{0}</usage><description>zero vector</description>
+	</notation>
+	or <m>\vec{0}</m><notation><usage>\vec{0}</usage>
+	  <description>zero vector</description>
+	</notation>.
+</p>
+
+  <p>
+A sum of the form
+<me>\sum_{i=1}^r c_i \mathbf{u}_i = c_1\mathbf{u}_1 + c_2\mathbf{u}_2
+  + \cdots + c_r\mathbf{u}_r</me>
+where <m>c_1,c_2,\ldots,c_r</m> are scalars and
+<m>\mathbf{u}_1,\mathbf{u}_2,\ldots,\mathbf{u}_r</m> are vectors is called a
+<term>linear combination</term><idx><h>linear combination</h>
+</idx> of the vectors <m>\mathbf{u}_i</m>.
+  </p>
+
+</subsection>
+
+<subsection>
+  <title>Standard basis vectors</title>
+
+  <p>
+    The vector <m>\mathbf{e}_i=(0,\ldots,0,1,0,\ldots,0)</m>
+    with a single 1 in the <m>i</m>th
+    position and zeroes in all other positions is called
+    the <term><m>i</m>th  standard basis vector</term><idx><h>standard
+    basis vector</h>
+    </idx><notation><usage><m>\mathbf{e}_i</m></usage><description><m>i</m>th
+    standard basis vector</description></notation> in <m>\R^n</m>.
+    In <m>\R^2</m>, the standard basis vectors
+    <m>\mathbf{e}_1=(1,0)</m> and <m>\mathbf{e}_2=(0,1)</m> are also
+    called <m>{\mathbf i}</m> and <m>\mathbf{j}</m>, respectively.
+    In <m>\R^3</m>, the standard basis
+    vectors <m>\mathbf{e}_1=(1,0,0)</m>, <m>\mathbf{e}_2=(0,1,0)</m>
+    and <m>\mathbf{e}_3=(0,0,1)</m> are also called <m>{\mathbf
+      i}</m>, <m>\mathbf{j}</m>, and <m>\mathbf{k}</m>, respectively.  Given a vector
+    <m>\mathbf{x}=(x_1,\ldots,x_n)</m>, we have the following
+    representation of <m>\mathbf{x}</m> as a
+sum of scalar multiples of the standard basis vectors (note that the
+    summation sign indicates vector addition).
+    <men xml:id="sumofcomps">\mathbf{x} = \sum_{i=1}^n x_i\mathbf{e}_i
+    </men>
+Equation <xref ref="sumofcomps"/> says that every vector is a linear
+combination of standard basis vectors.
+</p>
+  
+</subsection>
+
+<subsection>
+  <title>Inner product</title>
+
+  <p>
+    The <term>inner product</term><idx><h>inner product</h>
+    </idx>
+    or <term>dot product</term><idx><h>dot product</h>
+    </idx>
+    of two vectors
+    <m>\mathbf{x}=(x_1,\ldots,x_n)</m>
+    and <m>\mathbf{y}=(y_1,\ldots,y_n)</m>
+    is defined to be the
+    real number
+    <me><notation><usage>\mathbf{x}\cdot
+    \mathbf{y}</usage><description>inner product (or dot product) of
+	  vectors <m>\mathbf{x},\mathbf{y}</m>
+	</description>
+      </notation>
+\mathbf{x}\cdot \mathbf{y} = x_1y_1+x_2y_2 + \cdots +x_ny_n.      
+    </me>
+    In terms of inner product, the <m>i</m>th coordinate <m>x_i</m>
+    of the vector <m>\mathbf{x}=(x_1,\ldots,x_n)</m>
+    is given by
+    <men xml:id="ithentry">
+x_i = \mathbf{e}_i\cdot \mathbf{x}      
+    </men>
+    and <xref ref="sumofcomps"/> becomes
+    <men xml:id="sumofstandprojs">
+\mathbf{x} = \sum_{i=1}^n \left(\mathbf{e}_i\cdot \mathbf{x}\right)\mathbf{e}_i.      
+    </men>
+  </p>
+  
+</subsection>
+
+<exercises>
+  <exercise xml:id="vectnotationexer">
+    <p>Write each of the following vectors <m>\mathbf{x}</m>
+      in the form
+      <m>(x_1,x_2,\ldots,x_n)</m>
+      and <m>\sum_i x_i\mathbf{e}_i</m>.  For <m>n=2,3</m>, also
+      write <m>\mathbf{x}</m>
+      using <m>\mathbf{i},\mathbf{j},\mathbf{k}</m>
+      notation.
+	Example: Given <m>\mathbf{x}=3(2,4,-1)</m>, write
+      <m>x=(6,12,-3)=6\mathbf{e}_1+12\mathbf{e}_2-3\mathbf{e}_3=6{\mathbf
+	i}+12{\mathbf j}-3{\mathbf k}</m>.
+      <ol>
+	<li><m>\mathbf{x}=(3,2)-(5,-2)</m>
+	</li>
+	<li><m>\mathbf{x}=2(-1,2,1) + 3(2,-2,0)</m>
+	</li>
+	<li><m>\mathbf{x}=2\mathbf{e}_1-3\mathbf{e}_2+4\mathbf{e}_4 -(\mathbf{e}_1-\mathbf{e}_2 +\mathbf{e}_3)</m>
+	</li>
+      </ol>
+    </p>
+    <answer>
+      <p>
+	<ol>
+	  <li><m>\mathbf{x}=(-2,4)=-2\mathbf{e}_1 + 4\mathbf{e}_2 = -2\mathbf{i} + 4\mathbf{j}</m>
+	  </li>
+	  <li><m>\mathbf{x}=(4,-2,2)= 4\mathbf{e}_1 - 2\mathbf{e}_2 +
+	      2\mathbf{e}_3 = 4\mathbf{i} - 2\mathbf{j} +2 \mathbf{k}</m>
+	  </li>
+	  <li><m>\mathbf{x}=(1, -2, -1, 4) = \mathbf{e}_1 - 2\mathbf{e}_2- \mathbf{e}_3 + 4\mathbf{e}_4</m>
+	  </li>
+	</ol>
+      </p>
+    </answer>
+
+  </exercise>
+
+
+  <exercise xml:id="sumofcompsexer">
+    <p>Verify equation <xref ref="sumofcomps"/>.
+    </p>
+  </exercise>
+
+<!-- Instructor's solution -->  
+    <commentary>
+    <title>Instructor's solution for
+      <xref ref="vectnotationexer"/> (verification of <xref ref="sumofcomps"/>)</title>
+    <p>
+  We have
+  <md>
+    <mrow>\sum_{i=1}^n x_i\mathbf{e}_i \amp = x_1\mathbf{e}_1
+    +x_2\mathbf{e}_2 + \cdots + x_n\mathbf{e}_n 
+    </mrow>
+    <mrow>\amp =x_1(1,0,0,\ldots,0) + x_2(0,1,0,\ldots,0) + \cdots x_n
+    (0,0,\ldots,0,1) \amp \text{(defn. of standard basis vects.)}
+    </mrow>
+    <mrow>
+        \amp =(x_1,0,0,\ldots,0) + (0,x_2,0,\ldots,0) + \cdots 
+    (0,0,\ldots,0,x_n) \amp \text{(scalar mult.)}
+    </mrow>
+    <mrow>
+      \amp = (x_1, x_2, \ldots , x_n)\amp \text{(vector addition)}
+    </mrow>
+    <mrow>
+      \amp = \mathbf{x}.
+    </mrow>
+</md>
+    </p>
+  </commentary>
+
+    <exercise xml:id="ithentryexer">
+      <p>Verify equation <xref ref="ithentry"/>.
+      </p>
+    </exercise>
+
+<!-- Instructor's solution -->
+<commentary>
+  <title>Instructor's solution for <xref ref="ithentryexer"/>
+  (verification of <xref ref="ithentry"/>)</title>
+  <p>
+  We have
+  <md>
+    <mrow>\mathbf{e}_i\cdot \mathbf{x} \amp = (0,0,\ldots,0,1,0,\ldots,0) \cdot
+      (x_1,x_2,\ldots,x_n) \amp \text{(defn. of standard basis vect.)}</mrow>
+    <mrow>\amp = 0x_1+0x_2+\cdots 0x_{i-1} + 1x_i+ 0x_{i+1}+\cdots +
+      0x_n \amp \text{(defn. of dot product)}</mrow>
+    <mrow>  \amp = x_i.</mrow>
+</md>
+  </p>
+</commentary>
+
+<exercise xml:id="eidotejexer">
+  <p>
+    Show that
+    <me>\mathbf{e}_i\cdot \mathbf{e}_j = \delta_{ij}</me>
+    where <m>\delta_{ij}</m><notation><usage><m>\delta_{ij}</m>
+      </usage><description>Kronecker delta</description>
+    </notation>, called the <term>Kronecker
+      delta</term><idx><h>Kronecker delta</h>
+    </idx>, is given by
+    <men>
+      \delta_{ij}=\left\{ \begin{array}{cc}
+1 \amp \mbox{if $i=j$}\\
+0 \amp \mbox{if $i\neq j$}
+\end{array}
+  \right.</men>
+</p>
+</exercise>
+
+<!-- Instructor's solution -->
+<commentary>
+  <title>Instructor's solution for <xref ref="eidotejexer"/></title>
+  <p>
+    If <m>i\neq j</m>, each summand in the dot product has a factor of 0. If
+    <m>i=j</m>, all the terms in the dot product are 0 except for
+    the <m>i</m>th,
+    which is <m>1\cdot 1=1</m>.    
+  </p>
+</commentary>
+
+<exercise xml:id="vectnormexer">
+  <p>
+    The <term>length</term><idx><h>length of a vector</h>
+    </idx>
+    or <term>norm</term><idx><h>norm of a vector</h>
+    </idx>
+    of vector
+    <m>\mathbf{x}=(x_1,x_2,\ldots,x_n)</m>,
+    denoted <m>|\mathbf{x}|</m><notation><usage><m>|\mathbf{x}|</m>
+      </usage><description>norm of a vector</description>
+    </notation>
+    (or often <m>\|\mathbf{x}\|</m>), is defined by
+<me>|\mathbf{x}|^2 = \mathbf{x}\cdot \mathbf{x} = x_1^2 + x_2^2 + \cdots
+  + x_n^2.</me>
+A vector <m>\mathbf{x}</m> is said be
+be <term>normalized</term><idx><h>normalized vector</h>
+</idx>
+or <term>have norm 1</term><idx><h>norm 1 vector</h>
+</idx>
+if <m>|\mathbf{x}|=1</m>.
+<ol>
+  <li>
+    Show that, for any vector <m>\mathbf{x}</m>
+    and any <m>\alpha>0</m>, we have
+    <me>|\alpha\mathbf{x}|=\alpha|\mathbf{x}|.</me>
+  </li>
+  <li>
+    Show that, for any nonzero vector <m>\mathbf{x}</m>, the vector
+    <m>\frac{\mathbf{x}}{|\mathbf{x}|}</m> has norm 1. 
+  </li>
+</ol>
+  </p>
+</exercise>
+
+<!-- Instructor's solution -->
+<commentary>
+  <title>Instructor's solution for <xref ref="vectnormexer"/></title>
+  <p>
+    <ol>
+      <li>
+<m>|\alpha\mathbf{x}| = \sqrt{\alpha^2x_1^2 + \alpha^2 x_2^2 + \cdots + \alpha^2x_n^2}
+  = \alpha\sqrt{x_1^2 + x_2^2 + \cdots + x_n^2} = \alpha|\mathbf{x}|</m>
+</li>
+      <li>
+ Using the previous problem for the first equality that follows, we have
+ <m>\left|\frac{\mathbf{x}}{|\mathbf{x}|}\right|
+   = \frac{1}{|\mathbf{x}|}|\mathbf{x}| = 1</m>. QED 
+</li>
+</ol>
+  </p>
+</commentary>
+</exercises>
+
+</section>
+
