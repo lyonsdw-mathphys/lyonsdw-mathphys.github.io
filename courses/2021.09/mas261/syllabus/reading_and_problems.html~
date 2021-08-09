@@ -1,30 +1,67 @@
 <h3>Reading and Problem List</h3>
 
+Read the text sections listed below. In [Calc3], work all of the
+Checkpoint problems, and work every other odd numbered problem in the
+Exercises at the end of each section. If additional practice is needed,
+work more odd numbered Exercises. In [LinAlg], work all of the
+problems. 
+
 <pre>
-Reading        Problems
--------        --------
-Ch 1    
-Ch 2           A:1,2,5,7,8,11 Rev.Ex.:1,3,5,6,8,10--12
-Ch 3 Sec 1--4  A:1--4,7 B:1,2 C:1--3 D:1,2 Rev.Ex.:1--9
-Ch 4	       A:1--6,9 B:1--6 C:1--5 D:1--3,5,6,9 E:1--5,12 Rev.Ex.:1--7
-Ch 5	       A--F:all Rev.Ex.:1--4,6--9,11
-Ch 6	       Rev.Ex.:1--5
-Ch 8	       A:all B:1--6,9 C:all D:1,2,4 Rev.Ex:1,3--5,7--10
-Ch 9	       A:1--4,6--9 B:1--4 C:1--4 D:1,2 E:1--5 Rev.Ex.:1--5,8,10--12
-Ch 10          A:all B:all C:all D:all E:all Rev.Ex.:all
-Ch 11          A--E:all Rev.Ex.:1--7,12
-Ch 12          A--B:all Rev.Ex.:1--6
-Ch 13 Sec 1--4 A:all B:all C:1--5,7 D:1--7 Rev.Ex.:1--5,7--12
-Ch 14          A:all B:all C:all D:1--5 Rev.Ex.:1--13
-Ch 15          A:1--5 Rev.Ex.:1--10
-Ch 16          A:1--6,8 B:1--7 C:1--3 Rev.Ex.:1--10
-Ch 17	       A:1--6 B:1--7 C:1--8 D:1--4 E:1--3,5--9 Rev.Ex.:1--14
-Ch 18	       A:1--4 B:1--6 C:1--8 Rev.Ex.:1--15
-Ch 19	       A:1,2,4,5 Rev.Ex.:1,4,7--10
-Ch 20 Sec 2--5 A:1--5 B:1--5 C:1--5 Rev.Ex.:1--3,7--12
-               Ch 16 A:7 repeat for 50,000, 2,000 and 1,000 marbles in box
-Ch 21	       A:1--5,7,8 B:1--4 C:1--6 D:1,2 E:1,2 Rev.Ex.:1--6,8,10--15
-Ch 23	       A:1--10 B:1--4,6,7 C:1--4 D:1--4,6,7 Rev.Ex.:1--5,7,8,10--12
-Ch 24	       A:1,4,5 B:1--4 C:1--7 Rev.Ex.:1--4,7,9,10
-Ch 26 Sec 1--5 A:all B:all C:all D:all E:1--10 Rev.Ex.:1--6,8,9
+Vectors and Linear Algebra
+==========================
+  [Calc3]  2.1                
+  [Calc3]  2.2
+  [Calc3]  2.3  
+  [Calc3]  2.4
+  [Calc3]  2.5
+ [LinAlg]  Sections 1 and 2
+ [LinAlg]  Section 3
+           Review
+           Exam
+
+Curves, Limits, Continuity
+==========================
+  [Calc3]  2.7 
+  [Calc3]  3.1
+  [Calc3]  3.2
+  [Calc3]  3.3
+  [Calc3]  3.4
+  [Calc3]  4.1
+  [Calc3]  4.2
+           Review
+           Exam
+
+Differential Calculus
+=====================
+  [Calc3]  4.3
+  [Calc3]  4.4
+  [Calc3]  4.5
+  [Calc3]  4.6
+  [Calc3]  4.7
+  [Calc3]  4.8
+ [LinAlg]  Section 4
+           Review
+           Exam
+
+Integral Caclulus
+=================
+  [Calc3]  5.1
+  [Calc3]  5.2  
+  [Calc3]  5.3  
+  [Calc3]  5.4  
+  [Calc3]  5.5  
+  [Calc3]  5.6  
+  [Calc3]  5.7  
+           Review
+           Exam
+
+Vector Calculus
+===============
+  [Calc3]  6.1
+  [Calc3]  6.2  
+  [Calc3]  6.3  
+  [Calc3]  6.3  
+           Review
+           Final Exam
 </pre>
+
