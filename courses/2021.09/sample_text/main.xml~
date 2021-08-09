@@ -65,19 +65,13 @@
     <!-- switch titles (comment/uncomment) 
     for printed Instructor's  Solutions version -->
 
-    <title>Linear and Matrix Algebra for Multivariable Calculus</title>
+    <title>Sample Textbook</title>
 
 
 <!-- Chapters of the text, Front and Back Matter -->
 
     <xi:include href="front_matter.xml"/>
-    <xi:include href="rnvects.xml"/>
-    <xi:include href="lin_maps.xml"/>
-    <xi:include href="matrices.xml"/>
-    <!--
-    <xi:include href="morelinalg.xml"/>
---> 
-    <xi:include href="linalgincalc3.xml"/>        
+    <xi:include href="sample_text_section.xml"/>
     <xi:include href="back_matter.xml"/>    
 
 
