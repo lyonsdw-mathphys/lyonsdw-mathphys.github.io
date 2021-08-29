@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-08-28T22:35:45-04:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Probability</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore",
+    processHtmlClass: "has_am",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-article has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(      \DeclareMathOperator{\AVE}{AVE}
+      \DeclareMathOperator{\SD}{SD}
+      \DeclareMathOperator{\rms}{rms}
+      \DeclareMathOperator{\REGR}{REGR}
+      \DeclareMathOperator{\AND}{AND}
+      \DeclareMathOperator{\OR}{OR}
+      \DeclareMathOperator{\OPPOSITE}{OPPOSITE}                        
+      \DeclareMathOperator{\Inn}{Inn}
+      \DeclareMathOperator{\lcm}{lcm}            
+\DeclareMathOperator{\Aut}{Aut}      
+\DeclareMathOperator{\Perm}{Perm}
+\DeclareMathOperator{\Stab}{Stab}
+\DeclareMathOperator{\Orb}{Orb}
+\DeclareMathOperator{\Rot}{Rot}
+\DeclareMathOperator{\re}{Re}
+\DeclareMathOperator{\im}{Im}
+\DeclareMathOperator{\img}{image}
+\DeclareMathOperator{\conj}{conj}
+\DeclareMathOperator{\Id}{Id}
+\newcommand{\C}{\mathbb{C}} 
+\newcommand{\Quat}{\mathbb{H}} 
+\newcommand{\extC}{\hat{\C}} 
+\newcommand{\R}{\mathbb{R}} 
+\newcommand{\extR}{\hat{\R}} 
+\newcommand{\F}{\mathbb{F}} 
+\newcommand{\extF}{\hat{\F}} 
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Proj}{\mathbb{P}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\M}{{\rm \bf M}} 
+\newcommand{\E}{{\rm \bf E}} 
+\renewcommand{\H}{{\rm \bf H}} 
+\newcommand{\HU}{\H_{\U}} 
+\renewcommand{\S}{{\rm \bf S}} 
+\newcommand{\D}{\mathbb{D}} 
+\newcommand{\closedD}{\hat{\D}} 
+\newcommand{\U}{\mathbb{U}} 
+\newcommand{\spacer}{\rule[0cm]{0cm}{0cm}}
+\newcommand{\MOD}{\mathbin{\text{MOD}}}
+\newcommand{\twotwo}[4]{\left[ \begin{array}{cc} #1 \amp #2 \\
+                        #3 \amp #4 \end{array} \right]}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="elemstats.html"><span class="title">Elementary Statistics Supplementary Notes</span></a></h1>
+<p class="byline">David W. Lyons</p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="regression_section.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="elemstats.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sampling_section.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="regression_section.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="elemstats.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sampling_section.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a><ul><li><a href="preface-1.html" data-scroll="preface-1">Preface</a></li></ul>
+</li>
+<li class="link">
+<a href="descriptive_stats_section.html" data-scroll="descriptive_stats_section"><span class="codenumber">1</span> <span class="title">Descriptive Statistics</span></a><ul>
+<li><a href="descriptive_stats_section.html#subsection-1" data-scroll="subsection-1">The Histogram</a></li>
+<li><a href="descriptive_stats_section.html#subsection-2" data-scroll="subsection-2">Average, Median, Percentiles</a></li>
+<li><a href="descriptive_stats_section.html#subsection-3" data-scroll="subsection-3">Operations on Lists</a></li>
+<li><a href="descriptive_stats_section.html#subsection-4" data-scroll="subsection-4">The Standard Normal Distribution</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="regression_section.html" data-scroll="regression_section"><span class="codenumber">2</span> <span class="title">Regression</span></a><ul>
+<li><a href="regression_section.html#subsection-5" data-scroll="subsection-5">RMS Error of Fit</a></li>
+<li><a href="regression_section.html#subsection-6" data-scroll="subsection-6">The Regression Line</a></li>
+<li><a href="regression_section.html#subsection-7" data-scroll="subsection-7">The Scatter Diagram</a></li>
+<li><a href="regression_section.html#subsection-8" data-scroll="subsection-8">More on Prediction and Error</a></li>
+<li><a href="regression_section.html#subsection-9" data-scroll="subsection-9">Facts about the correlation coefficient \(r\)</a></li>
+<li><a href="regression_section.html#subsection-10" data-scroll="subsection-10">The Regression Effect and the Regression Fallacy</a></li>
+</ul>
+</li>
+<li class="link active">
+<a href="probability_section.html" data-scroll="probability_section"><span class="codenumber">3</span> <span class="title">Probability</span></a><ul>
+<li><a href="probability_section.html#subsection-11" data-scroll="subsection-11">Box Models</a></li>
+<li><a href="probability_section.html#subsection-12" data-scroll="subsection-12">Complement, Intersection, Union of Events</a></li>
+<li><a href="probability_section.html#subsection-13" data-scroll="subsection-13">Conditional Probability</a></li>
+<li><a href="probability_section.html#subsection-14" data-scroll="subsection-14">Independent and Dependent Events</a></li>
+<li><a href="probability_section.html#subsection-15" data-scroll="subsection-15">Probability Rules</a></li>
+<li><a href="probability_section.html#subsection-16" data-scroll="subsection-16">The Binomial Formula</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="sampling_section.html" data-scroll="sampling_section"><span class="codenumber">4</span> <span class="title">Sampling Theory</span></a><ul>
+<li><a href="sampling_section.html#subsection-17" data-scroll="subsection-17">Sampling Vocabulary and Formulas</a></li>
+<li><a href="sampling_section.html#subsection-18" data-scroll="subsection-18">The Central Limit Theorem</a></li>
+<li><a href="sampling_section.html#subsection-19" data-scroll="subsection-19">Basic prediction problem</a></li>
+<li><a href="sampling_section.html#subsection-20" data-scroll="subsection-20">Basic Inference Problem</a></li>
+<li><a href="sampling_section.html#exercises-1" data-scroll="exercises-1">Sum of Draws Practice Problems</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="colophon-1.html" data-scroll="colophon-1"><span class="title">Colophon</span></a></li>
+<li class="link"><a href="biography-1.html" data-scroll="biography-1"><span class="title">About the author</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1"><span class="title">Index</span></a></li>
+<li class="link"><a href="references-1.html" data-scroll="references-1"><span class="title">Notation</span></a></li>
+<li class="link"><a href="references-2.html" data-scroll="references-2"><span class="title">References</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="probability_section"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">3</span> <span class="title">Probability</span>
+</h2>
+<section class="introduction" id="introduction-3">This section is coordinated with Freedman, <em class="emphasis">Statistics</em><a class="xref" data-knowl="./knowl/freedman_statistics.html" title="Bibliographic Entry 1: Statistics, 4th edition">[1]</a>, Chapters 13--15.</section><section class="subsection" id="subsection-11"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.1</span> <span class="title">Box Models</span>
+</h3>
+<p id="p-18">A <dfn class="terminology">box model</dfn> consists of a box that contains tickets, each of which is equally likely to be selected on any single random draw from the box, as in a fair lottery or raffle. In this course, every chance process can be modeled in terms of a sequence of one or more random draws from a box of tickets. The sequence of draws can be conducted in two different ways: <dfn class="terminology">with replacement</dfn> or <dfn class="terminology">without replacement</dfn>. These terms refer to whether or not each ticket drawn from the box is replaced in the box before the next draw; either way, it is assumed that on any given draw, every ticket in the box at that moment has an equal chance to be selected.</p>
+<p id="p-19">The <dfn class="terminology">outcome</dfn> of a sequence of random draws is the list of specific tickets that were drawn. That is, an outcome is a list of the form</p>
+<div class="displaymath">
+\begin{equation*}
+\text{(1st ticket drawn), (2nd ticket drawn), ... , (last ticket drawn)}.
+\end{equation*}
+</div>
+<p class="continuation">The assumption that each ticket is equally likely to be selected on any given random draw implies that every draw sequence outcome is equally likely. A set of outcomes is called an <dfn class="terminology">event</dfn>. We say an event <dfn class="terminology">happens</dfn> or <dfn class="terminology">occurs</dfn> if a sequence of random draws produces an outcome that belongs to that event. The <dfn class="terminology">probability</dfn> that an event occurs is the fraction</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{\text{number of outcomes in the event}}{\text{total number of possible outcomes}}.
+\end{equation*}
+</div>
+<p class="continuation">We usually use capital letters to denote events. We write \(P(A)\) to denote the probability of an event \(A\text{.}\) Here is the basic definition of probability using these symbols.</p>
+<div class="displaymath">
+\begin{equation}
+P(A) = \frac{\text{number of outcomes in } A}{\text{total number of  possible outcomes}}\label{eventprobdef}\tag{3.1}
+\end{equation}
+</div>
+<article class="example example-like" id="probeg1"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-probeg1"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-probeg1"><article class="example example-like"><p id="p-20">Consider the box with tickets labeled \(x,y,z\) and consider the chance process that selects two tickets, without replacement, from the box. The set of all possible outcomes is</p>
+<div class="displaymath">
+\begin{equation*}
+{(x,y), (x,z), (y,x), (y,z), (z,x), (z,y)}
+\end{equation*}
+</div>
+<p class="continuation">where the pair \((y,x)\text{,}\) for example, denotes the outcome where \(y\) is selected on the first draw, and \(x\) is selected on the second draw. The event \(A = \text{ "get an } x \text{"}\) is the set</p>
+<div class="displaymath">
+\begin{equation*}
+A={(x,y), (x,z), (z,x), (y,x)}
+\end{equation*}
+</div>
+<p class="continuation">and the event \(B = \text{ "get an } x \text{ on draw 1"}\) is the set</p>
+<div class="displaymath">
+\begin{equation*}
+B={(x,y), (x,z)}.
+\end{equation*}
+</div>
+<p class="continuation">We have the following probabilities.</p>
+<div class="displaymath">
+\begin{align*}
+P(A) \amp = P(\text{get an } x) = 4/6 = 2/3\\
+P(B) \amp = P(\text{get an } x \text{ on draw 1}) = 2/6 = 1/3
+\end{align*}
+</div></article></div>
+<p id="p-21">The point of the rest of this section is that we want to avoid having to explicitly list and count outcomes in order to calculate probabilities; we want to use shortcuts instead. First, we need more vocabulary.</p></section><section class="subsection" id="subsection-12"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.2</span> <span class="title">Complement, Intersection, Union of Events</span>
+</h3>
+<p id="p-22">The <dfn class="terminology">opposite</dfn> of an event \(U\) (also called the <dfn class="terminology">complement</dfn> of \(U\)) is the event that consists of all the outcomes not in \(U\text{.}\) For two events \(U,V\text{,}\) the event "\(U \AND V\)" (also called the <dfn class="terminology">intersection</dfn> of \(U\) and \(V\)) is the set of all the outcomes shared by both \(U\) and \(V\text{.}\) The event "\(U \OR V\)" (also called the <dfn class="terminology">union</dfn> of \(U\) and \(V\)) is the set of all the outcomes that are in \(U\) or in \(V\) or both. Events \(U,V\) are called <dfn class="terminology">mutually exclusive</dfn> if the event "\(U \AND V\)" is empty.</p>
+<article class="example example-like" id="probeg2"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-probeg2"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-probeg2"><article class="example example-like"><p id="p-23">Continuing <a class="xref" data-knowl="./knowl/probeg1.html" title="Example 3.1">Example 3.1</a>, consider these events.</p>
+<div class="displaymath">
+\begin{align*}
+C \amp = \text{ "get an } x \text{ on draw 2" } = {(y,x), (z,x)}\\
+D \amp = \text{"get a }y \text{" } = {(x,y), (z,y), (y,x), (y,z)}
+\end{align*}
+</div>
+<p class="continuation">The we have the following.</p>
+<div class="displaymath">
+\begin{align*}
+\text{opposite of } A \amp = {(y,z), (z,y)}\\
+A \AND D \amp= {(x,y), (y,x)}\\
+C \OR D \amp = {(x,y), (z,y), (y,x), (y,z), (z,x)}
+\end{align*}
+</div>
+<p class="continuation">The event \(B \AND C\) is the empty set, so \(B,C\) are mutually exclusive.</p></article></div></section><section class="subsection" id="subsection-13"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.3</span> <span class="title">Conditional Probability</span>
+</h3>
+<p id="p-24">Suppose we are about to make a sequence of draws from a box model and we are considering the probability that the outcome will be in some event \(V\text{.}\) Using definition <a class="xref" data-knowl="./knowl/eventprobdef.html" title="Equation 3.1">(3.1)</a>, we have this.</p>
+<div class="displaymath">
+\begin{equation}
+P(V) = \frac{\text{number of outcomes in }
+V}{\text{total number of possible outcomes}}\label{condprobdisc2}\tag{3.2}
+\end{equation}
+</div>
+<p class="continuation">Suppose now that we are somehow guaranteed that the outcome of our draws will be in a particular event \(U\text{,}\) and that all of the outcomes in \(U\) are equally likely. This effectively reduces the pool of possible outcomes: any outcome that is not in \(U\) should not be considered in the top or the bottom of the fraction on the right side of <a class="xref" data-knowl="./knowl/condprobdisc2.html" title="Equation 3.2">(3.2)</a>. We define the <dfn class="terminology">conditional probability of V given U</dfn>, denoted \(P(V|U)\), to be</p>
+<div class="displaymath">
+\begin{equation}
+P(V|U) = \frac{\text{number of outcomes in } U
+\AND V}{\text{number of outcomes in } U}.\label{condprobintuition}\tag{3.3}
+\end{equation}
+</div>
+<p class="continuation">The conditional probability \(P(V|U)\) reflects our updated assessment of the likelihood that the outcome of our sequence of draws will be in \(V\text{,}\) in the presence of the knowledge that the outcome is in \(U\text{.}\) Dividing the top and bottom of the fraction on the right side of <a class="xref" data-knowl="./knowl/condprobintuition.html" title="Equation 3.3">(3.3)</a> by the total number of possible outcomes yields the following expression for conditional probability.</p>
+<div class="displaymath">
+\begin{equation}
+P(V|U) = \frac{P(U \AND V)}{P(U)}\label{condprobdef}\tag{3.4}
+\end{equation}
+</div>
+<article class="example example-like" id="example-3"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-3"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.3</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-3"><article class="example example-like">Continuing <a class="xref" data-knowl="./knowl/probeg1.html" title="Example 3.1">Example 3.1</a> and <a class="xref" data-knowl="./knowl/probeg2.html" title="Example 3.2">Example 3.2</a>, we have the following.<div class="displaymath">
+\begin{align*}
+P(A|B) \amp = 1\\
+P(B|C) \amp = 0\\
+P(B|A) \amp = 1/2\\
+P(A|D) \amp = 1/2
+\end{align*}
+</div></article></div></section><section class="subsection" id="subsection-14"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.4</span> <span class="title">Independent and Dependent Events</span>
+</h3>
+<p id="p-25">If \(P(V) = P(V|U)\text{,}\) the events \(U,V\) are called <dfn class="terminology">independent</dfn>. Otherwise, the events are called <dfn class="terminology">dependent</dfn>. Using the word "independent" to describe events \(U,V\) reflects the fact that knowing whether or not an outcome is guaranteed to be in event \(U\) does not affect the way we assess the probability of event \(V\text{.}\)</p></section><section class="subsection" id="subsection-15"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.5</span> <span class="title">Probability Rules</span>
+</h3>
+<p id="p-26">The usefulness of the following equations is when something you want to know can be put in the form of the expressions on the left sides, and the expressions on the right sides are easier to compute. Most of the time, these rules save you from having to make explicit lists and counts of outcomes.</p>
+<p id="p-27">Rearranging <a class="xref" data-knowl="./knowl/condprobdef.html" title="Equation 3.4">(3.4)</a>, we have the following equation, called the <dfn class="terminology">multiplication rule</dfn>.</p>
+<div class="displaymath">
+\begin{equation*}
+P(U \AND V) = P(U) \cdot P(V|U)
+\end{equation*}
+</div>
+<p class="continuation">If \(U,V\) are independent, the multiplication rule simplifies a little.</p>
+<div class="displaymath">
+\begin{equation*}
+P(U \AND V) = P(U) \cdot P(V)    \;\;\;(U,V \text{ independent})
+\end{equation*}
+</div>
+<p class="continuation">If \(U,V\) are mutually exclusive, we have the following equation, called the <dfn class="terminology">addition rule for mutually exclusive events</dfn>.</p>
+<div class="displaymath">
+\begin{equation*}
+P(U \OR V) = P(U) + P(V)   \;\;\;(U,V \text{ mutually exclusive})
+\end{equation*}
+</div>
+<p class="continuation">A special case of the addition rule is when \(V\) is the opposite of \(U\text{.}\) In this case, \(U \OR V\) is the set of all possible outcomes, so \(P(U \OR V) = 1\text{.}\) Rearranging the addition rule terms, we have the <dfn class="terminology">opposite rule</dfn> .</p>
+<div class="displaymath">
+\begin{equation*}
+P(U) = 1 - P(\text{opposite of }U)
+\end{equation*}
+</div></section><section class="subsection" id="subsection-16"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.6</span> <span class="title">The Binomial Formula</span>
+</h3>
+<p id="p-28">Consider a box model in which the tickets are divided into two categories: \(W\) (for winning tickets) and \(L\) for (losing tickets). Let \(p\) be the probability that a single random draw is a winning ticket. In symbols we have the following.</p>
+<div class="displaymath">
+\begin{align*}
+P(W) \amp = p\\
+P(L) \amp = 1 - p
+\end{align*}
+</div>
+<p id="p-29">Now consider a sequence of random draws, with replacement. Let \(n\) be the number of draws in the sequence (\(n\) is some positive whole number), and let \(S\) be the event</p>
+<div class="displaymath">
+\begin{equation*}
+S = \text{"get exactly } k \;\;W's \text{ and } (n-k)\;\; L\text{'s in } n
+\text{ draws"}
+\end{equation*}
+</div>
+<p class="continuation">where \(k\) is some whole number in the range from 0 to \(n\text{.}\) For example, the outcome \(WLWWL\) belongs to \(S\) for \(n=5\) and \(k=3\text{.}\) The binomial formula is</p>
+<div class="displaymath">
+\begin{equation*}
+P(S) = {n \choose k}  p^k (1-p)^{n-k}
+\end{equation*}
+</div>
+<p class="continuation">where \({n \choose k}\) is the quantity</p>
+<div class="displaymath">
+\begin{equation*}
+{n \choose k} = \frac{n!}{k! (n-k)!}.
+\end{equation*}
+</div>
+<p class="continuation">The number \({n \choose k}\text{,}\) called a <dfn class="terminology">binomial coefficient</dfn>, is the number of different \(n\)-letter words you can write with \(k\) \(W\)'s and \((n-k)\) \(L\)'s. For example, the number of different 5-letter words you can write with \(k=3\) \(W\)'s and \(n-k=2\) \(L\)'s is</p>
+<div class="displaymath">
+\begin{equation*}
+{5 \choose 3} = \frac{5!}{3!2!} = 10.
+\end{equation*}
+</div>
+<p class="continuation">Indeed, here is the list of the 10 words.</p>
+<div class="displaymath">
+\begin{gather*}
+WWWLL, WWLWL, WLWWL, LWWWL, WWLLW, \\
+WLWLW, LWWLW, WLLWW, LWLWW, LLWWW
+\end{gather*}
+</div>
+<p class="continuation">For the box with 1 \(W\) and 3 \(L\)'s (so \(p=P(W)=1/4\)), the chance of getting exactly \(k=3\) \(W\)'s in \(n=5\) draws is \({5 \choose 3}  (1/4)^3  (3/4)^2 \approx 8.79\%.\)</p>
+<p id="p-30">Here is the reasoning for why the binomial formula works, in brief: There are \(n \choose k\) outcomes with \(k\) \(W\)'s and \((n-k)\) \(L\)'s. All of these outcomes are mutually exclusive to one another, so the probability of getting a outcome sequence with exactly \(k\) \(W\)'s in in draws is the sum of the probabilities of each individual outcome (by the addition rule). Any particular sequence of \(k\) \(W\)'s and \((n-k)\) \(L\)'s has a probability of \(p^k (1-p)^{n-k}\) (by the multiplication rule for independent events). Put all this together and you get the binomial formula.</p></section></section></div></main>
+</div>
+</body>
+</html>
