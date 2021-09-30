@@ -1,0 +1,59 @@
+Course Outline
+
+Curves, Limits, Continuity
+==========================
+  [Calc3]  2.7 
+  [Calc3]  3.1   cut Exercises 3,27,28,37--40
+  [Calc3]  3.2
+  [Calc3]  3.3
+
+    arc length of a parametrized curve r(t)
+    arc length reparametrization r(t(s))
+    curvature
+    Thm 3.6 expression (3.15) for calculating curvature
+    
+
+  [Calc3]  3.4
+     cut reading "Components of the Acceleration Vector"
+     *keep* reading "Projectile Motion"
+     cut reading "Kepler's Laws"
+     cut Exercises 185--193, 197--201
+  [Calc3]  4.1
+  [Calc3]  4.2
+           Review
+           Exam
+
+Differential Calculus
+=====================
+  [Calc3]  4.3
+  [Calc3]  4.4
+  [Calc3]  4.5
+  [Calc3]  4.6
+  [Calc3]  4.7
+  [Calc3]  4.8
+ [LinAlg]  Section 4
+           Review
+           Exam
+
+Integral Caclulus
+=================
+  [Calc3]  5.1
+  [Calc3]  5.2  
+  [Calc3]  5.3  
+  [Calc3]  5.4  
+  [Calc3]  5.5  
+  [Calc3]  5.6  
+  [Calc3]  5.7  
+           Review
+           Exam
+
+Vector Calculus
+===============
+  [Calc3]  6.1
+  [Calc3]  6.2  
+  [Calc3]  6.3  
+  [Calc3]  6.3  
+           Review
+           Final Exam
+</pre>
+
