@@ -26,39 +26,28 @@ Thu  <date>2021-10-21</date> <title>Ch 13</title> <hw/>
 
 built on Canvas to here 8/10/2021
 
-Fri  <date>2021-10-22</date> <title></title> <hw/> <discuss/>  
-Mon  <date>2021-10-25</date> <title></title> <hw/> <discuss/>  
-Tue  <date>2021-10-26</date> <title></title> <hw/> <discuss/>  
-Wed  <date>2021-10-27</date> <title></title> <hw/> <discuss/>  
-Thu  <date>2021-10-28</date> <title></title> <hw/> <discuss/>  
-Fri  <date>2021-10-29</date> <title></title> <hw/> <discuss/>  
-Mon  <date>2021-11-01</date> <title></title> <hw/> <discuss/>  
-Tue  <date>2021-11-02</date> <title></title> <hw/> <discuss/>  
-Wed  <date>2021-11-03</date> <title></title> <hw/> <discuss/>  
-Thu  <date>2021-11-04</date> <title></title> <hw/> <discuss/>  
-Fri  <date>2021-11-05</date> <title></title> <hw/> <discuss/>  
-Mon  <date>2021-11-08</date> <title></title> <hw/> <discuss/>  
-Tue  <date>2021-11-09</date> <title></title> <hw/> <discuss/>  
-Wed  <date>2021-11-10</date> <title></title> <hw/> <discuss/>  
-Thu  <date>2021-11-11</date> <title></title> <hw/> <discuss/>  
-Fri  <date>2021-11-12</date> <title></title> <hw/> <discuss/>  
-Mon  <date>2021-11-15</date> <title></title> <hw/> <discuss/>  
-Tue  <date>2021-11-16</date> <title></title> <hw/> <discuss/>  
-Wed  <date>2021-11-17</date> <title></title> <hw/> <discuss/>  
-Thu  <date>2021-11-18</date> <title></title> <hw/> <discuss/>  
-Fri  <date>2021-11-19</date> <title></title> <hw/> <discuss/>  
-Mon  <date>2021-11-22</date> <title></title> <hw/> <discuss/>  
-Tue  <date>2021-11-23</date> <title></title> <hw/> <discuss/>  
-Wed  <date>2021-11-24</date> <title></title> <hw/> <discuss/>  
-Thu  <date>2021-11-25</date> <title></title> <hw/> <discuss/>  
-Fri  <date>2021-11-26</date> <title></title> <hw/> <discuss/>  
-Mon  <date>2021-11-29</date> <title></title> <hw/> <discuss/>  
-Tue  <date>2021-11-30</date> <title></title> <hw/> <discuss/>  
-Wed  <date>2021-12-01</date> <title></title> <hw/> <discuss/>  
-Thu  <date>2021-12-02</date> <title></title> <hw/> <discuss/>  
-Fri  <date>2021-12-03</date> <title></title> <hw/> <discuss/>  
-Mon  <date>2021-12-06</date> <title></title> <hw/> <discuss/>  
-Tue  <date>2021-12-07</date> <title></title> <hw/> <discuss/>  
-Wed  <date>2021-12-08</date> <title></title> <hw/> <discuss/>  
-Thu  <date>2021-12-09</date> <title></title> <hw/> <discuss/>  
-Fri  <date>2021-12-10</date> <title></title> <hw/> <discuss/>  
+Tue  <date>2021-10-26</date> <title>Ch 14</title> <hw/>
+Thu  <date>2021-10-28</date> <title>Ch 15</title> <hw/>
+
+Tue  <date>2021-11-02</date> <title>Ch 16</title> <hw/>
+Thu  <date>2021-11-04</date> <title>Ch 17</title> <hw/>
+
+Tue  <date>2021-11-09</date> <title>Ch 18</title> <hw/>
+Thu  <date>2021-11-11</date> <title>Review</title>
+
+Tue  <date>2021-11-16</date> <title>Exam 3</title>
+Thu  <date>2021-11-18</date> <title>Ch 19</title> <hw/>
+
+Tue  <date>2021-11-23</date> <title>Ch 20</title> <hw/>
+Thu  <date>2021-11-25</date> <title>BREAK</title> 
+
+Tue  <date>2021-11-30</date> <title>Ch 21</title> <hw/>
+Thu  <date>2021-12-02</date> <title>Ch 23</title> <hw/>
+
+Tue  <date>2021-12-07</date> <title>Review</title>
+Thu  <date>2021-12-09</date> <title>Review</title>
+
+Tue  <date>2021-12-14</date> <title>Final Exam Section 2 12:30pm</title>
+Thu  <date>2021-12-16</date> <title>Final Exam Section 1 8:30am</title> 
+
+built on Canvas to here 10/6/2021
