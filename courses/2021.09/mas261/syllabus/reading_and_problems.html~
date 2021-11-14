@@ -33,7 +33,7 @@ Curves, Limits, Continuity
   [Calc3]  3.3
      in Thm 3.6 *learn* (3.15), practice but do not memorize (3.16),(3.17)
      cut reading beginning at "Normal and Binormal Vectors"
-     cut Exercises 114,117,118,120,124,125,141,142,143
+     cut Exercises 114,117,118,120,124,125,141,142,143,149
   [Calc3]  3.4
      cut reading "Components of the Acceleration Vector"
      *keep* reading "Projectile Motion"
@@ -47,12 +47,15 @@ Curves, Limits, Continuity
 Differential Calculus
 =====================
   [Calc3]  4.3
+     omit the reading section "Student Project: Lord Kelvin and the Age of the Earth"
   [Calc3]  4.4
   [Calc3]  4.5
   [Calc3]  4.6
   [Calc3]  4.7
   [Calc3]  4.8
- [LinAlg]  Section 4
+     cut reading the very end of the section: Lagrange method for multiple constraints
+     cut Exercise #379
+[LinAlg]  Section 4
            Review
            Exam
 
@@ -73,7 +76,7 @@ Vector Calculus
   [Calc3]  6.1
   [Calc3]  6.2  
   [Calc3]  6.3  
-  [Calc3]  6.3  
+  [Calc3]  6.4
            Review
            Final Exam
 </pre>
