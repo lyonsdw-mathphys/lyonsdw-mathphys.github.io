@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-11-08T13:46:57-05:00       *-->
+<!--*       on 2021-11-16T09:57:46-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,12 +15,30 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
+<p>Armed with the facts and formulas above, here is the skeleton of the basic prediction problem.</p>
+<ul class="disc">
+<li>Given: a description of a chance process</li>
+<li>Question: find the probability that a sample (with a sufficiently large number of draws) from a box model for the chance process produces a sum or average in a given range</li>
+</ul>
+<p class="continuation">The procedure to solve the problem has these steps:</p>
+<ul class="disc">
+<li>Construct the box model that matches the question. How many tickets are in the box? What numbers are on the tickets? How many draws?  Are the draws taken with or without replacement? Is the question about the sum or the average of the draws?</li>
+<li>
 <p>Perform calculations.</p>
 <ul class="circle">
 <li>ave(box)</li>
 <li>SD(box)</li>
 <li>expected(sum,ave,%1's) (using <a class="xref" data-knowl="./knowl/expectedsumformula.html" title="Equation 4.1">(4.1)</a>)</li>
 <li>SE(sum,ave,%1's) (using <a class="xref" data-knowl="./knowl/sesumformula.html" title="Equation 4.2">(4.2)</a> and also <a class="xref" data-knowl="./knowl/sewithcorrfact.html" title="Equation 4.3">(4.3)</a> if draws are without replacement)</li>
+</ul>
+</li>
+<li>Sketch a normal curve (justified by the Central Limit Theorem) and shade an area that answers the question. The center of the horizontal axis is expected(sum,ave,%1's)) (depending on the question). Find the \(z\) values needed for your shaded area.<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+z =  \frac{\text{(sum,ave,%1's in the question)} - (\text{expected(sum,ave,%1's)})}{\text{SE(sum,ave,%1's)}}
+\end{equation*}
+</div>
+</li>
+<li>Finally, use the normal distribution table to find the area that answers the given question.</li>
 </ul>
 <span class="incontext"><a href="sampling_section.html#p-40">in-context</a></span>
 </body>

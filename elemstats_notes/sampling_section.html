@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-11-08T13:46:57-05:00       *-->
+<!--*       on 2021-11-16T09:57:45-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -259,16 +259,22 @@ n \amp = \text{the number of draws in the sample}.
 \text{average(list) }\amp = \frac{\text{sum(list)}}{\text{#items in the list}}\label{avesumpctrelation}\tag{4.5}\\
 \text{percent 1's in a list of 0's and 1's }\amp = (\text{average of the list}) \cdot 100\%\notag
 \end{align}
+</div>
+<p id="p-37"><em class="alert">A special case SD formula:</em> Suppose that all of the entries of a list \(X=A,A,A,\ldots,A,B,B,B,\ldots B\) are one of two values \(A\) and \(B\text{,}\) with \(A\lt B\text{,}\) and suppose there are \(r\) entries with value \(A\) and \(s\) entries with value \(B\text{.}\) The SD of the list \(X\) is given by the following formula.</p>
+<div class="displaymath">
+\begin{equation}
+\text{SD}(X)= (B-A)\sqrt{\frac{r}{r+s}\frac{s}{r+s}} = (B-A)\frac{\sqrt{rs}}({r+s}\tag{4.6}
+\end{equation}
 </div></section><section class="subsection" id="subsection-19"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">4.2</span> <span class="title">The Law of Averages</span>
 </h3>
-<p id="p-37">The "law of averages" is an intuitive statement, confirmed by the SE formulas <a class="xref" data-knowl="./knowl/sesumformula.html" title="Equation 4.2">(4.2)</a>, that the sample percentage of 1's becomes a more and more accurate approximation of the percentage of 1's in a box as the number of draws increases. In statistics terms, "more accurate" means a smaller SE. [The summary at the end of Chapter 16 of our text is stated for the special case of a fair coin box, that is, a box containing half 0's and half 1's. Despite this restriction in the exposition, the authors expect the student to apply the law of averages for arbitrary 0-1 boxes. It should be noted that no SE formulas appear in the text before or in Chapter 16. The authors use the term "absolute error" to refer to the SE for the sum of draws, and use the term "relative error" to mean the fraction SE(sum)/(number of draws). In these terms, the law of averages says that absolute error increases as the number of draws increases, and relative error decreases as the number of draws increases. The authors imply that the law of averages is intuitively clear, whether you are aware of SE formulas or not.]</p></section><section class="subsection" id="subsection-20"><h3 class="heading hide-type">
+<p id="p-38">The "law of averages" is an intuitive statement, confirmed by the SE formulas <a class="xref" data-knowl="./knowl/sesumformula.html" title="Equation 4.2">(4.2)</a>, that the sample percentage of 1's becomes a more and more accurate approximation of the percentage of 1's in a box as the number of draws increases. In statistics terms, "more accurate" means a smaller SE. [The summary at the end of Chapter 16 of our text is stated for the special case of a fair coin box, that is, a box containing half 0's and half 1's. Despite this restriction in the exposition, the authors expect the student to apply the law of averages for arbitrary 0-1 boxes. It should be noted that no SE formulas appear in the text before or in Chapter 16. The authors use the term "absolute error" to refer to the SE for the sum of draws, and use the term "relative error" to mean the fraction SE(sum)/(number of draws). In these terms, the law of averages says that absolute error increases as the number of draws increases, and relative error decreases as the number of draws increases. The authors imply that the law of averages is intuitively clear, whether you are aware of SE formulas or not.]</p></section><section class="subsection" id="subsection-20"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">4.3</span> <span class="title">The Central Limit Theorem</span>
 </h3>
-<p id="p-38">Sampling theory derives its power from a fact called the <dfn class="terminology">Central Limit Theorem</dfn>. The Central Limit Theorem says that, no matter what numbers are in a box model, the histogram of all possible (standardized) sample sums (which is the same as the standardized sample average or the standardized sample percentage of 1's) is close to the standard normal distribution, as long as the number of draws is sufficiently large. [Our textbook is vague about how large is "sufficiently large". For a box with a uniform distribution (that is, a histogram for which all the blocks are close to even in height), 25 draws or more is sufficiently large. For a box that is very uneven (that is, a histogram with blocks of very different heights), sufficiently large might be 100 or more draws.]</p></section><section class="subsection" id="subsection-21"><h3 class="heading hide-type">
+<p id="p-39">Sampling theory derives its power from a fact called the <dfn class="terminology">Central Limit Theorem</dfn>. The Central Limit Theorem says that, no matter what numbers are in a box model, the histogram of all possible (standardized) sample sums (which is the same as the standardized sample average or the standardized sample percentage of 1's) is close to the standard normal distribution, as long as the number of draws is sufficiently large. [Our textbook is vague about how large is "sufficiently large". For a box with a uniform distribution (that is, a histogram for which all the blocks are close to even in height), 25 draws or more is sufficiently large. For a box that is very uneven (that is, a histogram with blocks of very different heights), sufficiently large might be 100 or more draws.]</p></section><section class="subsection" id="subsection-21"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">4.4</span> <span class="title">Basic prediction problem</span>
 </h3>
-<p id="p-39">Armed with the facts and formulas above, here is the skeleton of the basic prediction problem.</p>
+<p id="p-40">Armed with the facts and formulas above, here is the skeleton of the basic prediction problem.</p>
 <ul class="disc">
 <li id="li-7">Given: a description of a chance process</li>
 <li id="li-8">Question: find the probability that a sample (with a sufficiently large number of draws) from a box model for the chance process produces a sum or average in a given range</li>
@@ -277,7 +283,7 @@ n \amp = \text{the number of draws in the sample}.
 <ul class="disc">
 <li id="li-9">Construct the box model that matches the question. How many tickets are in the box? What numbers are on the tickets? How many draws?  Are the draws taken with or without replacement? Is the question about the sum or the average of the draws?</li>
 <li id="li-10">
-<p id="p-40">Perform calculations.</p>
+<p id="p-41">Perform calculations.</p>
 <ul class="circle">
 <li id="li-11">ave(box)</li>
 <li id="li-12">SD(box)</li>
@@ -295,16 +301,16 @@ z =  \frac{\text{(sum,ave,%1's in the question)} - (\text{expected(sum,ave,%1's)
 </ul></section><section class="subsection" id="subsection-22"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">4.5</span> <span class="title">Basic Inference Problem</span>
 </h3>
-<p id="p-41">The basic inferential statistics problem in our text goes like this: you are given information about a sample from a box with unknown contents. You are asked to estimate the average of the box, and to make an educated statement about how far off that estimate might be from the actual value.</p>
-<p id="p-42">Let's write ave(observed) and SD(observed) to denote the average and SD of the list of numbers in the given sample. By virtue of Equation <a class="xref" data-knowl="./knowl/expectedsumformula.html" title="Equation 4.1">(4.1)</a>, it is intuitively reasonable to use ave(observed) to estimate ave(box). It is not so clear, but it turns out to be okay for large enough samples, to use SD(observed) to estimate SD(box). By <a class="xref" data-knowl="./knowl/sesumformula.html" title="Equation 4.2">(4.2)</a>, it makes sense that our actual ave(observed) will be off from the ave(box) by SE(ave), which we can estimate by</p>
+<p id="p-42">The basic inferential statistics problem in our text goes like this: you are given information about a sample from a box with unknown contents. You are asked to estimate the average of the box, and to make an educated statement about how far off that estimate might be from the actual value.</p>
+<p id="p-43">Let's write ave(observed) and SD(observed) to denote the average and SD of the list of numbers in the given sample. By virtue of Equation <a class="xref" data-knowl="./knowl/expectedsumformula.html" title="Equation 4.1">(4.1)</a>, it is intuitively reasonable to use ave(observed) to estimate ave(box). It is not so clear, but it turns out to be okay for large enough samples, to use SD(observed) to estimate SD(box). By <a class="xref" data-knowl="./knowl/sesumformula.html" title="Equation 4.2">(4.2)</a>, it makes sense that our actual ave(observed) will be off from the ave(box) by SE(ave), which we can estimate by</p>
 <div class="displaymath">
 \begin{equation}
 \text{SE(ave) } \approx
-\frac{\text{SD(observed)}}{\sqrt{\text{number of draws}}} \;\;\text{(estimated)}\label{bootstrap}\tag{4.6}
+\frac{\text{SD(observed)}}{\sqrt{\text{number of draws}}} \;\;\text{(estimated)}\label{bootstrap}\tag{4.7}
 \end{equation}
 </div>
-<p class="continuation">(times the correction factor, if sampling without replacement). Equation <a class="xref" data-knowl="./knowl/bootstrap.html" title="Equation 4.6">(4.6)</a> is called the <dfn class="terminology">bootstrap estimate</dfn> for the SE of the sample average.</p>
-<p id="p-43">It makes intuitive sense to report our estimate of ave(box) as follows.</p>
+<p class="continuation">(times the correction factor, if sampling without replacement). Equation <a class="xref" data-knowl="./knowl/bootstrap.html" title="Equation 4.7">(4.7)</a> is called the <dfn class="terminology">bootstrap estimate</dfn> for the SE of the sample average.</p>
+<p id="p-44">It makes intuitive sense to report our estimate of ave(box) as follows.</p>
 <div class="displaymath">
 \begin{equation*}
 \text{ave(observed)} \pm \text{(estimated SE(ave))}
@@ -313,17 +319,17 @@ z =  \frac{\text{(sum,ave,%1's in the question)} - (\text{expected(sum,ave,%1's)
 <p class="continuation">For a positive number \(z\text{,}\) let's write Area(\(z\)) to denote the area under the normal curve in the range \(-z\) to \(+z\text{.}\) The interval</p>
 <div class="displaymath">
 \begin{equation}
-\text{ave(observed)} \pm z\cdot \text{(estimated SE(ave))}\label{confinterval}\tag{4.7}
+\text{ave(observed)} \pm z\cdot \text{(estimated SE(ave))}\label{confinterval}\tag{4.8}
 \end{equation}
 </div>
 <p class="continuation">is called an <dfn class="terminology">Area(\(z\)) confidence interval for ave(box)</dfn>. For example, a 95% confidence interval for the average of the box is the observed sample average plus or minus 2 times the estimated SE for the sample average.</p>
-<p id="p-44">By virtue of the Central Limit Theorem, we can make a precise probability statement about the interval <a class="xref" data-knowl="./knowl/confinterval.html" title="Equation 4.7">(4.7)</a>. We can say that approximately Area(\(z\)) (time 100 percent) of all Area(\(z\)) confidence intervals (imagine many samples of the given sample size) will contain the average of the box. For example, approximately 95% of all 95% confidence intervals (calculated from many samples) will contain the box average.</p></section><section class="exercises" id="exercises-1"><h3 class="heading hide-type">
+<p id="p-45">By virtue of the Central Limit Theorem, we can make a precise probability statement about the interval <a class="xref" data-knowl="./knowl/confinterval.html" title="Equation 4.8">(4.8)</a>. We can say that approximately Area(\(z\)) (time 100 percent) of all Area(\(z\)) confidence intervals (imagine many samples of the given sample size) will contain the average of the box. For example, approximately 95% of all 95% confidence intervals (calculated from many samples) will contain the box average.</p></section><section class="exercises" id="exercises-1"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber">4.6</span> <span class="title">Sum of Draws Practice Problems</span>
 </h3>
-<section class="introduction" id="introduction-5"><p id="p-45">Problems 1--9 below are about the following game. A fair die is rolled 600 times.  On each roll, you win $4 if you get a 6.  You lose $1 if you get something different from a 6.</p></section><article class="exercise exercise-like" id="exercise-1"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
-<p id="p-46">The total winnings will be about $<span class="fillin" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> give or take $<span class="fillin" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> or so.</p>
+<section class="introduction" id="introduction-5"><p id="p-46">Problems 1--9 below are about the following game. A fair die is rolled 600 times.  On each roll, you win $4 if you get a 6.  You lose $1 if you get something different from a 6.</p></section><article class="exercise exercise-like" id="exercise-1"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
+<p id="p-47">The total winnings will be about $<span class="fillin" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> give or take $<span class="fillin" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> or so.</p>
 <a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-1" id="answer-1"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1"><div class="answer solution-like">
-<p id="p-47">The box model has six tickets: (1) 4 and (5) \(-1\)'s.</p>
+<p id="p-48">The box model has six tickets: (1) 4 and (5) \(-1\)'s.</p>
 <div class="displaymath">
 \begin{align*}
 \AVE(\text{box}) \amp = -1/6\\
@@ -333,16 +339,16 @@ z =  \frac{\text{(sum,ave,%1's in the question)} - (\text{expected(sum,ave,%1's)
 \end{align*}
 </div>
 </div></div></article><article class="exercise exercise-like" id="exercise-2"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
-<p id="p-48">The chance of breaking even or better is about <span class="fillin" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</p>
-<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-2" id="answer-2"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-2"><div class="answer solution-like"><div class="displaymath" id="p-49">
+<p id="p-49">The chance of breaking even or better is about <span class="fillin" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</p>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-2" id="answer-2"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-2"><div class="answer solution-like"><div class="displaymath" id="p-50">
 \begin{align*}
 z \amp \approx \frac{0 - (-100)}{45.64} \approx 2.19\\
 P\amp \approx 1.5\%
 \end{align*}
 </div></div></div></article><article class="exercise exercise-like" id="exercise-3"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
-<p id="p-50">The number of sixes rolled will be about <span class="fillin" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> give or take <span class="fillin" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</p>
+<p id="p-51">The number of sixes rolled will be about <span class="fillin" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> give or take <span class="fillin" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</p>
 <a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-3" id="answer-3"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-3"><div class="answer solution-like">
-<p id="p-51">The box model has (1) 1 and (5) 0's.</p>
+<p id="p-52">The box model has (1) 1 and (5) 0's.</p>
 <div class="displaymath">
 \begin{align*}
 \AVE(\text{box}) \amp = 1/6\\
@@ -352,16 +358,16 @@ P\amp \approx 1.5\%
 \end{align*}
 </div>
 </div></div></article><article class="exercise exercise-like" id="exercise-4"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
-<p id="p-52">The chance that the number of sixes will be ten or more above the expected number is about <span class="fillin" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</p>
-<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-4" id="answer-4"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-4"><div class="answer solution-like"><div class="displaymath" id="p-53">
+<p id="p-53">The chance that the number of sixes will be ten or more above the expected number is about <span class="fillin" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</p>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-4" id="answer-4"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-4"><div class="answer solution-like"><div class="displaymath" id="p-54">
 \begin{align*}
 z \amp \approx \frac{110 - 100}{9.13} \approx 1.1\\
 P \amp \approx 14\%
 \end{align*}
 </div></div></div></article><article class="exercise exercise-like" id="exercise-5"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
-<p id="p-54">The sum of the numbers on the die face on all the rolls will be about <span class="fillin" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> give or take <span class="fillin" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</p>
+<p id="p-55">The sum of the numbers on the die face on all the rolls will be about <span class="fillin" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> give or take <span class="fillin" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</p>
 <a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-5" id="answer-5"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-5"><div class="answer solution-like">
-<p id="p-55">The box model has the tickets 1,2,3,4,5,6.</p>
+<p id="p-56">The box model has the tickets 1,2,3,4,5,6.</p>
 <div class="displaymath">
 \begin{align*}
 \AVE(\text{box}) \amp = 3.5\\
@@ -371,23 +377,23 @@ P \amp \approx 14\%
 \end{align*}
 </div>
 </div></div></article><article class="exercise exercise-like" id="exercise-6"><h6 class="heading"><span class="codenumber">6<span class="period">.</span></span></h6>
-<p id="p-56">The chance that the sum will be in the range 2050--2150 is about <span class="fillin" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</p>
-<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-6" id="answer-6"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-6"><div class="answer solution-like"><div class="displaymath" id="p-57">
+<p id="p-57">The chance that the sum will be in the range 2050--2150 is about <span class="fillin" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</p>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-6" id="answer-6"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-6"><div class="answer solution-like"><div class="displaymath" id="p-58">
 \begin{align*}
 z \amp \approx \frac{2150 - 2100}{41.83} \approx 1.2\\
 P \amp \approx 77\%
 \end{align*}
 </div></div></div></article><article class="exercise exercise-like" id="exercise-7"><h6 class="heading"><span class="codenumber">7<span class="period">.</span></span></h6>
-<p id="p-58">There is about a 50% chance that the sum will be in the range 2100 plus or minus <span class="fillin" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</p>
-<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-7" id="answer-7"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-7"><div class="answer solution-like"><div class="displaymath" id="p-59">
+<p id="p-59">There is about a 50% chance that the sum will be in the range 2100 plus or minus <span class="fillin" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</p>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-7" id="answer-7"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-7"><div class="answer solution-like"><div class="displaymath" id="p-60">
 \begin{gather*}
 z \text{ for 50% is about } .67\\
 \text{range is } 2100 \pm 28
 \end{gather*}
 </div></div></div></article><article class="exercise exercise-like" id="exercise-8"><h6 class="heading"><span class="codenumber">8<span class="period">.</span></span></h6>
-<p id="p-60">The total number of even rolls will be about <span class="fillin" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> give or take <span class="fillin" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</p>
+<p id="p-61">The total number of even rolls will be about <span class="fillin" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> give or take <span class="fillin" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</p>
 <a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-8" id="answer-8"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-8"><div class="answer solution-like">
-<p id="p-61">One possible box model has (3) 1's and (3) 0's.  A simpler box model has (1) 1 and (1) 0 with equal probabilities of 1/2 each.</p>
+<p id="p-62">One possible box model has (3) 1's and (3) 0's.  A simpler box model has (1) 1 and (1) 0 with equal probabilities of 1/2 each.</p>
 <div class="displaymath">
 \begin{align*}
 \AVE(\text{box}) \amp = 1/2\\
@@ -397,8 +403,8 @@ z \text{ for 50% is about } .67\\
 \end{align*}
 </div>
 </div></div></article><article class="exercise exercise-like" id="exercise-9"><h6 class="heading"><span class="codenumber">9<span class="period">.</span></span></h6>
-<p id="p-62">The chance that the number of even rolls will be off by 20 or more from the expected number is about <span class="fillin" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</p>
-<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-9" id="answer-9"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-9"><div class="answer solution-like"><div class="displaymath" id="p-63">
+<p id="p-63">The chance that the number of even rolls will be off by 20 or more from the expected number is about <span class="fillin" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</p>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-9" id="answer-9"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-9"><div class="answer solution-like"><div class="displaymath" id="p-64">
 \begin{align*}
 z \amp \approx \frac{320 - 300}{12.25} \approx 1.63\\
 P \amp \approx 10\%
