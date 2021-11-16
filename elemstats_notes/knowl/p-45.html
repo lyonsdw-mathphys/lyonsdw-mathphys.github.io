@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-11-16T10:03:55-05:00       *-->
+<!--*       on 2021-11-16T12:20:53-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,7 +15,19 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p xmlns:svg="http://www.w3.org/2000/svg">By virtue of the Central Limit Theorem, we can make a precise probability statement about the interval <a class="xref" data-knowl="./knowl/confinterval.html" title="Equation 4.8">(4.8)</a>. We can say that approximately Area(\(z\)) (time 100 percent) of all Area(\(z\)) confidence intervals (imagine many samples of the given sample size) will contain the average of the box. For example, approximately 95% of all 95% confidence intervals (calculated from many samples) will contain the box average.</p>
+<p>It makes intuitive sense to report our estimate of ave(box) as follows.</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\text{ave(observed)} \pm \text{(estimated SE(ave))}
+\end{equation*}
+</div>
+<p class="continuation">For a positive number \(z\text{,}\) let's write Area(\(z\)) to denote the area under the normal curve in the range \(-z\) to \(+z\text{.}\) The interval</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation}
+\text{ave(observed)} \pm z\cdot \text{(estimated SE(ave))}\tag{4.8}
+\end{equation}
+</div>
+<p class="continuation">is called an <dfn xmlns:svg="http://www.w3.org/2000/svg" class="terminology">Area(\(z\)) confidence interval for ave(box)</dfn>. For example, a 95% confidence interval for the average of the box is the observed sample average plus or minus 2 times the estimated SE for the sample average.</p>
 <span class="incontext"><a href="sampling_section.html#p-45">in-context</a></span>
 </body>
 </html>
