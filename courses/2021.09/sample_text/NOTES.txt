@@ -1,0 +1,12 @@
+NOTES
+Sample Text pretext book for homework 0 and exam 0
+Fall 2021
+
+12/15/2021
+
+This is the fall 2021 version in this directory.
+
+The sample text is now maintained in
+~/a/teach/notes/sample_text
+
+starting 12/2021
