@@ -1,6 +1,6 @@
 <html> 
 <head>
-  <title>MAS 162 Calculus Spring 2021 Syllabus</title>
+  <title>MAS 162 Calculus Spring 2022 Syllabus</title>
   <style>
     .boxed {
       border: 1px solid black ;
@@ -15,12 +15,12 @@ body {
 
 <body>
 
-<h1>MAS 162 Calculus 2 Spring 2021<br>
+<h1>MAS 162 Calculus 2 Spring 2022<br>
     Course Syllabus
 </h1>
 
 <!--@include "../../syllabus_common/date_stamp.html"-->
-<!--@include "../../syllabus_common/intro.html"-->
+<!--@include "intro.html"-->
 
 <!--@insert_toc-->
 

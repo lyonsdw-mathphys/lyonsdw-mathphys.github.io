@@ -1,6 +1,6 @@
 <html> 
 <head>
-  <title>MAS 170 Elementary Statistics Fall 2021 Syllabus</title>
+  <title>MAS 170 Elementary Statistics Spring 2022 Syllabus</title>
   <style>
     .boxed {
       border: 1px solid black ;
@@ -15,12 +15,12 @@ body {
 
 <body>
 
-<h1>MAS 170 Elementary Statistics Fall 2021<br>
+<h1>MAS 170 Elementary Statistics Spring 2022<br>
     Course Syllabus
 </h1>
 
 <!--@include "../../syllabus_common/date_stamp.html"-->
-<!--@include "../../syllabus_common/intro.html"-->
+<!--@include "intro.html"-->
 
 <!--@insert_toc-->
 
@@ -39,6 +39,7 @@ body {
 <h2>Grades and Other Policies</h2>
 
 <!--@include "../../syllabus_common/grade_categories_1XX.html"-->
+<!--@include "../../syllabus_common/gradebook.html"-->
 <!--@include "../../syllabus_common/graded_hmwk_1XX.html"-->
 <!--@include "../../syllabus_common/exam_grading_1XX.html"-->
 <!--@include "../../syllabus_common/make_up.html"-->
