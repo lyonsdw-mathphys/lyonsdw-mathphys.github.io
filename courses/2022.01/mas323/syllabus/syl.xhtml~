@@ -1,6 +1,6 @@
 <html> 
 <head>
-  <title>MAS 323 Introduction to Modern Algebra and Geometry Spring 2021 Syllabus</title>
+  <title>MAS 323 Introduction to Modern Algebra and Geometry Spring 2022 Syllabus</title>
   <style>
     .boxed {
       border: 1px solid black ;
@@ -15,13 +15,13 @@ body {
 
 <body>
 
-  <h1>MAS 323 Spring 2021<br/>
+  <h1>MAS 323 Spring 2022<br/>
     Introduction to Modern Algebra and Geometry <br/>
     Course Syllabus
 </h1>
 
 <!--@include "../../syllabus_common/date_stamp.html"-->
-<!--@include "../../syllabus_common/intro.html"-->
+<!--@include "intro.html"-->
   
 <!--@insert_toc-->
 
