@@ -18,7 +18,7 @@ body {
 
 
 <body>
-  <h2>Fall 2021 Course Documents<br>David W. Lyons</h2>
+  <h2>Spring 2022 Course Documents<br>David W. Lyons</h2>
 
   <i>These pages are periodically updated.  Course policies are subject to
     change at the discretion of the instructor.</i>
@@ -28,7 +28,7 @@ body {
   This page contains links to course syllabi and other course
   documents. Log in
   to <a href="https://lvc.instructure.com/login/ldap">Canvas</a> for the
-  main course web pages, including the course calendar, assignments, grades, and
+  main course web pages, including the course calendar, assignments, and
   more (including links back to this page).
   
   <p>
@@ -47,7 +47,7 @@ body {
 <h3>MAS 170 Elementary Statistics</h3>
 <ul>
   <li><a href="mas170/syllabus/syl.html">Course Syllabus</a>
-    <li><a href="sample_text/frontmatter.html">Sample Textbook
+    <li><a href="../../sample_text/frontmatter.html">Sample Textbook
     Section</a> for practicing homework procedures
   <li><a href="../../elemstats_notes/frontmatter.html"/>Supplementary Notes</a>
 <!--    <ul>
@@ -65,11 +65,16 @@ body {
       -->
 </ul>
 
-<h3>MAS 261 Calculus 3</h3>
+<h3>MAS 162 Calculus 2</h3>
 <ul>
-  <li><a href="mas261/syllabus/syl.html">Course Syllabus</a>
-        <li><a href="sample_text/frontmatter.html">Sample Textbook
+  <li><a href="mas162/syllabus/syl.html">Course Syllabus</a>
+        <li><a href="../../sample_text/frontmatter.html">Sample Textbook
     Section</a> for practicing homework procedures
+</ul>
+
+<h3>MAS 323 Introduction to Modern Algebra and Geometry</h3>
+<ul>
+  <li><a href="mas323/syllabus/syl.html">Course Syllabus</a>
 </ul>
 
 </body>
