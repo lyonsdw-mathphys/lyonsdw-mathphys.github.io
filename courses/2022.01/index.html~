@@ -68,6 +68,8 @@ body {
 <h3>MAS 162 Calculus 2</h3>
 <ul>
   <li><a href="mas162/syllabus/syl.html">Course Syllabus</a>
+      <li><a href="https://activecalculus.org/single/frontmatter.html">Active Calculus, single
+      variable</a></i>, 2020 edition
         <li><a href="../../sample_text/frontmatter.html">Sample Textbook
     Section</a> for practicing homework procedures
 </ul>
@@ -75,6 +77,9 @@ body {
 <h3>MAS 323 Introduction to Modern Algebra and Geometry</h3>
 <ul>
   <li><a href="mas323/syllabus/syl.html">Course Syllabus</a>
+      <li>Lyons, <a href="https://mathvista.org/algeom_text_files/frontmatter.html"><i>Introduction
+  to Groups and Geometries</i></a>
+
 </ul>
 
 </body>
