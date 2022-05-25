@@ -1,0 +1,53 @@
+MAS 170 Fall 2021 <course_id>14475</course_id>
+
+Tue  <date>2021-08-31</date> <title>Introduction</title>
+Thu  <date>2021-09-02</date> <title>Ch 1,2</title> <hw/>
+
+Tue  <date>2021-09-07</date> <title>Ch 3</title> <hw/> 
+Thu  <date>2021-09-09</date> <title>Ch 4</title> <hw/> 
+
+Tue  <date>2021-09-14</date> <title>Ch 5,6</title> <hw/>
+Thu  <date>2021-09-16</date> <title>Review</title> 
+
+Tue  <date>2021-09-21</date> <title>Exam Ch 1--6</title>
+Thu  <date>2021-09-23</date> <title>Ch 8</title> <hw/>
+
+Tue  <date>2021-09-28</date> <title>Ch 9</title> <hw/>
+Thu  <date>2021-09-30</date> <title>Ch 10</title> <hw/>
+
+Tue  <date>2021-10-05</date> <title>Ch 11</title> <hw/> 
+Thu  <date>2021-10-07</date> <title>Ch 12</title> <hw/> 
+
+Tue  <date>2021-10-12</date> <title>Fall Break</title> 
+Thu  <date>2021-10-14</date> <title>Review</title> 
+
+Tue  <date>2021-10-19</date> <title>Exam Ch 8--12</title>
+Thu  <date>2021-10-21</date> <title>Ch 13</title> <hw/>
+
+built on Canvas to here 8/10/2021
+
+Tue  <date>2021-10-26</date> <title>Ch 14</title> <hw/>
+Thu  <date>2021-10-28</date> <title>Ch 15</title> <hw/>
+
+Tue  <date>2021-11-02</date> <title>Ch 16</title> <hw/>
+Thu  <date>2021-11-04</date> <title>Ch 17</title> <hw/>
+
+Tue  <date>2021-11-09</date> <title>Ch 18</title> <hw/>
+Thu  <date>2021-11-11</date> <title>Review</title>
+
+Tue  <date>2021-11-16</date> <title>Exam 3</title>
+Thu  <date>2021-11-18</date> <title>Ch 19</title> <hw/>
+
+Tue  <date>2021-11-23</date> <title>Ch 20</title> <hw/>
+Thu  <date>2021-11-25</date> <title>BREAK</title> 
+
+Tue  <date>2021-11-30</date> <title>Ch 21</title> <hw/>
+Thu  <date>2021-12-02</date> <title>Ch 23</title> <hw/>
+
+Tue  <date>2021-12-07</date> <title>Review</title>
+Thu  <date>2021-12-09</date> <title>Review</title>
+
+Tue  <date>2021-12-14</date> <title>Final Exam Section 2 12:30pm</title>
+Thu  <date>2021-12-16</date> <title>Final Exam Section 1 8:30am</title> 
+
+built on Canvas to here 10/6/2021
