@@ -1,6 +1,6 @@
 <html> 
 <head>
-  <title>MAS 170 Elementary Statistics Fall 2022 Syllabus</title>
+  <title>MAS 100 Concepts of Mathematics Fall 2022 Syllabus</title>
   <style>
     .boxed {
       border: 1px solid black ;
@@ -15,7 +15,7 @@ body {
 
 <body>
 
-<h1>MAS 170 Elementary Statistics Fall 2022<br>
+<h1>MAS 100 Concepts of Mathematics Fall 2022<br>
     Course Syllabus
 </h1>
 
@@ -37,52 +37,76 @@ last update: 2022-08-15
 </pre>
 
 <!--@insert_toc-->
-
+<div class="boxed">
+<h2>Table of Contents</h2>
+&nbsp <a href="#Course Description">1</a> Course Description<br>
+&nbsp <a href="#Prerequisites">2</a> Prerequisites<br>
+&nbsp <a href="#Requirements Met">3</a> Requirements Met<br>
+&nbsp <a href="#Required Text(s) and Materials">4</a> Required Text(s) and Materials<br>
+&nbsp <a href="#Required Technology">5</a> Required Technology<br>
+&nbsp <a href="#Instructor">6</a> Instructor<br>
+&nbsp <a href="#Class Meetings, Office Hours">7</a> Class Meetings, Office Hours<br>
+&nbsp <a href="#Course Calendar">8</a> Course Calendar<br>
+&nbsp <a href="#Exam Dates (Tentative)">9</a> Exam Dates (Tentative)<br>
+&nbsp <a href="#Reading and Problem List">10</a> Reading and Problem List<br>
+&nbsp <a href="#Course Goals, Objectives, and Learning Outcomes">11</a> Course Goals, Objectives, and Learning Outcomes<br>
+<p><a href="#Learning and Study"></a> <b>Learning and Study</b><br>
+<p>
+&nbsp <a href="#Learning">12</a> Learning<br>
+&nbsp <a href="#Study Strategies">13</a> Study Strategies<br>
+&nbsp <a href="#Sample Study Aids">14</a> Sample Study Aids<br>
+&nbsp <a href="#Portfolio">15</a> Portfolio<br>
+<p><a href="#Grades and Other Policies"></a> <b>Grades and Other Policies</b><br>
+<p>
+&nbsp <a href="#Graded Work">16</a> Graded Work<br>
+&nbsp <a href="#Graded Homework">17</a> Graded Homework<br>
+&nbsp <a href="#Quizzes">18</a> Quizzes<br>
+&nbsp <a href="#Makeup Assignments and Extra Credit">19</a> Makeup Assignments and Extra Credit<br>
+&nbsp <a href="#Letter Grades">20</a> Letter Grades<br>
+&nbsp <a href="#Attendance">21</a> Attendance<br>
+&nbsp <a href="#Class Engagement">22</a> Class Engagement<br>
+&nbsp <a href="#Collaboration versus Plagiarism">23</a> Collaboration versus Plagiarism<br>
+&nbsp <a href="#Honor Policy">24</a> Honor Policy<br>
+<p><a href="#LVC Official Syllabus Material"></a> <b>LVC Official Syllabus Material</b><br>
+<p>
+&nbsp <a href="#LVC Policies and Statements">25</a> LVC Policies and Statements<br>
+&nbsp <a href="#Quantitative Reasoning (QR)">26</a> Quantitative Reasoning (QR)<br>
+</div>
 <!--@include "description.html"-->
-<h3>Course Description</h3>
+<h3><a name="Course Description">1</a> Course Description</h3>
 
-This course is an introduction to elementary descriptive and inferential
-statistics. We emphasize qualitative understanding and judgment in the use of
-statistics, addressing questions such as when conclusions based on statistics
-are justified or meaningful. Topics may include design of experiments,
-descriptive statistics, correlation and regression, probability, sampling and
-hypothesis testing.  
+This course examines topics in fairness and manipulability in social
+decision making including voting systems and division of goods.
+
+
+
 <!--@include "prerequisites.html"-->
-<h3>Prerequisites</h3>
+<h3><a name="Prerequisites">2</a> Prerequisites</h3>
 
 There are no prerequisites beyond high school algebra skills.
 
 
-
-
 <!--@include "requirements_met.html"-->
-<h3>Requirements Met</h3>
+<h3><a name="Requirements Met">3</a> Requirements Met</h3>
+
 
 <pre>
   Credit Hours: 3
   Constellation LVC Component: Quantitative Reasoning (QR) 
 </pre>
 <!--@include "texts_etc.html"-->
-<h3>Required Text(s) and Materials</h3>
+<h3><a name="Required Text(s) and Materials">4</a> Required Text(s) and Materials</h3>
 
 <ul>
-  <li>Freedman et al., <i>Statistics</i>, 4th edition
-    <li>Lyons, <a href="../text_notes.pdf"><i>Essential
-    Clarifications</i></a> to Freedman's text
+  <li>Textbook: COMAP, <i>For All Practical Purposes</i> 10th edition
     <li>Lyons, <a href="../../../../sample_text/frontmatter.html"><i>Sample
 	  Textbook</i></a>, 9/2021 edition
-    <li>Lyons, <a href="../../../../elemstats_notes/frontmatter.html"><i>Elementary
-    Statistics Supplementary Notes</i></a>, August 2021 edition      
-
 <li>Calculator for homework and quizzes.  Business and graphing calculators are
   allowed, but not required.
+    
 </ul>
-
-<i>The Sample Textbook and the Supplementary Notes are free and online.</i>
-
-
 <!--@include "../../syllabus_common/technology.html"-->
-<h3>Required Technology</h3>
+<h3><a name="Required Technology">5</a> Required Technology</h3>
 
 <ul>
     <li>PDF scanner app for your phone (or other device) for scanning
@@ -95,7 +119,7 @@ There are no prerequisites beyond high school algebra skills.
     we have to switch to online class meetings
 </ul>
 <!--@include "../../syllabus_common/instructor.html"-->
-<h3>Instructor</h3>
+<h3><a name="Instructor">6</a> Instructor</h3>
 
 <pre>
   <a href="http://quantum.lvc.edu/lyons">David W. Lyons</a>, Professor
@@ -109,24 +133,24 @@ There are no prerequisites beyond high school algebra skills.
 
 
 <!--@include "../../syllabus_common/meetings_times_locations.html"-->
-<h3>Class Meetings, Office Hours</h3>
+<h3><a name="Class Meetings, Office Hours">7</a> Class Meetings, Office Hours</h3>
 
 Meeting times and locations for classes and office hours will be kept up to date on the
 <a href="http://quantum.lvc.edu/lyons/sched/2022.fall.sched.pdf">Instructor's
   Schedule</a>.
 
 <!--@include "../../syllabus_common/course_calendar.html"-->
-<h3>Course Calendar</h3>
+<h3><a name="Course Calendar">8</a> Course Calendar</h3>
 
 The course calendar is maintained on Canvas. It includes class meetings,
 graded homework assignments, and quizzes. All dates are subject to change.
 
 
 <!--@include "exam_dates_tentative.html"-->
-<h3>Quiz and Exam Dates</h3>
+<h3><a name="Exam Dates (Tentative)">9</a> Exam Dates (Tentative)</h3>
 
 Subject to change, quizzes will be given at the beginning of class every
-Thursday. One last quiz will be given during the scheduled final exam
+Wednesday. One last quiz will be given during the scheduled final exam
 period.
 
 <p>
@@ -135,55 +159,71 @@ A schedule of quiz dates, announcements about the subject matter and length
 of each quiz, and sample quiz solutions will be maintained on Canvas.
 
 <pre>
-Final Exam
-==========
-  Thu  12/15 8:30--11:00
+Final Exams
+===========
+  Monday    12/12 15:30--18:00 MAS 100-02 (3pm class)
+  Wednesday 12/14 15:30--18:00 MAS 100-01 (2pm class)
 </pre>
 
 <!--@include "reading_and_problems.html"-->
-<h3>Reading and Problem List</h3>
+<h3><a name="Reading and Problem List">10</a> Reading and Problem List</h3>
+
+Course reading assignments are the text sections listed below. The
+amount of problem solving practice needed to achieve mastery varies by
+individual. Here are two extremes.
+
+<ul>
+<li><b>Maximum practice needed:</b> work all of the end-of-chapter "Skills Check
+  Exercises", work all of the odd-numbered "Exercises" for each section
+<li><b>Minimum practice needed:</b> work approximately every other odd-numbered 
+  problem in the "Exercises" for each section 
+</ul>
+
+<!-- Sections with no exercises: cut Canvas homework assignment for these
+9.1
+9.4
+10.1
+  -->
 
 <pre>
-Homework 0 from the Sample Textbook
-===================================
+Reading     Notes
+=======     =====
+9.1         
+9.2         
+9.3         
+9.4         
+9.5         
 
-Reading        Problems
--------        --------
-Sec. 1         all
+10.1        
+10.2	    
+10.3	    
+10.4	    
+10.5	    
 
-All other homework from the Freedman Textbook
-=============================================
+11.1        
+11.2	    
+11.3	    
+11.4	    
+	    
+12.1        
+12.2	    
+12.3	    
+12.4	    
+12.5	    
 
-Reading        Problems
--------        --------
-Ch 1    
-Ch 2           A:1,2,5,7,8,11 Rev.Ex.:1,3,5,6,8,10--12
-Ch 3 Sec 1--4  A:1--4,7 B:1,2 C:1--3 D:1,2 Rev.Ex.:1--9
-Ch 4	       A:1--6,9 B:1--6 C:1--5 D:1--3,5,6,9 E:1--5,12 Rev.Ex.:1--7
-Ch 5	       A--F:all Rev.Ex.:1--4,6--9,11
-Ch 6	       Rev.Ex.:1--5
-Ch 8	       A:all B:1--6,9 C:all D:1,2,4 Rev.Ex:1,3--5,7--10
-Ch 9	       A:1--4,6--9 B:1--4 C:1--4 D:1,2 E:1--5 Rev.Ex.:1--5,8,10--12
-Ch 10          A:all B:all C:all D:all E:all Rev.Ex.:all
-Ch 11          A--E:all Rev.Ex.:1--7,12
-Ch 12          A--B:all Rev.Ex.:1--6
-Ch 13 Sec 1--4 A:all B:all C:1--5,7 D:1--7 Rev.Ex.:1--5,7--12
-Ch 14          A:all B:all C:all D:1--5 Rev.Ex.:1--13
-Ch 15          A:1--5 Rev.Ex.:1--10
-Ch 16          A:1--6,8 B:1--7 C:1--3 Rev.Ex.:1--10
-Ch 17	       A:1--6 B:1--7 C:1--8 D:1--4 E:1--3,5--9 Rev.Ex.:1--14
-Ch 18	       A:1--4 B:1--6 C:1--8 Rev.Ex.:1--15
-Ch 19	       A:1,2,4,5 Rev.Ex.:1,4,7--10
-Ch 20 Sec 2--5 A:1--5 B:1--5 C:1--5 Rev.Ex.:1--3,7--12
-               Ch 16 A:7 repeat for 50,000, 2,000 and 1,000 marbles in box
-Ch 21	       A:1--5,7,8 B:1--4 C:1--6 D:1,2 E:1,2 Rev.Ex.:1--6,8,10--15
-Ch 23	       A:1--10 B:1--4,6,7 C:1--4 D:1--4,6,7 Rev.Ex.:1--5,7,8,10--12
-Ch 24	       A:1,4,5 B:1--4 C:1--7 Rev.Ex.:1--4,7,9,10
-Ch 26 Sec 1--5 A:all B:all C:all D:all E:1--10 Rev.Ex.:1--6,8,9
-</pre>
+13.1        
+13.2	    
+13.4	    
+	    
+14.1	    
+14.2        reading: omit last paragraph, "new states paradox", p585     
+14.3	    reading: omit d'Hondt method pp592--593, omit Sainte-Lague method p596
+	    problems: 17,19,29,31,33
+14.4	    problems: 35,37,41
+</pre>	    
 <!--@include "../../syllabus_common/goals.html"-->
 <a name="goals_etc"></a>
-<h3>Course Goals, Objectives, and Learning Outcomes</h3>
+<h3><a name="Course Goals, Objectives, and Learning Outcomes">11</a> Course Goals, Objectives, and Learning Outcomes</h3>
 
 The primary goal of the course is <b>mathematical intellectual
 growth</b> through the <b>understanding and mastery of mathematical
@@ -204,10 +244,10 @@ course, a student who achieves the course learning objectives will:
 <li>have increased strength and fluency in clear, concise communication skills
 </ul>
 
-<h2>Learning and Study</h2>
+<h2><a name="Learning and Study"></a> Learning and Study</h2>
 
 <!--@include "../../syllabus_common/learning.html"-->
-<h3>Learning</h3>
+<h3><a name="Learning">12</a> Learning</h3>
 
 The process of reading, mastering vocabulary, solving problems, and writing
 is the only way to achieve real understanding and skills. No one else
@@ -283,12 +323,12 @@ experience. Here is an outline of the work flow for each section in the text(s).
   </ul>
 
 
-<h3>Study Strategies</h3>
+<h3><a name="Study Strategies">13</a> Study Strategies</h3>
 
 <ul>
 <li>Plan for two hours of study outside of class for each hour of class.
 <li>Keep an organized paper binder or electronic notebook with reading notes, homework solutions, and
-  class notes (see the <a href="#Portfolio">Portfolio</a> section below). Mark your questions clearly with sticky notes or some
+  class notes (see the Portfolio section below). Mark your questions clearly with sticky notes or some
   other device and follow up every question, either in class
   or in office hours, until you gain understanding.
 <li>After reading, summarize the material in your own words.
@@ -315,7 +355,7 @@ experience. Here is an outline of the work flow for each section in the text(s).
 </ul>
 
 
-<h3>Sample Study Aids</h3>
+<h3><a name="Sample Study Aids">14</a> Sample Study Aids</h3>
 
 <ul>
   <li>
@@ -326,7 +366,7 @@ experience. Here is an outline of the work flow for each section in the text(s).
     and Weekly Planner</a> sample forms
 </ul>
 
-<h3><a name="Portfolio">Portfolio</h3>
+<h3><a name="Portfolio">15</a> Portfolio</h3>
 
 Keep your work organized. Use electronic or hard copy media, whatever
 works best for you. Whatever method you use, it should be designed to
@@ -349,10 +389,10 @@ wish to discuss class performance.
 for graded written work
 -->
 
-<h2>Grades and Other Policies</h2>
+<h2><a name="Grades and Other Policies"></a> Grades and Other Policies</h2>
 
 <!--@include "../../syllabus_common/grade_categories_1XX.html"-->
-  <h3>Graded Work</h3>
+  <h3><a name="Graded Work">16</a> Graded Work</h3>
   
 Your cumulative average is determined by graded work in the categories listed
 below with the indicated weights. Details and instructions are given in
@@ -381,7 +421,7 @@ the sections that follow.
 <!-- will use Canvas gradebook spring 2022 -->
 <!--@DONOTinclude "../../syllabus_common/gradebook.html"-->
 <!--@include "../../syllabus_common/graded_hmwk_1XX.html"-->
-<h3>Graded Homework</h3>
+<h3><a name="Graded Homework">17</a> Graded Homework</h3>
 
 Homework is reading course material, mastering definitions of terms
 and statements of facts and formulas, solving problems, checking your
@@ -450,7 +490,7 @@ assignments.
 </table>
 
 <!--@include "../../syllabus_common/quiz_1XX.html"-->
-<h3>Quizzes</h3>  
+<h3><a name="Quizzes">18</a> Quizzes</h3>
 
 We will have a quiz with two or three problems at the beginning of class
 one day each week.  Quiz problems are based on, but not limited to, the
@@ -586,7 +626,7 @@ advance.
 </table>  
 
 <!--@include "../../syllabus_common/make_up.html"-->
-<h3>Makeup Assignments and Extra Credit</h3>
+<h3><a name="Makeup Assignments and Extra Credit">19</a> Makeup Assignments and Extra Credit</h3>
 
 <p>
   Missed quizzes may be excused, at the discretion of the instructor. A
@@ -603,7 +643,7 @@ advance.
 
 There are no makeup homework assignments. There are no extra credit assignments.
 <!--@include "../../syllabus_common/letter_grades.html"-->
-<h3>Letter Grades</h3>
+<h3><a name="Letter Grades">20</a> Letter Grades</h3>
 
 <h4>Meaning of letter grades</h4>
 
@@ -644,7 +684,7 @@ midterm grades.
 
 
 <!--@include "../../syllabus_common/attendance.html"-->
-<h3>Attendance</h3>
+<h3><a name="Attendance">21</a> Attendance</h3>
 
 Class attendance is expected, but it is understood that sometimes there
 are reasonable circumstances for absence. For most students, there is no
@@ -684,7 +724,7 @@ Absence does not change the due date for any graded work.
 <!-- DISCUSSION BOARD SECTION TURNED OFF 8/2021 -->
 <!--@DONOTinclude "../../syllabus_common/class_discussion.html"-->
 <!--@include "../../syllabus_common/class_engagement.html"-->
-<h3>Class Engagement</h3>
+<h3><a name="Class Engagement">22</a> Class Engagement</h3>
   
 The purpose of class meetings is to pursue understanding and mastery of
 the course material. This requires mental presence, engagement with the
@@ -707,7 +747,7 @@ learning environment, please observe the following.
 
 
 <!--@include "../../syllabus_common/collaboration.html"-->
-<h3>Collaboration versus Plagiarism</h3>
+<h3><a name="Collaboration versus Plagiarism">23</a> Collaboration versus Plagiarism</h3>
 
 You are encouraged to collaborate with classmates and ask questions of
 the instructor or consult any source for homework. You must work hard to
@@ -718,17 +758,17 @@ academic citation for any material created by others.  Plagiarism is a
 serious academic offense; penalties range from failing the course to
 expulsion from the college.
 <!--@include "../../syllabus_common/honor_policy.html"-->
-<h3>Honor Policy</h3>
+<h3><a name="Honor Policy">24</a> Honor Policy</h3>
 
 It is expected that each student in this class will act with honesty and 
 academic integrity.  Instances of academic dishonesty will be pursued as
 described in the College Catalog and Student Handbook.
 
 
-<h2>LVC Official Syllabus Material</h2>
+<h2><a name="LVC Official Syllabus Material"></a> LVC Official Syllabus Material</h2>
 
 <!--@include "../../syllabus_common/lvc_official_statements/lvc_official_statements_pointer.html"-->
-<h3>LVC Policies and Statements</h3>
+<h3><a name="LVC Policies and Statements">25</a> LVC Policies and Statements</h3>
 
 <ul>
 <li><a href="../../syllabus_common/lvc_official_statements/Syllabi_Essentials_FA2022.pdf">LVC
@@ -738,7 +778,7 @@ described in the College Catalog and Student Handbook.
 </ul>
 
 <!--@include "../../syllabus_common/lvc_official_statements/qr.html"-->
-<h3>Quantitative Reasoning (QR)</h3>
+<h3><a name="Quantitative Reasoning (QR)">26</a> Quantitative Reasoning (QR)</h3>
 
 <i>[Quantitative Reasoning (QR) is a component of the Constellation LVC
   Core Curriculum. QR learning outcomes are addressed in course
