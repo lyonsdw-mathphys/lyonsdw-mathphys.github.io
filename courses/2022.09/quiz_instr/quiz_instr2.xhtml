@@ -11,43 +11,25 @@ body {
    margin:10 auto;
 }
 </style>
-
-  <div class="flex-container">
-
-    <div class="flex-child">
-
-
-  </div>
-
-        <div class="flex-child">
-<!-- embedded clock -->
-  <div style="text-align:center;padding:1em 0;">
-    <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=medium&timezone=America%2FNew_York"
-	    width="100%" height="115" frameborder="0" seamless></iframe>
-  </div>
-	</div>
-  </div>	
-<style>
-  
-.flex-container {
-    display: flex;
-}
-
-.flex-child {
-    flex: 1;
-}  
-
-.flex-child:first-child {
-    margin-right: 20px;
-} 
-
-</style>
   
 </head>
 
 <body>
 
-    <!--@include "content.html"-->
+  <div class="row">
+    <div class="column">
+      <!--@include "content.html"-->
+    </div>
+    <div class="column">
+        <div style="text-align:center;padding:1em 0;">
+    <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=medium&timezone=America%2FNew_York"
+	    width="100%" height="115" frameborder="0" seamless></iframe>
+  </div>
+
+    </div>
+</div>
+
+
 
 
 </body>
