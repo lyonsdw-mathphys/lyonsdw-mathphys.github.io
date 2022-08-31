@@ -1,31 +1,29 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-01-12T10:20:47-05:00       *-->
-<!--*   A recent stable commit (2020-08-09):   *-->
-<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
 <html lang="en-US">
-<head>
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Sample Textbook Section</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script>window.MathJax = {
+<meta property="og:type" content="article">
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
   tex: {
     inlineMath: [['\\(','\\)']],
     tags: "none",
-    useLabelIds: true,
     tagSide: "right",
     tagIndent: ".8em",
     packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
   },
   options: {
-    ignoreHtmlClass: "tex2jax_ignore",
-    processHtmlClass: "has_am",
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
   },
   chtml: {
     scale: 0.88,
@@ -35,22 +33,29 @@
     load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
+  startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+},
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
-</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
-<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
-<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
-<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
-<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
-<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
-<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
-<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
-<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
-<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
 </head>
-<body class="mathbook-article has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(      \DeclareMathOperator{\Inn}{Inn}
+<body class="pretext-article ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(      \DeclareMathOperator{\Inn}{Inn}
       \DeclareMathOperator{\lcm}{lcm}            
 \DeclareMathOperator{\Aut}{Aut}      
 \DeclareMathOperator{\Perm}{Perm}
@@ -87,14 +92,16 @@
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
-\)</div>
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
 <header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
 <a id="logo-link" href=""></a><div class="title-container">
 <h1 class="heading"><a href="sample_text.html"><span class="title">Sample Textbook</span></a></h1>
 <p class="byline">David W. Lyons</p>
 </div>
 </div></div>
-<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<nav id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
 <button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="frontmatter.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="sample_text.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="backmatter-1.html" title="Next">Next</a></span></div>
 </div>
@@ -102,89 +109,89 @@
 <button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="frontmatter.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="sample_text.html" title="Up">Up</a><a class="next-button button toolbar-item" href="backmatter-1.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
-<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
 <nav id="toc"><ul>
-<li class="link frontmatter"><a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a></li>
-<li class="link active"><a href="sample_text_section.html" data-scroll="sample_text_section"><span class="codenumber">1</span> <span class="title">Sample Textbook Section</span></a></li>
-<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
-<li class="link"><a href="colophon-1.html" data-scroll="colophon-1"><span class="title">Colophon</span></a></li>
-<li class="link"><a href="biography-1.html" data-scroll="biography-1"><span class="title">About the author</span></a></li>
-</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+<li class="link frontmatter"><a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a></li>
+<li class="link active"><a href="sample_text_section.html" data-scroll="sample_text_section" class="internal"><span class="codenumber">1</span> <span class="title">Sample Textbook Section</span></a></li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1" class="internal"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="colophon-1.html" data-scroll="colophon-1" class="internal"><span class="title">Colophon</span></a></li>
+<li class="link"><a href="biography-1.html" data-scroll="biography-1" class="internal"><span class="title">About the author</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
-<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sample_text_section"><h2 class="heading hide-type">
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="sample_text_section"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">1</span> <span class="title">Sample Textbook Section</span>
 </h2>
 <p id="p-2">An ordered list of numbers</p>
-<div class="displaymath">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 s_1,s_2,s_3,\ldots
 \end{equation*}
 </div>
-<p class="continuation">is called a <dfn class="terminology">sequence</dfn>. The numbers in the list are called the <dfn class="terminology">entries</dfn> or <dfn class="terminology">terms</dfn> in the sequence.</p>
+<p class="continuation">is called a <dfn class="terminology">sequence</dfn>. An individual number in the list is called an <dfn class="terminology">entry</dfn> or <dfn class="terminology">term</dfn> in the sequence.</p>
 <p id="p-3">A <dfn class="terminology">linear</dfn> sequence is a sequence that has the form</p>
-<div class="displaymath">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 a,\; a+d,\; a+d+d,\; a+d+d+d, \ldots
 \end{equation*}
 </div>
-<p class="continuation">for some constants \(a\) and \(d\text{,}\) so that each entry is equal to \(d\) plus the previous entry. A linear sequence can be written in the simplified form</p>
-<div class="displaymath">
+<p class="continuation">for some constants <span class="process-math">\(a\)</span> and <span class="process-math">\(d\text{,}\)</span> so that each entry is equal to <span class="process-math">\(d\)</span> plus the previous entry. A linear sequence can be written in the simplified form</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 a,\; a+d,\; a+2d,\; a+3d,\ldots .
 \end{equation*}
 </div>
 <p class="continuation">For example, the positive odd numbers</p>
-<div class="displaymath">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 1,3,5,7,\ldots
 \end{equation*}
 </div>
-<p class="continuation">is a linear sequence with \(a=1\) and \(d=2\text{.}\)</p>
+<p class="continuation">is a linear sequence with <span class="process-math">\(a=1\)</span> and <span class="process-math">\(d=2\text{.}\)</span></p>
 <p id="p-4">An <dfn class="terminology">exponential</dfn> sequence is a sequence that has the form</p>
-<div class="displaymath">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 a, ar, arr, arrr, \ldots
 \end{equation*}
 </div>
-<p class="continuation">for some constants \(a\) and \(r\text{,}\) so that each entry is equal to \(r\) times the previous entry. An exponential sequence can be written in the simplified form</p>
-<div class="displaymath">
+<p class="continuation">for some constants <span class="process-math">\(a\)</span> and <span class="process-math">\(r\text{,}\)</span> so that each entry is equal to <span class="process-math">\(r\)</span> times the previous entry. An exponential sequence can be written in the simplified form</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 a,ar,ar^2,ar^3,\ldots .
 \end{equation*}
 </div>
 <p class="continuation">For example, the doubling sequence</p>
-<div class="displaymath">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 1,2,4,8,16,\ldots
 \end{equation*}
 </div>
-<p class="continuation">is an exponential sequence with \(a=1\) and \(r=2\text{.}\)</p>
+<p class="continuation">is an exponential sequence with <span class="process-math">\(a=1\)</span> and <span class="process-math">\(r=2\text{.}\)</span></p>
 <section class="exercises" id="exercises-1"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Exercises</span>
 </h3>
-<article class="exercise exercise-like" id="exercise1"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
+<article class="exercise exercise-like" id="exercise1"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
 <p id="p-5">The first few terms of each of the following sequences fits a linear pattern, an exponential pattern, or neither. Say which, and explain.</p>
 <ol class="lower-alpha">
-<li id="li-1">\(\displaystyle 2,6,10,\ldots\)</li>
-<li id="li-2">\(\displaystyle 2,6,18,\ldots\)</li>
-<li id="li-3">\(\displaystyle 2,6,18,20,\ldots\)</li>
+<li id="li-1"><p id="p-derived-li-1"><span class="process-math">\(\displaystyle 2,6,10,\ldots\)</span></p></li>
+<li id="li-2"><p id="p-derived-li-2"><span class="process-math">\(\displaystyle 2,6,18,\ldots\)</span></p></li>
+<li id="li-3"><p id="p-derived-li-3"><span class="process-math">\(\displaystyle 2,6,18,20,\ldots\)</span></p></li>
 </ol>
 <div class="solutions">
-<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-1" id="answer-1"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1"><div class="answer solution-like"><ol class="lower-alpha">
-<li id="li-4">linear</li>
-<li id="li-5">exponential</li>
-<li id="li-6">neither</li>
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-1" id="answer-1"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1"><div class="answer solution-like"><ol class="lower-alpha">
+<li id="li-4"><p id="p-derived-li-4">linear</p></li>
+<li id="li-5"><p id="p-derived-li-5">exponential</p></li>
+<li id="li-6"><p id="p-derived-li-6">neither</p></li>
 </ol></div></div>
-</div></article><article class="exercise exercise-like" id="exercise2"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
+</div></article><article class="exercise exercise-like" id="exercise2"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
 <p id="p-7">Find the 10th terms in the linear and exponential sequences below.</p>
 <ol class="lower-alpha">
-<li id="li-10">\(\displaystyle 2,\frac{2}{3},\frac{4}{9},\ldots\)</li>
-<li id="li-11">\(\displaystyle 2,-1,-4,\ldots\)</li>
+<li id="li-10"><p id="p-derived-li-10"><span class="process-math">\(\displaystyle 2,\frac{2}{3},\frac{4}{9},\ldots\)</span></p></li>
+<li id="li-11"><p id="p-derived-li-11"><span class="process-math">\(\displaystyle 2,-1,-4,\ldots\)</span></p></li>
 </ol>
 <div class="solutions">
-<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-2" id="answer-2"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-2"><div class="answer solution-like"><ol class="lower-alpha">
-<li id="li-12">\(\displaystyle 2/3^9 \approx 1.02 \times 10^{-4} = 0.000102\)</li>
-<li id="li-13">\(\displaystyle -25\)</li>
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-2" id="answer-2"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-2"><div class="answer solution-like"><ol class="lower-alpha">
+<li id="li-12"><p id="p-derived-li-12"><span class="process-math">\(\displaystyle 2/3^9 \approx 1.02 \times 10^{-4} = 0.000102\)</span></p></li>
+<li id="li-13"><p id="p-derived-li-13"><span class="process-math">\(\displaystyle -25\)</span></p></li>
 </ol></div></div>
 </div></article></section></section></div></main>
 </div>
