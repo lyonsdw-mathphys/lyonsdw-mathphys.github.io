@@ -1,0 +1,67 @@
+MAS 162 Spring 2023  <course_id></course_id>
+
+Mon  <date>2023-01-16</date> <title>Introduction</title>
+Wed  <date>2023-01-18</date> <title>2.5,4.4</title> <hw/>
+Fri  <date>2023-01-20</date> <title>5.1</title> <hw/>
+
+Mon  <date>2023-01-23</date> <title>5.2</title> <hw/>
+Wed  <date>2023-01-25</date> <title>Workshop</title><quiz/>
+Fri  <date>2023-01-27</date> <title>5.3</title> <hw/>
+
+Mon  <date>2023-01-30</date> <title>5.4</title> <hw/>
+Wed  <date>2023-02-01</date> <title>Workshop</title><quiz/>
+Fri  <date>2023-02-03</date> <title>5.5</title> <hw/>
+
+<!-- build to here initially -->
+
+Mon  <date>2023-02-06</date> <title></title> <hw/>
+Wed  <date>2023-02-08</date> <title></title> <hw/>
+Fri  <date>2023-02-10</date> <title></title> <hw/>
+
+Mon  <date>2023-02-13</date> <title></title> <hw/>
+Wed  <date>2023-02-15</date> <title></title> <hw/>
+Fri  <date>2023-02-17</date> <title></title> <hw/>
+
+Mon  <date>2023-02-20</date> <title></title> <hw/>
+Wed  <date>2023-02-22</date> <title></title> <hw/>
+Fri  <date>2023-02-24</date> <title></title> <hw/>
+
+Mon  <date>2023-02-27</date> <title></title> <hw/>
+Wed  <date>2023-03-01</date> <title></title> <hw/>
+Fri  <date>2023-03-03</date> <title></title> <hw/>
+
+Mon  <date>2023-03-06</date> <title></title> <hw/>
+Wed  <date>2023-03-08</date> <title></title> <hw/>
+Fri  <date>2023-03-10</date> <title></title> <hw/>
+
+Mon  <date>2023-03-13</date> <title></title> <hw/>
+Wed  <date>2023-03-15</date> <title></title> <hw/>
+Fri  <date>2023-03-17</date> <title></title> <hw/>
+
+Mon  <date>2023-03-20</date> <title></title> <hw/>
+Wed  <date>2023-03-22</date> <title></title> <hw/>
+Fri  <date>2023-03-24</date> <title></title> <hw/>
+
+Mon  <date>2023-03-27</date> <title></title> <hw/>
+Wed  <date>2023-03-29</date> <title></title> <hw/>
+Fri  <date>2023-03-31</date> <title></title> <hw/>
+
+Mon  <date>2023-04-03</date> <title></title> <hw/>
+Wed  <date>2023-04-05</date> <title></title> <hw/>
+Fri  <date>2023-04-07</date> <title></title> <hw/>
+
+Mon  <date>2023-04-10</date> <title></title> <hw/>
+Wed  <date>2023-04-12</date> <title></title> <hw/>
+Fri  <date>2023-04-14</date> <title></title> <hw/>
+
+Mon  <date>2023-04-17</date> <title></title> <hw/>
+Wed  <date>2023-04-19</date> <title></title> <hw/>
+Fri  <date>2023-04-21</date> <title></title> <hw/>
+
+Mon  <date>2023-04-24</date> <title></title> <hw/>
+Wed  <date>2023-04-26</date> <title></title> <hw/>
+Fri  <date>2023-04-28</date> <title></title> <hw/>
+
+Mon  <date>2023-05-01</date> <title></title> <hw/>
+Wed  <date>2023-05-03</date> <title></title> <hw/>
+Fri  <date>2023-05-05</date> <title></title> <hw/>

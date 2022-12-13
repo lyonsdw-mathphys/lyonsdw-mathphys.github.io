@@ -1,0 +1,51 @@
+MAS 323 Spring 2023  <course_id>17513</course_id>
+
+Tue  <date>2023-01-17</date> <title>Introduction</title> 
+Thu  <date>2023-01-19</date> <title>1.1,1.2</title> 
+
+Tue  <date>2023-01-24</date> <title>1.3</title> 
+Thu  <date>2023-01-26</date> <title>1.4</title> 
+
+Tue  <date>2023-01-31</date> <title>Review Ch 1</title> 
+Thu  <date>2023-02-02</date> <title>Exam Ch 1</title> 
+
+Tue  <date>2023-02-07</date> <title>NO CLASS</title> 
+Thu  <date>2023-02-09</date> <title>2.1</title> 
+
+Tue  <date>2023-02-14</date> <title>2.1,2.2</title> 
+Thu  <date>2023-02-16</date> <title>2.2</title> 
+
+Tue  <date>2023-02-21</date> <title>2.3</title> 
+Thu  <date>2023-02-23</date> <title>2.3</title> 
+
+Tue  <date>2023-02-28</date> <title>2.4</title> 
+Thu  <date>2023-03-02</date> <title>2.4</title> 
+
+Tue  <date>2023-03-07</date> <title>SPRING BREAK</title> 
+Thu  <date>2023-03-09</date> <title>SPRING BREAK</title> 
+
+Tue  <date>2023-03-14</date> <title>2.5</title> 
+Thu  <date>2023-03-16</date> <title>2.5</title> 
+
+Tue  <date>2023-03-21</date> <title>Review Ch 2</title> 
+Thu  <date>2023-03-23</date> <title>Exam Ch 2</title> 
+
+Tue  <date>2023-03-28</date> <title>3.1</title> 
+Thu  <date>2023-03-30</date> <title>3.1</title> 
+
+Tue  <date>2023-04-04</date> <title>3.2</title> 
+Thu  <date>2023-04-06</date> <title>3.2</title> 
+
+Tue  <date>2023-04-11</date> <title>3.3</title> 
+Thu  <date>2023-04-13</date> <title>3.3</title> 
+
+Tue  <date>2023-04-18</date> <title>3.4</title> 
+Thu  <date>2023-04-20</date> <title>3.4</title> 
+
+Tue  <date>2023-04-25</date> <title>3.5</title> 
+Thu  <date>2023-04-27</date> <title>3.5</title> 
+
+Tue  <date>2023-05-02</date> <title>Review Ch 3</title> 
+Thu  <date>2023-05-04</date> <title>Exam Ch 3</title> 
+
+Tue  <date>2023-05-09</date> <title>Final Exam Period</title> 
