@@ -1,0 +1,66 @@
+MAS 100 Fall 2022 <course_id>16851</course_id>
+
+Mon  <date>2022-08-29</date> <title>Introduction</title>
+Wed  <date>2022-08-31</date> <title>9.1,9.2</title> <hw/> 
+Fri  <date>2022-09-02</date> <title>9.3</title> <hw/> 
+
+Mon  <date>2022-09-05</date> <title>9.3</title> <hw/> 
+Wed  <date>2022-09-07</date> <title>Workshop</title> <quiz/>
+Fri  <date>2022-09-09</date> <title>9.4</title> <hw/> 
+
+<!-- check to here, first build -->
+
+Mon  <date>2022-09-12</date> <title>9.5</title> <hw/>
+Wed  <date>2022-09-14</date> <title>Workshop</title> <quiz/>  
+Fri  <date>2022-09-16</date> <title>10.1</title> <hw/>
+
+Mon  <date>2022-09-19</date> <title>10.2</title> <hw/>
+Wed  <date>2022-09-21</date> <title>Workshop</title> <quiz/>  
+Fri  <date>2022-09-23</date> <title>10.3</title> <hw/>
+
+Mon  <date>2022-09-26</date> <title>10.4</title> <hw/>
+Wed  <date>2022-09-28</date> <title>Workshop</title> <quiz/>  
+Fri  <date>2022-09-30</date> <title>10.5</title> <hw/>
+
+Mon  <date>2022-10-03</date> <title>11.1</title> <hw/>
+Wed  <date>2022-10-05</date> <title>Workshop</title> <quiz/>  
+Fri  <date>2022-10-07</date> <title>11.2</title> <hw/>
+
+<!-- 2nd build, before semster begins -->
+
+Mon  <date>2022-10-10</date> <title>NO CLASS</title>
+Wed  <date>2022-10-12</date> <title>Workshop</title> <quiz/>  
+Fri  <date>2022-10-14</date> <title>11.3</title> <hw/>
+
+Mon  <date>2022-10-17</date> <title>11.4</title> <hw/>
+Wed  <date>2022-10-19</date> <title>Workshop</title> <quiz/>  
+Fri  <date>2022-10-21</date> <title>12.1</title> <hw/>
+
+Mon  <date>2022-10-24</date> <title>12.2</title> <hw/>
+Wed  <date>2022-10-26</date> <title>12.3</title> <hw/> <quiz/>  
+Fri  <date>2022-10-28</date> <title>NO CLASS</title>
+
+Mon  <date>2022-10-31</date> <title>NO CLASS</title>
+Wed  <date>2022-11-02</date> <title>12.4</title> <hw/> <quiz/>  
+Fri  <date>2022-11-04</date> <title>12.5</title> <hw/>
+
+Mon  <date>2022-11-07</date> <title>13.1</title> <hw/>
+Wed  <date>2022-11-09</date> <title>Workshop</title> <quiz/>  
+Fri  <date>2022-11-11</date> <title>13.2</title> <hw/>
+
+Mon  <date>2022-11-14</date> <title>13.4</title> <hw/>
+Wed  <date>2022-11-16</date> <title>Workshop</title>  <quiz/>  
+Fri  <date>2022-11-18</date> <title>14.1</title> <hw/>
+
+Mon  <date>2022-11-21</date> <title>14.2</title> <hw/>
+Wed  <date>2022-11-23</date> <title>NO CLASS</title>
+Fri  <date>2022-11-25</date> <title>NO CLASS</title>
+
+Mon  <date>2022-11-28</date> <title>14.3</title> <hw/>
+Wed  <date>2022-11-30</date> <title>Workshop</title> <quiz/>  
+Fri  <date>2022-12-02</date> <title>14.4</title> <hw/>
+
+Mon  <date>2022-12-05</date> <title>Workshop</title>
+Wed  <date>2022-12-07</date> <title>Workshop</title> 
+Fri  <date>2022-12-09</date> <title>Workshop</title> <quiz/>  
+
