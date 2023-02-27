@@ -11,15 +11,24 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
+<h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">Consider a box model in which the tickets are divided into two categories: <span class="process-math">\(W\)</span> (for winning tickets) and <span class="process-math">\(L\)</span> for (losing tickets). Let <span class="process-math">\(p\)</span> be the probability that a single random draw is a winning ticket. In symbols we have the following.</div>
-<div class="displaymath process-math">
+<div class="para">Continuing <a href="" class="xref" data-knowl="./knowl/probeg1.html" title="Example 3.3.1">Example 3.3.1</a>, consider these events.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/probeg1.html">
 \begin{align*}
-P(W) \amp = p\\
-P(L) \amp = 1 - p
+C \amp = \text{ "get an } x \text{ on draw 2" } = \{(y,x), (z,x)\}\\
+D \amp = \text{"get a }y \text{" } = \{(x,y), (z,y), (y,x), (y,z)\}
 \end{align*}
 </div>
+<div class="para">The we have the following.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/probeg1.html">
+\begin{align*}
+\text{opposite of } A \amp = \{(y,z), (z,y)\}\\
+A \AND D \amp= \{(x,y), (y,x)\}\\
+C \OR D \amp = \{(x,y), (z,y), (y,x), (y,z), (z,x)\}
+\end{align*}
+</div>
+<div class="para">The event <span class="process-math">\(B \AND C\)</span> is the empty set, so <span class="process-math">\(B,C\)</span> are mutually exclusive.</div>
 </div>
 <span class="incontext"><a href="probability_section.html#p-83" class="internal">in-context</a></span>
 </body>

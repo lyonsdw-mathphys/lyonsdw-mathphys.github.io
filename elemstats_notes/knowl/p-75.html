@@ -11,34 +11,31 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h5 class="heading"><span class="type">Paragraph</span></h5>
-<div class="para logical">
-<div class="para">Consider the box with tickets labeled <span class="process-math">\(x,y,z\)</span> and consider the chance process that selects two tickets, without replacement, from the box. The set of all possible outcomes is</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\{(x,y), (x,z), (y,x), (y,z), (z,x), (z,y)\}
-\end{equation*}
+<h4 class="heading"><span class="type">Paragraph</span></h4>
+<div class="para">
+<a href="" class="xref" data-knowl="./knowl/linescomparetable.html" title="Table 3.2.1: Comparison of Lines and Prediction Errors">Table 3.2.1</a> shows a comparison of three lines and their rms errors. All three lines pass through the point of averages. The SD line is defined to have positive slope if <span class="process-math">\(r\gt 0\)</span> and negative slope if <span class="process-math">\(r\lt 0\text{.}\)</span> <figure class="table table-like"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.2.1<span class="period">.</span></span><span class="space"> </span>Comparison of Lines and Prediction Errors</figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b3 r1 l1 t1 lines">line</td>
+<td class="c m b3 r1 l0 t1 lines">slope</td>
+<td class="c m b3 r1 l0 t1 lines">rms error</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">regression line</td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(r\cdot \SD(Y)/\SD(X)\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\SD(Y) \sqrt{1-r^2}\)</span></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">SD line</td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\pm \SD(Y)/\SD(X)\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\SD(Y)  \sqrt{2(1-|r|)}\)</span></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">average line</td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\SD(Y)\)</span></td>
+</tr>
+</table></div></figure>
 </div>
-<div class="para">where the pair <span class="process-math">\((y,x)\text{,}\)</span> for example, denotes the outcome where <span class="process-math">\(y\)</span> is selected on the first draw, and <span class="process-math">\(x\)</span> is selected on the second draw. The event <span class="process-math">\(A = \text{ "get an } x \text{"}\)</span> is the set</div>
-<div class="displaymath process-math">
-\begin{equation*}
-A=\{(x,y), (x,z), (z,x), (y,x)\}
-\end{equation*}
-</div>
-<div class="para">and the event <span class="process-math">\(B = \text{ "get an } x \text{ on draw 1"}\)</span> is the set</div>
-<div class="displaymath process-math">
-\begin{equation*}
-B=\{(x,y), (x,z)\}.
-\end{equation*}
-</div>
-<div class="para">We have the following probabilities.</div>
-<div class="displaymath process-math">
-\begin{align*}
-P(A) \amp = P(\text{get an } x) = 4/6 = 2/3\\
-P(B) \amp = P(\text{get an } x \text{ on draw 1}) = 2/6 = 1/3
-\end{align*}
-</div>
-</div>
-<span class="incontext"><a href="probability_section.html#p-75" class="internal">in-context</a></span>
+<span class="incontext"><a href="regression_section.html#p-75" class="internal">in-context</a></span>
 </body>
 </html>

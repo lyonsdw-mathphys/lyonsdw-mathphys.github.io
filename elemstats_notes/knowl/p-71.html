@@ -12,19 +12,20 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para logical"><ul class="disc">
-<li><div class="para">The value of <span class="process-math">\(r\)</span> is in the range <span class="process-math">\(-1\)</span> to <span class="process-math">\(1\text{.}\)</span> The value of <span class="process-math">\(|r|\)</span> is 1 precisely when all the points <span class="process-math">\((X,Y)\)</span> on the scatter diagram lie on a straight line.</div></li>
-<li><div class="para">The correlation coefficient is unitless. The value of <span class="process-math">\(r\)</span> does not change if you rescale <span class="process-math">\(X\)</span> or <span class="process-math">\(Y\text{.}\)</span>
-</div></li>
-<li><div class="para">It is tempting to summarize data using averages, but this has a misleading effect on correlation. Suppose that the points in a scatter diagram are subdivided into subsets, and that each subset is replaced by a single point<div class="displaymath process-math">
+<div class="para logical">
+<div class="para">Among all possible lines, there is one single line with the least possible rms error, called the <dfn class="terminology">regression line for <span class="process-math">\(Y\)</span> on <span class="process-math">\(X\)</span></dfn>. This means that the regression line is the best possible line to use as a prediction tool to guess an unknown corresponding <span class="process-math">\(Y\)</span> value for a given <span class="process-math">\(X\)</span> value. The regression line passes through the point <span class="process-math">\((\AVE(X),\AVE(Y))\text{,}\)</span> called the <dfn class="terminology">point of averages</dfn> for the lists <span class="process-math">\(X,Y\text{,}\)</span> and has slope equal to <span class="process-math">\(r\cdot \SD(Y)/\SD(X)\text{,}\)</span> where <span class="process-math">\(r\)</span> is the number</div>
+<div class="displaymath process-math">
 \begin{equation*}
-\text{(average of the } X \text{ values in the subset, average
-of the } Y \text{ values in the subset)}.
+r = \AVE\left(\left(\frac{X-\AVE(X)}{\SD(X)}\right) \left(\frac{Y-\AVE(Y)}{\SD(Y)}\right)\right)
 \end{equation*}
-</div>The correlation for this smaller data set of average points is usually higher (in absolute value) than the correlation for the original scatter diagram. This phenomenon is called <dfn class="terminology">ecological correlation</dfn>.</div></li>
-<li><div class="para">A strong correlation provides no evidence of a causal link between the variables <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\text{.}\)</span>
-</div></li>
-</ul></div>
+</div>
+<div class="para">called the <dfn class="terminology">correlation coefficient</dfn> for the pair of lists <span class="process-math">\(X,Y\text{.}\)</span> The rms error for the regression line is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{rms error for regression line } = \SD(Y) \cdot \sqrt{1-r^2}.
+\end{equation*}
+</div>
+</div>
 <span class="incontext"><a href="regression_section.html#p-71" class="internal">in-context</a></span>
 </body>
 </html>

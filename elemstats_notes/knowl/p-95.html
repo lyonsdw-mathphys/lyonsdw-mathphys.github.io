@@ -12,7 +12,46 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para">Sampling theory derives its power from a fact called the <dfn class="terminology">Central Limit Theorem</dfn>. The Central Limit Theorem says that, no matter what numbers are in a box model, the histogram of all possible (standardized) sample sums (which is the same as the standardized sample average or the standardized sample percentage of 1's) is close to the standard normal distribution, as long as the number of draws is sufficiently large. [Our textbook is vague about how large is "sufficiently large". For a box with a uniform distribution (that is, a histogram for which all the blocks are close to even in height), 25 draws or more is sufficiently large. For a box that is very uneven (that is, a histogram with blocks of very different heights), sufficiently large might be 100 or more draws.]</div>
+<div class="para logical">
+<div class="para">For samples with replacement, we have the following formulas. Equation <a href="" class="xref" data-knowl="./knowl/sesumformula.html" title="Equation 3.4.2">(3.4.2)</a> is called the <dfn class="terminology">Square Root Law</dfn>.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/sesumformula.html ./knowl/expectedsumformula.html ./knowl/sesumformula.html">
+\begin{align}
+\text{ expected(sum) }\amp = (\text{average of the box}) \cdot (\text{number of draws})\tag{3.4.1}\\
+\text{expected(ave) } \amp  = \text{average of the box}\notag\\
+\text{expected(%1's) }\amp = \text{percent 1's in the box}\notag
+\end{align}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/sesumformula.html ./knowl/expectedsumformula.html ./knowl/sesumformula.html">
+\begin{align}
+\text{ SE(sum) } \amp  = (\text{SD of the box}) \sqrt{\text{number of draws}}\tag{3.4.2}\\
+\text{SE(ave) }\amp =
+\frac{\text{SE(sum)}}{{\text{number of draws}}} = \frac{\text{SD of
+the box}}{\sqrt{\text{number of draws}}} \notag\\
+\text{SE(%1's) }\amp =
+\frac{\text{SE(sum)}}{{\text{number of draws}}} \cdot 100\% =
+\frac{\text{SD of the box}}{\sqrt{\text{number of draws}}} \cdot 100\%\notag
+\end{align}
+</div>
+<div class="para">For samples without replacement, there is no change in formula <a href="" class="xref" data-knowl="./knowl/expectedsumformula.html" title="Equation 3.4.1">(3.4.1)</a>, but each of the equations in <a href="" class="xref" data-knowl="./knowl/sesumformula.html" title="Equation 3.4.2">(3.4.2)</a> is replaced by</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/sesumformula.html ./knowl/expectedsumformula.html ./knowl/sesumformula.html">
+\begin{equation}
+\text{SE(without replacement) }= \text{SE(with replacement) } \cdot (\text{correction factor})\tag{3.4.3}
+\end{equation}
+</div>
+<div class="para">where the <dfn class="terminology">correction factor</dfn> is given by the following.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/sesumformula.html ./knowl/expectedsumformula.html ./knowl/sesumformula.html">
+\begin{equation}
+\text{correction factor } = \sqrt{ \frac{N - n}{N - 1} },\tag{3.4.4}
+\end{equation}
+</div>
+<div class="para">where</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/sesumformula.html ./knowl/expectedsumformula.html ./knowl/sesumformula.html">
+\begin{align*}
+N \amp = \text{the number of tickets in the box}\\
+n \amp = \text{the number of draws in the sample}.
+\end{align*}
+</div>
+</div>
 <span class="incontext"><a href="sampling_section.html#p-95" class="internal">in-context</a></span>
 </body>
 </html>

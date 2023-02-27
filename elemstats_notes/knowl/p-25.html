@@ -11,79 +11,31 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para logical">
-<div class="para">Here are some basic problem types about the normal curve. Data called <span class="process-math">\(X\)</span> is approximately normally distributed, with <span class="process-math">\(\AVE(X)=72.3\)</span> and <span class="process-math">\(\SD(X)=6.7\text{.}\)</span>
-</div>
-<ol class="decimal">
-<li><div class="para">(symmetric region) Estimate the percent of data in the range <span class="process-math">\(72.3\pm 3.9\text{.}\)</span>
-</div></li>
-<li><div class="para">(asymmetric region) Estimate the percent of data in the range <span class="process-math">\(69.0\)</span> to <span class="process-math">\(81.0\text{.}\)</span>
-</div></li>
-<li><div class="para">(left tail region) Estimate the percentile rank for the data values <span class="process-math">\(69.0\)</span> and <span class="process-math">\(81.0\text{.}\)</span>
-</div></li>
-<li><div class="para">(from area to <span class="process-math">\(z\)</span>) Estimate the data values with 70th and 35th percentile ranks.</div></li>
-</ol>
-<div class="para">Here are the solutions. Here are the <a class="external" href="images/normal_curve_sample_solutions.pdf" target="_blank">drawing method</a><a href="" class="fn-knowl original" data-knowl="./knowl/fn-1-hidden.html" title="Footnote 2.2.1"><sup> 1 </sup></a> solution steps taught in the textbook.</div>
-<ol class="decimal">
-<li><div class="para">The <span class="process-math">\(z\)</span> values for <span class="process-math">\(72.3\pm 3.9\)</span> are <span class="process-math">\(\pm
-\frac{3.9}{6.7} \approx \pm .58\text{.}\)</span> The normal table shows that the area between these <span class="process-math">\(z\)</span> values is about <span class="process-math">\(44\%\text{.}\)</span>
-</div></li>
-<li><div class="para">The <span class="process-math">\(z\)</span> value for <span class="process-math">\(69.0\)</span> is <span class="process-math">\(z_L=\frac{69.0-72.3}{6.7}\approx -.49\text{,}\)</span> and the <span class="process-math">\(z\)</span> value for <span class="process-math">\(81.0\)</span> is <span class="process-math">\(z_R =
-\frac{81.0-72.3}{6.7}\approx 1.30\text{.}\)</span> The corresponding areas in the normal table are <span class="process-math">\(38\%\)</span> and <span class="process-math">\(81\%\text{,}\)</span> respectively. The area from <span class="process-math">\(z_L\)</span> to <span class="process-math">\(0\)</span> is about <span class="process-math">\(38/2=19\%\)</span> and the area from <span class="process-math">\(0\)</span> to <span class="process-math">\(z_R\)</span> is about <span class="process-math">\(81/2=40.5\%\text{,}\)</span> so the area from <span class="process-math">\(z_L\)</span> to <span class="process-math">\(z_R\)</span> is about <span class="process-math">\(19+40.5=59.5\%\approx
-60\%\text{.}\)</span>
-</div></li>
-<li><div class="para">We have the same values <span class="process-math">\(z_L,z_R\)</span> from the previous part. First, we consider <span class="process-math">\(z_L=-.49\text{.}\)</span> Start with the observation that<div class="displaymath process-math">
+<h6 class="heading"><span class="type">Paragraph</span></h6>
+<div class="para logical"><div class="displaymath process-math">
 \begin{align*}
-100\% \amp = (\text{area to the left of }-.49)\\
-\amp + (\text{area
-between }-.49 \text{ and }+.49)\\
-\amp + (\text{area to the right of }+4.9).
+A
+\amp\spacer\amp B
+\amp\spacer\amp p
+\amp\spacer\amp \text{height}	      \\
+25
+\amp\spacer\amp 43
+\amp\spacer\amp 15\%
+\amp\spacer\amp .83\\
+42
+\amp\spacer\amp 61
+\amp\spacer\amp 66.5\%
+\amp\spacer\amp 3.5\\
+15
+\amp\spacer\amp 19
+\amp\spacer\amp 18.4\%
+\amp\spacer\amp 4.6\\
+87
+\amp\spacer\amp 90
+\amp\spacer\amp 18\%
+\amp\spacer\amp 6.0
 \end{align*}
-</div>By mirror symmetry, we have<div class="displaymath process-math">
-\begin{equation*}
-(\text{area to the left of }-.49) = (\text{area to the right
-of }+4.9).
-\end{equation*}
-</div>Putting these together, we get<div class="displaymath process-math">
-\begin{equation*}
-(\text{area to the left of }-.49)= \frac{100\%-(\text{area between }-.49 \text{ and }+.49)}{2}
-\end{equation*}
-</div>which is <span class="process-math">\((100 -38)/2=31\%\text{.}\)</span> Next, we consider <span class="process-math">\(z_R=1.30\text{.}\)</span> Start with<div class="displaymath process-math">
-\begin{align*}
-(\text{area to the left of }1.30)\amp = (\text{area
-left of }0)\\
-\amp + (\text{area
-between }0 \text{ and }1.30)\\
-\amp = 50\% + 81/2\\
-\amp \approx 90\%.
-\end{align*}
-</div>
-</div></li>
-<li><div class="para">First, we find the <span class="process-math">\(z\)</span> value that has 70th percentile rank. Let's call that value <span class="process-math">\(A\text{.}\)</span> Starting with the observation that<div class="displaymath process-math">
-\begin{align*}
-100\% \amp = (\text{area to the left of }A)\\
-\amp + (\text{area to the right of }A)\\
-\amp = 70 + (\text{area to the right of }A)
-\end{align*}
-</div>we conclude that the area to the right of <span class="process-math">\(A\)</span> is <span class="process-math">\(30\%\text{.}\)</span> By mirror symmetry, it must be that the area to the left of <span class="process-math">\(-A\)</span> is also <span class="process-math">\(30\%\text{,}\)</span> so the area between <span class="process-math">\(-A\)</span> and <span class="process-math">\(+A\)</span> must be <span class="process-math">\(100 - 2(30)
-= 40\%\text{.}\)</span> Using the normal curve table, we find that <span class="process-math">\(A\approx .52\text{.}\)</span> This converts to an <span class="process-math">\(X\)</span> value of <span class="process-math">\(X=(.52)(6.7)+72.3\approx 75.8\text{.}\)</span> Next, we find a <span class="process-math">\(z\)</span> value that has 35th percentile rank. Let's call that value <span class="process-math">\(-B\)</span> (so that <span class="process-math">\(-B\)</span> is to the left of average, and <span class="process-math">\(+B\)</span> is to the right of average). Starting with<div class="displaymath process-math">
-\begin{align*}
-100\% \amp = (\text{area to the left of }-B)\\
-\amp + (\text{area
-between }-B \text{ and }B)\\
-\amp + (\text{area to the right of }B)
-\end{align*}
-</div>By mirror symmetry, we have<div class="displaymath process-math">
-\begin{equation*}
-(\text{area to the left of }-B) = (\text{area to the right
-of }B).
-\end{equation*}
-</div>It follows that both sides of this equation are <span class="process-math">\(35\%\text{,}\)</span> so we conclude that <span class="process-math">\((\text{area between
-}-B \text{ and }B)= 100 - 2(35)=30\%\text{.}\)</span> From the normal table, we get <span class="process-math">\(-B\approx -.385\text{.}\)</span> This converts to an <span class="process-math">\(X\)</span> value of <span class="process-math">\(X=(-.385)(6.7)+72.3\approx 69.7\text{.}\)</span>
-</div></li>
-</ol>
-</div>
+</div></div>
 <span class="incontext"><a href="basic_text_problems_section.html#p-25" class="internal">in-context</a></span>
 </body>
 </html>
