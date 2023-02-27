@@ -12,30 +12,32 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<p>Rearranging <a href="" class="xref" data-knowl="./knowl/condprobdef.html" title="Equation 3.4">(3.4)</a>, we have the following equation, called the <dfn class="terminology">multiplication rule</dfn>.</p>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/condprobdef.html">
-\begin{equation*}
-P(U \AND V) = P(U) \cdot P(V|U)
-\end{equation*}
+<div class="para logical">
+<div class="para">Here are some basic problem types about regression.</div>
+<ol class="decimal">
+<li>
+<div class="para logical">
+<div class="para">The scatter diagram for data called <span class="process-math">\(X,Y\)</span> shows a linear association, with the following summary statistics.</div>
+<div class="displaymath process-math">
+\begin{align*}
+\AVE(X)\amp =20.13 \amp \amp \amp  \AVE(Y)\amp =15.86\\
+\SD(X)\amp =3.65  \amp  \amp \amp \AVE(Y)\amp
+=4.90\\
+\amp  \amp r\amp=.82 \amp  \amp
+\end{align*}
 </div>
-<p class="continuation">If <span class="process-math">\(U,V\)</span> are independent, the multiplication rule simplifies a little.</p>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/condprobdef.html">
-\begin{equation*}
-P(U \AND V) = P(U) \cdot P(V)    \;\;\;(U,V \text{ independent})
-\end{equation*}
 </div>
-<p class="continuation">If <span class="process-math">\(U,V\)</span> are mutually exclusive, we have the following equation, called the <dfn class="terminology">addition rule for mutually exclusive events</dfn>.</p>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/condprobdef.html">
-\begin{equation*}
-P(U \OR V) = P(U) + P(V)   \;\;\;(U,V \text{ mutually exclusive})
-\end{equation*}
+<div class="para logical"><ol class="lower-alpha">
+<li><div class="para">Estimate the average <span class="process-math">\(Y\)</span> value for data whose <span class="process-math">\(X\)</span> value is near <span class="process-math">\(24.8\text{.}\)</span>
+</div></li>
+<li><div class="para">Estimate the average <span class="process-math">\(X\)</span> value for data whose <span class="process-math">\(Y\)</span> value is near <span class="process-math">\(21.0\text{.}\)</span>
+</div></li>
+</ol></div>
+</li>
+<li><div class="para">Continuing the previous problem, suppose now that the <span class="process-math">\(Y\)</span> data is normally distributed within each thin vertical strip, and that the scatter diagram is homoscedastic. For data whose <span class="process-math">\(X\)</span> value is near <span class="process-math">\(24.8\text{,}\)</span> estimate the percent of <span class="process-math">\(Y\)</span> data in the range <span class="process-math">\(15.86\)</span> and higher.</div></li>
+<li><div class="para">Suppose that data called <span class="process-math">\(V,W\)</span> have a linear association with a correlation of <span class="process-math">\(r=.65\text{,}\)</span> and that  <span class="process-math">\(V,W\)</span> are both approximately normally distributed. Estimtate the average percentile rank for <span class="process-math">\(W\)</span> data whose <span class="process-math">\(V\)</span> value is close to 80th percentile.</div></li>
+</ol>
 </div>
-<p class="continuation">A special case of the addition rule is when <span class="process-math">\(V\)</span> is the opposite of <span class="process-math">\(U\text{.}\)</span> In this case, <span class="process-math">\(U \OR V\)</span> is the set of all possible outcomes, so <span class="process-math">\(P(U \OR V) = 1\text{.}\)</span> Rearranging the addition rule terms, we have the <dfn class="terminology">opposite rule</dfn> .</p>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/condprobdef.html">
-\begin{equation*}
-P(U) = 1 - P(\text{ opposite of } U)
-\end{equation*}
-</div>
-<span class="incontext"><a href="probability_section.html#p-27" class="internal">in-context</a></span>
+<span class="incontext"><a href="basic_text_problems_section.html#p-27" class="internal">in-context</a></span>
 </body>
 </html>

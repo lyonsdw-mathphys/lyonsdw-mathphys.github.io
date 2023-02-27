@@ -12,18 +12,28 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<p>Among all possible lines, there is one single line with the least possible rms error, called the <dfn class="terminology">regression line for <span class="process-math">\(Y\)</span> on <span class="process-math">\(X\)</span></dfn>. This means that the regression line is the best possible line to use as a prediction tool to guess an unknown corresponding <span class="process-math">\(Y\)</span> value for a given <span class="process-math">\(X\)</span> value. The regression line passes through the point <span class="process-math">\((\AVE(X),\AVE(Y))\text{,}\)</span> called the <dfn class="terminology">point of averages</dfn> for the lists <span class="process-math">\(X,Y\text{,}\)</span> and has slope equal to <span class="process-math">\(r\cdot \SD(Y)/\SD(X)\text{,}\)</span> where <span class="process-math">\(r\)</span> is the number</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
+<div class="para logical">
+<div class="para">The textbook does not give a definition of the term conditional probability; instead, they explain by example in Ch 13 Sec. 2 (p.226). Here is the definition: The <dfn class="terminology">conditional probability</dfn> of event <span class="process-math">\(E\)</span> given that event <span class="process-math">\(F\)</span> has happened, denoted <span class="process-math">\(P(E|F)\text{,}\)</span> is</div>
+<div class="displaymath process-math">
 \begin{equation*}
-r = \AVE\left(\left(\frac{X-\AVE(X)}{\SD(X)}\right) \left(\frac{Y-\AVE(Y)}{\SD(Y)}\right)\right)
+P(E|F) = \frac{P(E \AND F)}{P(F)}
 \end{equation*}
 </div>
-<p class="continuation">called the <dfn class="terminology">correlation coefficient</dfn> for the pair of lists <span class="process-math">\(X,Y\text{.}\)</span> The rms error for the regression line is</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
+<div class="para">where the event "<span class="process-math">\(E \AND F\)</span>" is the set of all outcomes that belong to both events <span class="process-math">\(E\)</span> and <span class="process-math">\(F\text{.}\)</span> For example, in 2 draws with replacement from the box <span class="process-math">\(\{A,K,Q,J\}\text{,}\)</span> we have</div>
+<div class="displaymath process-math">
 \begin{equation*}
-\text{rms error for regression line } = \SD(Y) \cdot \sqrt{1-r^2}.
+P(\text{get a queen | get a king on draw 1}) = 1/3 \approx 33.3\%
 \end{equation*}
 </div>
-<span class="incontext"><a href="regression_section.html#p-11" class="internal">in-context</a></span>
+<div class="para">because there is 1 outcome, namely <span class="process-math">\(KQ\text{,}\)</span> that has a <span class="process-math">\(Q\text{,}\)</span> among the 3 outcomes that have <span class="process-math">\(K\)</span> on draw 1. We also have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P(\text{get a king on draw 1 | get a queen}) = 1/6 \approx 16.7\%
+\end{equation*}
+</div>
+<div class="para">because there is 1 outcome, namely <span class="process-math">\(KQ\text{,}\)</span> for which draw 1 is a <span class="process-math">\(K\text{,}\)</span> among the 6 outcomes that have a <span class="process-math">\(Q\text{.}\)</span>
+</div>
+</div>
+<span class="incontext"><a href="essential_clarifications_section.html#p-11" class="internal">in-context</a></span>
 </body>
 </html>

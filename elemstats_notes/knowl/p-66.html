@@ -11,8 +11,21 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h5 class="heading"><span class="type">Paragraph</span></h5>
-<p>On every 6th roll (that is, on roll numbers 6, 12, 18, etc) you win a blue marble if exactly half of the last 6 rolls came up even. The chance that you win 35 or more blue marbles in 600 rolls is <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>. Use the continuity correction to be as precise as possible.</p>
-<span class="incontext"><a href="sampling_section.html#p-66" class="internal">in-context</a></span>
+<h4 class="heading"><span class="type">Paragraph</span></h4>
+<div class="para logical">
+<div class="para">Among all possible lines, there is one single line with the least possible rms error, called the <dfn class="terminology">regression line for <span class="process-math">\(Y\)</span> on <span class="process-math">\(X\)</span></dfn>. This means that the regression line is the best possible line to use as a prediction tool to guess an unknown corresponding <span class="process-math">\(Y\)</span> value for a given <span class="process-math">\(X\)</span> value. The regression line passes through the point <span class="process-math">\((\AVE(X),\AVE(Y))\text{,}\)</span> called the <dfn class="terminology">point of averages</dfn> for the lists <span class="process-math">\(X,Y\text{,}\)</span> and has slope equal to <span class="process-math">\(r\cdot \SD(Y)/\SD(X)\text{,}\)</span> where <span class="process-math">\(r\)</span> is the number</div>
+<div class="displaymath process-math">
+\begin{equation*}
+r = \AVE\left(\left(\frac{X-\AVE(X)}{\SD(X)}\right) \left(\frac{Y-\AVE(Y)}{\SD(Y)}\right)\right)
+\end{equation*}
+</div>
+<div class="para">called the <dfn class="terminology">correlation coefficient</dfn> for the pair of lists <span class="process-math">\(X,Y\text{.}\)</span> The rms error for the regression line is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{rms error for regression line } = \SD(Y) \cdot \sqrt{1-r^2}.
+\end{equation*}
+</div>
+</div>
+<span class="incontext"><a href="regression_section.html#p-66" class="internal">in-context</a></span>
 </body>
 </html>

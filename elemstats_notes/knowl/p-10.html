@@ -12,7 +12,33 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<p>Given two lists of numbers <span class="process-math">\(X,Y\)</span> with the same number of entries, and given a linear function <span class="process-math">\(y=L(x)=ax+b\)</span> (<span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> are constants), the <dfn class="terminology">rms error for the line <span class="process-math">\(L\)</span></dfn> is the rms of the list <span class="process-math">\(Y-L(X)\text{.}\)</span> (For example, if <span class="process-math">\(A\)</span> is an entry in the list <span class="process-math">\(X\)</span> and <span class="process-math">\(B\)</span> is the corresponding entry in the list <span class="process-math">\(Y\text{,}\)</span> then the corresponding entry in the list <span class="process-math">\(Y-L(X)\)</span> is <span class="process-math">\(B-(aA+b)\text{.}\)</span>) We interpret the rms error for a line as a measure of how well <span class="process-math">\(L\)</span> performs as a tool for predicting the <span class="process-math">\(Y\)</span> value that corresponds to a given <span class="process-math">\(X\)</span> value. Given an <span class="process-math">\(X\)</span> value <span class="process-math">\(A\text{,}\)</span> the value <span class="process-math">\(B=L(A)\)</span> has a "prediction error" equal to <span class="process-math">\(B-L(A)\text{.}\)</span> The line <span class="process-math">\(L\)</span> is a good prediction tool if the rms error for <span class="process-math">\(L\)</span> is low, and the line <span class="process-math">\(L\)</span> is a bad prediction tool if the rms error for <span class="process-math">\(L\)</span> is high. We interpret the rms error for a line <span class="process-math">\(L\)</span> as the size of the typical error that we would observe if we used <span class="process-math">\(L\)</span> to predict an unknown <span class="process-math">\(Y\)</span> value for a given <span class="process-math">\(X\)</span> value.</p>
-<span class="incontext"><a href="regression_section.html#p-10" class="internal">in-context</a></span>
+<div class="para logical">
+<div class="para">We will write <span class="process-math">\(P(E)\)</span> to denote the probability for an event <span class="process-math">\(E\)</span> . For example, in the game of 2 draws, with replacement, from the box <span class="process-math">\(\{A,K,Q,J\}\text{,}\)</span> the probability of the single outcome <span class="process-math">\(AK\)</span> is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P(AK) = 1/12 \approx 8.3\%
+\end{equation*}
+</div>
+<div class="para">because there are 12 equally likely outcomes for the 2 draws. The probability for getting the hand ace-king is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P(\text{get the hand ace-king}) = 2/12 \approx 16.7\%
+\end{equation*}
+</div>
+<div class="para">because there are 2 equally likely outcomes in the event "get the hand ace-king", and there are 12 equally likely outcomes in all for the 2 draws. The probability of getting a queen is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P(\text{get a queen}) = 6/12 = 50\%
+\end{equation*}
+</div>
+<div class="para">because there are 6 equally likely outcomes in the event "get a queen". The probability of getting king on the first draw is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P(\text{get a king on draw 1}) = 3/12 = 25\%
+\end{equation*}
+</div>
+<div class="para">because there are 3 equally likely outcomes in the event "get a king on draw 1".</div>
+</div>
+<span class="incontext"><a href="essential_clarifications_section.html#p-10" class="internal">in-context</a></span>
 </body>
 </html>

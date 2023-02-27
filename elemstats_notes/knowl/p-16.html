@@ -12,17 +12,33 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<ul class="disc">
-<li><p>The value of <span class="process-math">\(r\)</span> is in the range <span class="process-math">\(-1\)</span> to <span class="process-math">\(1\text{.}\)</span> The value of <span class="process-math">\(|r|\)</span> is 1 precisely when all the points <span class="process-math">\((X,Y)\)</span> on the scatter diagram lie on a straight line.</p></li>
-<li><p>The correlation coefficient is unitless. The value of <span class="process-math">\(r\)</span> does not change if you rescale <span class="process-math">\(X\)</span> or <span class="process-math">\(Y\text{.}\)</span></p></li>
-<li><p>It is tempting to summarize data using averages, but this has a misleading effect on correlation. Suppose that the points in a scatter diagram are subdivided into subsets, and that each subset is replaced by a single point<div class="displaymath process-math" data-contains-math-knowls="">
+<div class="para logical">
+<div class="para">Let <span class="process-math">\(L\)</span> be a line in the <span class="process-math">\(x,y\)</span>-plane that is not vertical (that is, not parallel to the <span class="process-math">\(y\)</span>-axis). Visualize traveling along the line <span class="process-math">\(L\)</span> from a starting point <span class="process-math">\((A,B)\)</span> to a final point <span class="process-math">\((P,Q)\text{.}\)</span> From start to finish, your position along the <span class="process-math">\(x\)</span>-axis will change from <span class="process-math">\(A\)</span> to <span class="process-math">\(P\text{.}\)</span> The deviation of <span class="process-math">\(P\)</span> from <span class="process-math">\(A\)</span> (also called the <dfn class="terminology">horizontal displacement</dfn> from <span class="process-math">\((A,B)\)</span> to <span class="process-math">\((P,Q)\)</span>) is called the <dfn class="terminology">run</dfn> of your trip.</div>
+<div class="displaymath process-math">
 \begin{equation*}
-\text{(average of the } X \text{ values in the subset, average
-of the } Y \text{ values in the subset)}.
+\text{ run } = P-A
 \end{equation*}
-</div>The correlation for this smaller data set of average points is usually higher (in absolute value) than the correlation for the original scatter diagram. This phenomenon is called <dfn class="terminology">ecological correlation</dfn>.</p></li>
-<li><p>A strong correlation provides no evidence of a causal link between the variables <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\text{.}\)</span></p></li>
-</ul>
-<span class="incontext"><a href="regression_section.html#p-16" class="internal">in-context</a></span>
+</div>
+<div class="para">Likewise, your position along the <span class="process-math">\(y\)</span>-axis will change from <span class="process-math">\(B\)</span> to <span class="process-math">\(Q\text{.}\)</span> The deviation of <span class="process-math">\(Q\)</span> from <span class="process-math">\(B\)</span> (also called the <dfn class="terminology">vertical displacement</dfn>) is called the <dfn class="terminology">rise</dfn> of your trip.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{ rise } = Q-B
+\end{equation*}
+</div>
+<div class="para">The fraction rise/run is called the <dfn class="terminology">slope</dfn> of the line <span class="process-math">\(L\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{ slope } = \frac{ \text{ rise }}{\text{ run }}
+\end{equation*}
+</div>
+<div class="para">Solving for rise, we have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{ rise } = { \text{ (slope)}}{\text{(run) }}
+\end{equation*}
+</div>
+</div>
+<span class="incontext"><a href="basic_algebra_section.html#p-16" class="internal">in-context</a></span>
 </body>
 </html>

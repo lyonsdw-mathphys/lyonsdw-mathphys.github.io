@@ -1,59 +1,191 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-08-27T11:37:46-04:00       *-->
-<!--*   A recent stable commit (2020-08-09):   *-->
-<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
 <html lang="en-US">
-<head>
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Facts about the correlation coefficient \(r\)</title>
+<title>More on Prediction and Error</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script>window.MathJax = {
+<meta property="og:type" content="book">
+<meta property="book:title" content="Elementary Statistics Supplementary Notes">
+<meta property="book:author" content="David W. Lyons">
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
   tex: {
     inlineMath: [['\\(','\\)']],
     tags: "none",
-    useLabelIds: true,
     tagSide: "right",
     tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
   },
   options: {
-    ignoreHtmlClass: "tex2jax_ignore",
-    processHtmlClass: "has_am",
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
   },
   chtml: {
-    scale: 0.88,
+    scale: 0.98,
     mtextInheritFont: true
   },
   loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
+  startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  },
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
-</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
-<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
-<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
-<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
-<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
-<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
-<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
-<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
-<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
-<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://unpkg.com/lunr/lunr.js"></script><script src="lunr-pretext-search-index.js"></script><script src="https://pretextbook.org/js/0.2/pretext_search.js"></script><link href="https://pretextbook.org/css/0.6/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.2</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.2/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.2/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.2/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link href="https://pretextbook.org/css/0.6/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/shell_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/setcolors.css" rel="stylesheet" type="text/css">
 </head>
-<body class="mathbook-book">
-<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(      \DeclareMathOperator{\AVE}{AVE}
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="elemstats.html"><span class="title">Elementary Statistics Supplementary Notes</span></a></h1>
+<p class="byline">David W. Lyons</p>
+</div>
+<div id="searchresultsplaceholder" style="display: none">
+<button id="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms"></span>
+</h2>
+<div id="searchempty"><span>No results.</span></div>
+<ol id="searchresults"></ol>
+</div>
+</div></header><nav id="ptx-navbar" class="navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><a class="index-button button" href="index-1.html" title="Index"><span class="name">Index</span></a><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="theavatarbutton" class="name">You!</span><div id="preferences_menu_holder" class="hidden"><ol id="preferences_menu" style="font-family: 'Roboto Serif', serif;">
+<li data-env="avatar" tabindex="-1">Choose avatar<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden avatar">
+<li data-val="You!" tabindex="-1">
+<span id="theYou!" class="avatarcheck">✔️</span>You!</li>
+<li data-val="😺" tabindex="-1">
+<span id="the😺" class="avatarcheck"></span>😺</li>
+<li data-val="👤" tabindex="-1">
+<span id="the👤" class="avatarcheck"></span>👤</li>
+<li data-val="👽" tabindex="-1">
+<span id="the👽" class="avatarcheck"></span>👽</li>
+<li data-val="🐶" tabindex="-1">
+<span id="the🐶" class="avatarcheck"></span>🐶</li>
+<li data-val="🐼" tabindex="-1">
+<span id="the🐼" class="avatarcheck"></span>🐼</li>
+<li data-val="🌈" tabindex="-1">
+<span id="the🌈" class="avatarcheck"></span>🌈</li>
+</ol>
+</li>
+<li data-env="fontfamily" tabindex="-1">Font family<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fontfamily">
+<li data-val="face" data-change="OS" tabindex="-1" style="font-family: 'Open Sans'">
+<span id="theOS" class="ffcheck">✔️</span><span class="name">Open Sans</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+<li data-val="face" data-change="RS" tabindex="-1" style="font-family: 'Roboto Serif'">
+<span id="theRS" class="ffcheck"></span><span class="name">Roboto Serif</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+</ol>
+</li>
+<li data-env="font" tabindex="-1">Adjust font<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fonts">
+<li>Size</li>
+<li><span id="thesize">12</span></li>
+<li data-val="size" data-change="-1" tabindex="-1" style="font-size: 80%">Smaller</li>
+<li data-val="size" data-change="1" tabindex="-1" style="font-size: 110%">Larger</li>
+<li>Width</li>
+<li><span id="thewdth">100</span></li>
+<li data-val="wdth" data-change="-5" tabindex="-1" style="font-variation-settings: 'wdth' 60">narrower</li>
+<li data-val="wdth" data-change="5" tabindex="-1" style="font-variation-settings: 'wdth' 150">wider</li>
+<li>Weight</li>
+<li><span id="thewght">400</span></li>
+<li data-val="wght" data-change="-50" tabindex="-1" style="font-weight: 200">thinner</li>
+<li data-val="wght" data-change="50" tabindex="-1" style="font-weight: 700">heavier</li>
+<li>Letter spacing</li>
+<li>
+<span id="thelspace">0</span><span class="byunits">/200</span>
+</li>
+<li data-val="lspace" data-change="-1" tabindex="-1">closer</li>
+<li data-val="lspace" data-change="1" tabindex="-1">f a r t h e r</li>
+<li>Word spacing</li>
+<li>
+<span id="thewspace">0</span><span class="byunits">/50</span>
+</li>
+<li data-val="wspace" data-change="-1" tabindex="-1">smaller gap </li>
+<li data-val="wspace" data-change="1" tabindex="-1">larger gap</li>
+<li>Line Spacing</li>
+<li>
+<span id="theheight">135</span><span class="byunits">/100</span>
+</li>
+<li data-val="height" data-change="-5" tabindex="-1" style="line-height: 1">closer<br>together</li>
+<li data-val="height" data-change="5" tabindex="-1" style="line-height: 1.75">further<br>apart</li>
+</ol>
+</li>
+<li data-env="atmosphere" tabindex="-1">Light/dark mode<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden atmosphere">
+<li data-val="default" tabindex="-1">
+<span id="thedefault" class="atmospherecheck">✔️</span>default</li>
+<li data-val="pastel" tabindex="-1">
+<span id="thepastel" class="atmospherecheck"></span>pastel</li>
+<li data-val="darktwilight" tabindex="-1">
+<span id="thedarktwilight" class="atmospherecheck"></span>twilight</li>
+<li data-val="dark" tabindex="-1">
+<span id="thedark" class="atmospherecheck"></span>dark</li>
+<li data-val="darkmidnight" tabindex="-1">
+<span id="thedarkmidnight" class="atmospherecheck"></span>midnight</li>
+</ol>
+</li>
+<li data-env="ruler" tabindex="-1">Reading ruler<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden ruler">
+<li data-val="none" tabindex="-1">
+<span id="thenone" class="rulercheck">✔️</span>none</li>
+<li data-val="underline" tabindex="-1">
+<span id="theunderline" class="rulercheck"></span>underline</li>
+<li data-val="lunderline" tabindex="-1">
+<span id="thelunderline" class="rulercheck"></span>L-underline</li>
+<li data-val="greybar" tabindex="-1">
+<span id="thegreybar" class="rulercheck"></span>grey bar</li>
+<li data-val="lightbox" tabindex="-1">
+<span id="thelightbox" class="rulercheck"></span>light box</li>
+<li data-val="sunrise" tabindex="-1">
+<span id="thesunrise" class="rulercheck"></span>sunrise</li>
+<li data-val="sunriseunderline" tabindex="-1">
+<span id="thesunriseunderline" class="rulercheck"></span>sunrise underline</li>
+<li class="moveQ">Motion by:</li>
+<li data-val="mouse" tabindex="-1">
+<span id="themouse" class="motioncheck">✔️</span>follow the mouse</li>
+<li data-val="arrow" tabindex="-1">
+<span id="thearrow" class="motioncheck"></span>up/down arrows - not yet</li>
+<li data-val="eye" tabindex="-1">
+<span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
+</ol>
+</li>
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="subsection-8.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="regression_section.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="subsection-10.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
+<input id="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" type="button" onclick="doSearch()">🔍</button>
+</div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(      \DeclareMathOperator{\AVE}{AVE}
       \DeclareMathOperator{\SD}{SD}
       \DeclareMathOperator{\rms}{rms}
-      \DeclareMathOperator{\REGR}{REGR}            
+      \DeclareMathOperator{\REGR}{REGR}
+      \DeclareMathOperator{\AND}{AND}
+      \DeclareMathOperator{\OR}{OR}
+      \DeclareMathOperator{\OPPOSITE}{OPPOSITE}                        
       \DeclareMathOperator{\Inn}{Inn}
       \DeclareMathOperator{\lcm}{lcm}            
 \DeclareMathOperator{\Aut}{Aut}      
@@ -91,40 +223,115 @@
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
-\)</div>
-<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
-<a id="logo-link" href=""></a><div class="title-container">
-<h1 class="heading"><a href="elemstats.html"><span class="title">Elementary Statistics Supplementary Notes</span></a></h1>
-<p class="byline">David W. Lyons</p>
-</div>
-</div></div>
-<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
-<div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
-<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="subsection-8.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="regression_section.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="subsection-10.html" title="Next">Next</a></span>
-</div>
-</div>
-<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="subsection-8.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="regression_section.html" title="Up">Up</a><a class="next-button button toolbar-item" href="subsection-10.html" title="Next">Next</a>
-</div>
-</div></nav></header><div class="page">
-<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
-<nav id="toc"><ul></ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
-</div></div>
-<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="subsection" id="subsection-9"><h2 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">2.5</span> <span class="title">Facts about the correlation coefficient \(r\)</span>
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar"><nav id="ptx-toc" class="depthNaN"><ul class="structural">
+<li>
+<div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="preface-1.html" class="internal"><span class="title">Preface</span></a></div></li></ul>
+</li>
+<li>
+<div class="toc-item"><a href="descriptive_stats_section.html" class="internal"><span class="codenumber">1</span> <span class="title">Descriptive Statistics</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="subsection-1.html" class="internal"><span class="codenumber">1.1</span> <span class="title">The Histogram</span></a></div></li>
+<li><div class="toc-item"><a href="subsection-2.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Average, Median, Percentiles</span></a></div></li>
+<li><div class="toc-item"><a href="subsection-3.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Operations on Lists</span></a></div></li>
+<li><div class="toc-item"><a href="subsection-4.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Standard Deviation and Standard Units</span></a></div></li>
+<li><div class="toc-item"><a href="subsection-5.html" class="internal"><span class="codenumber">1.5</span> <span class="title">The Standard Normal Distribution</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="regression_section.html" class="internal"><span class="codenumber">2</span> <span class="title">Regression</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="subsection-6.html" class="internal"><span class="codenumber">2.1</span> <span class="title">RMS Error of Fit</span></a></div></li>
+<li><div class="toc-item"><a href="subsection-7.html" class="internal"><span class="codenumber">2.2</span> <span class="title">The Regression Line</span></a></div></li>
+<li><div class="toc-item"><a href="subsection-8.html" class="internal"><span class="codenumber">2.3</span> <span class="title">The Scatter Diagram</span></a></div></li>
+<li class="active"><div class="toc-item"><a href="subsection-9.html" class="internal"><span class="codenumber">2.4</span> <span class="title">More on Prediction and Error</span></a></div></li>
+<li><div class="toc-item"><a href="subsection-10.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Facts about the correlation coefficient <span class="process-math">\(r\)</span></span></a></div></li>
+<li><div class="toc-item"><a href="subsection-11.html" class="internal"><span class="codenumber">2.6</span> <span class="title">The Regression Effect and the Regression Fallacy</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="probability_section.html" class="internal"><span class="codenumber">3</span> <span class="title">Probability</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="subsection-12.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Box Models</span></a></div></li>
+<li><div class="toc-item"><a href="subsection-13.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Complement, Intersection, Union of Events</span></a></div></li>
+<li><div class="toc-item"><a href="subsection-14.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Conditional Probability</span></a></div></li>
+<li><div class="toc-item"><a href="subsection-15.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Independent and Dependent Events</span></a></div></li>
+<li><div class="toc-item"><a href="subsection-16.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Probability Rules</span></a></div></li>
+<li><div class="toc-item"><a href="subsection-17.html" class="internal"><span class="codenumber">3.6</span> <span class="title">The Binomial Formula</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="sampling_section.html" class="internal"><span class="codenumber">4</span> <span class="title">Sampling Theory</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="subsection-18.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Sampling Vocabulary and Formulas</span></a></div></li>
+<li><div class="toc-item"><a href="subsection-19.html" class="internal"><span class="codenumber">4.2</span> <span class="title">The Law of Averages</span></a></div></li>
+<li><div class="toc-item"><a href="subsection-20.html" class="internal"><span class="codenumber">4.3</span> <span class="title">The Central Limit Theorem</span></a></div></li>
+<li><div class="toc-item"><a href="subsection-21.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Basic prediction problem</span></a></div></li>
+<li><div class="toc-item"><a href="subsection-22.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Basic Inference Problem</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-1.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Sum of Draws Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="backmatter-1.html" class="internal"><span class="title">Back Matter</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="colophon-1.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li><div class="toc-item"><a href="biography-1.html" class="internal"><span class="title">About the author</span></a></div></li>
+<li><div class="toc-item"><a href="index-1.html" class="internal"><span class="title">Index</span></a></div></li>
+<li><div class="toc-item"><a href="references-1.html" class="internal"><span class="title">Notation</span></a></div></li>
+<li><div class="toc-item"><a href="references-2.html" class="internal"><span class="title">References</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="subsection" id="subsection-9"><h2 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.4</span> <span class="title">More on Prediction and Error</span>
 </h2>
-<ul id="p-16" class="disc">
-<li id="li-1">The value of \(r\) is in the range \(-1\) to \(1\text{.}\) The value of \(|r|\) is 1 precisely when all the points \((X,Y)\) on the scatter diagram lie on a straight line.</li>
-<li id="li-2">The correlation coefficient is unitless. The value of \(r\) does not change if you rescale \(X\) or \(Y\text{.}\)</li>
-<li id="li-3">It is tempting to summarize data using averages, but this has a misleading effect on correlation. Suppose that the points in a scatter diagram are subdivided into subsets, and that each subset is replaced by a single point<div class="displaymath">
+<div class="para logical" id="p-14">
+<div class="para">Let's write <span class="process-math">\(\REGR(A)\)</span> for the <span class="process-math">\(y\)</span>-coordinate of a point on the regression line for the <span class="process-math">\(x\)</span>-value <span class="process-math">\(A\text{.}\)</span> Here's a formula<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-3" id="fn-3"><sup>  </sup></a>.</div>
+<div class="displaymath process-math">
 \begin{equation*}
-\text{(average of the } X \text{ values in the subset, average
-of the } Y \text{ values in the subset)}.
+\REGR(A) = r \cdot \left(\frac{A-\AVE(X)}{\SD(X)}\right) \cdot \SD(Y) + \AVE(Y)
 \end{equation*}
-</div>The correlation for this smaller data set of average points is usually higher (in absolute value) than the correlation for the original scatter diagram. This phenomenon is called <dfn class="terminology">ecological correlation</dfn>.</li>
-<li id="li-4">A strong correlation provides no evidence of a causal link between the variables \(X\) and \(Y\text{.}\)</li>
-</ul></section></div></main>
+</div>
+<div class="para">A <dfn class="terminology">residual</dfn> is another name for a vertical error <span class="process-math">\(Y-\REGR(X)\)</span> for a data point <span class="process-math">\((X,Y)\text{.}\)</span> The graph of residuals is the set of points <span class="process-math">\((X,Y-\REGR(X))\text{.}\)</span> You can see linear association and homoscedasticity (or the lack of either one) very plainly in the graph of residuals: data lists <span class="process-math">\(X,Y\)</span> have a linear association if the graph of residuals is roughly symmetric across the <span class="process-math">\(X\)</span>-axis; and the <span class="process-math">\(X,Y\)</span> data are homoscedastic if the graph of residuals has fairly even densities and vertical ranges in thin vertical strips across the horizontal range of <span class="process-math">\(X\text{.}\)</span> </div>
+</div>
+<div class="para" id="p-15">
+<a href="" class="xref" data-knowl="./knowl/linescomparetable.html" title="Table 2.4.NaN: Comparison of Lines and Prediction Errors">Table 2.4.NaN</a> shows a comparison of three lines and their rms errors. All three lines pass through the point of averages. The SD line is defined to have positive slope if <span class="process-math">\(r\gt 0\)</span> and negative slope if <span class="process-math">\(r\lt 0\text{.}\)</span> <figure class="table table-like" id="linescomparetable"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.4.NaN<span class="period">.</span></span><span class="space"> </span>Comparison of Lines and Prediction Errors</figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b3 r1 l1 t1 lines">line</td>
+<td class="c m b3 r1 l0 t1 lines">slope</td>
+<td class="c m b3 r1 l0 t1 lines">rms error</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">regression line</td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(r\cdot \SD(Y)/\SD(X)\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\SD(Y) \sqrt{1-r^2}\)</span></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">SD line</td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\pm \SD(Y)/\SD(X)\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\SD(Y)  \sqrt{2(1-|r|)}\)</span></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">average line</td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\SD(Y)\)</span></td>
+</tr>
+</table></div></figure>
+</div></section><div class="hidden-content tex2jax_ignore" id="hk-fn-3"><div class="fn">The notation <span class="process-math">\(\REGR\)</span> is not a standard notation. We use it here merely for convenience.</div></div>
+</div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="subsection-8.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="subsection-10.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
+</div></main>
+</div>
+<div class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org"><div class="name">Authored in PreTeXt</div>
+<div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259 "></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0  472  9732 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496 A 4241 4241  0  0  1  4724  3590 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259 A 4507 4507  0  0  1  4724  9448 "></path><polyline points="5385,4299 4062,8125 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8598,3496 8598,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="850,3496 850,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="4960,9685 4488,9685 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="3070,4582 1889,6141 3070,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="6418,4582 7600,6141 6418,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8976,3590 8976,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732 "></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy"><div class="name">Powered by Runestone</div>
+<img class="logo" title="Powered by Runestone" src="https://runestone.academy/runestone/static/rectangle_badge.png" alt="Powered by Runestone"></a><a class="mathjax-logo" href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a>
 </div>
 </body>
 </html>

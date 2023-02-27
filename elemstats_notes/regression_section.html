@@ -11,7 +11,9 @@
 <title>Regression</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta property="og:type" content="article">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Elementary Statistics Supplementary Notes">
+<meta property="book:author" content="David W. Lyons">
 <script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
   tex: {
@@ -19,18 +21,18 @@ window.MathJax = {
     tags: "none",
     tagSide: "right",
     tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
   },
   options: {
     ignoreHtmlClass: "tex2jax_ignore|ignore-math",
     processHtmlClass: "process-math",
   },
   chtml: {
-    scale: 0.88,
+    scale: 0.98,
     mtextInheritFont: true
   },
   loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
   startup: {
@@ -40,22 +42,144 @@ window.MathJax = {
       rsMathReady();
       }
     )}
-},
+  },
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
-</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/colors_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://unpkg.com/lunr/lunr.js"></script><script src="lunr-pretext-search-index.js"></script><script src="https://pretextbook.org/js/0.2/pretext_search.js"></script><link href="https://pretextbook.org/css/0.6/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.2</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.2/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.2/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.2/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link href="https://pretextbook.org/css/0.6/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/shell_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/setcolors.css" rel="stylesheet" type="text/css">
 </head>
-<body class="pretext-article ignore-math has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(      \DeclareMathOperator{\AVE}{AVE}
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="elemstats.html"><span class="title">Elementary Statistics Supplementary Notes</span></a></h1>
+<p class="byline">David W. Lyons</p>
+</div>
+<div id="searchresultsplaceholder" style="display: none">
+<button id="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms"></span>
+</h2>
+<div id="searchempty"><span>No results.</span></div>
+<ol id="searchresults"></ol>
+</div>
+</div></header><nav id="ptx-navbar" class="navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><a class="index-button button" href="index-1.html" title="Index"><span class="name">Index</span></a><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="theavatarbutton" class="name">You!</span><div id="preferences_menu_holder" class="hidden"><ol id="preferences_menu" style="font-family: 'Roboto Serif', serif;">
+<li data-env="avatar" tabindex="-1">Choose avatar<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden avatar">
+<li data-val="You!" tabindex="-1">
+<span id="theYou!" class="avatarcheck">✔️</span>You!</li>
+<li data-val="😺" tabindex="-1">
+<span id="the😺" class="avatarcheck"></span>😺</li>
+<li data-val="👤" tabindex="-1">
+<span id="the👤" class="avatarcheck"></span>👤</li>
+<li data-val="👽" tabindex="-1">
+<span id="the👽" class="avatarcheck"></span>👽</li>
+<li data-val="🐶" tabindex="-1">
+<span id="the🐶" class="avatarcheck"></span>🐶</li>
+<li data-val="🐼" tabindex="-1">
+<span id="the🐼" class="avatarcheck"></span>🐼</li>
+<li data-val="🌈" tabindex="-1">
+<span id="the🌈" class="avatarcheck"></span>🌈</li>
+</ol>
+</li>
+<li data-env="fontfamily" tabindex="-1">Font family<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fontfamily">
+<li data-val="face" data-change="OS" tabindex="-1" style="font-family: 'Open Sans'">
+<span id="theOS" class="ffcheck">✔️</span><span class="name">Open Sans</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+<li data-val="face" data-change="RS" tabindex="-1" style="font-family: 'Roboto Serif'">
+<span id="theRS" class="ffcheck"></span><span class="name">Roboto Serif</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+</ol>
+</li>
+<li data-env="font" tabindex="-1">Adjust font<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fonts">
+<li>Size</li>
+<li><span id="thesize">12</span></li>
+<li data-val="size" data-change="-1" tabindex="-1" style="font-size: 80%">Smaller</li>
+<li data-val="size" data-change="1" tabindex="-1" style="font-size: 110%">Larger</li>
+<li>Width</li>
+<li><span id="thewdth">100</span></li>
+<li data-val="wdth" data-change="-5" tabindex="-1" style="font-variation-settings: 'wdth' 60">narrower</li>
+<li data-val="wdth" data-change="5" tabindex="-1" style="font-variation-settings: 'wdth' 150">wider</li>
+<li>Weight</li>
+<li><span id="thewght">400</span></li>
+<li data-val="wght" data-change="-50" tabindex="-1" style="font-weight: 200">thinner</li>
+<li data-val="wght" data-change="50" tabindex="-1" style="font-weight: 700">heavier</li>
+<li>Letter spacing</li>
+<li>
+<span id="thelspace">0</span><span class="byunits">/200</span>
+</li>
+<li data-val="lspace" data-change="-1" tabindex="-1">closer</li>
+<li data-val="lspace" data-change="1" tabindex="-1">f a r t h e r</li>
+<li>Word spacing</li>
+<li>
+<span id="thewspace">0</span><span class="byunits">/50</span>
+</li>
+<li data-val="wspace" data-change="-1" tabindex="-1">smaller gap </li>
+<li data-val="wspace" data-change="1" tabindex="-1">larger gap</li>
+<li>Line Spacing</li>
+<li>
+<span id="theheight">135</span><span class="byunits">/100</span>
+</li>
+<li data-val="height" data-change="-5" tabindex="-1" style="line-height: 1">closer<br>together</li>
+<li data-val="height" data-change="5" tabindex="-1" style="line-height: 1.75">further<br>apart</li>
+</ol>
+</li>
+<li data-env="atmosphere" tabindex="-1">Light/dark mode<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden atmosphere">
+<li data-val="default" tabindex="-1">
+<span id="thedefault" class="atmospherecheck">✔️</span>default</li>
+<li data-val="pastel" tabindex="-1">
+<span id="thepastel" class="atmospherecheck"></span>pastel</li>
+<li data-val="darktwilight" tabindex="-1">
+<span id="thedarktwilight" class="atmospherecheck"></span>twilight</li>
+<li data-val="dark" tabindex="-1">
+<span id="thedark" class="atmospherecheck"></span>dark</li>
+<li data-val="darkmidnight" tabindex="-1">
+<span id="thedarkmidnight" class="atmospherecheck"></span>midnight</li>
+</ol>
+</li>
+<li data-env="ruler" tabindex="-1">Reading ruler<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden ruler">
+<li data-val="none" tabindex="-1">
+<span id="thenone" class="rulercheck">✔️</span>none</li>
+<li data-val="underline" tabindex="-1">
+<span id="theunderline" class="rulercheck"></span>underline</li>
+<li data-val="lunderline" tabindex="-1">
+<span id="thelunderline" class="rulercheck"></span>L-underline</li>
+<li data-val="greybar" tabindex="-1">
+<span id="thegreybar" class="rulercheck"></span>grey bar</li>
+<li data-val="lightbox" tabindex="-1">
+<span id="thelightbox" class="rulercheck"></span>light box</li>
+<li data-val="sunrise" tabindex="-1">
+<span id="thesunrise" class="rulercheck"></span>sunrise</li>
+<li data-val="sunriseunderline" tabindex="-1">
+<span id="thesunriseunderline" class="rulercheck"></span>sunrise underline</li>
+<li class="moveQ">Motion by:</li>
+<li data-val="mouse" tabindex="-1">
+<span id="themouse" class="motioncheck">✔️</span>follow the mouse</li>
+<li data-val="arrow" tabindex="-1">
+<span id="thearrow" class="motioncheck"></span>up/down arrows - not yet</li>
+<li data-val="eye" tabindex="-1">
+<span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
+</ol>
+</li>
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="descriptive_stats_section.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="summary_notes_chapter.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="probability_section.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
+<input id="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" type="button" onclick="doSearch()">🔍</button>
+</div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(      \DeclareMathOperator{\AVE}{AVE}
       \DeclareMathOperator{\SD}{SD}
       \DeclareMathOperator{\rms}{rms}
       \DeclareMathOperator{\REGR}{REGR}
@@ -102,110 +226,156 @@ window.MathJax = {
 \definecolor{fillinmathshade}{gray}{0.9}
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
-<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
-<a id="logo-link" href=""></a><div class="title-container">
-<h1 class="heading"><a href="elemstats.html"><span class="title">Elementary Statistics Supplementary Notes</span></a></h1>
-<p class="byline">David W. Lyons</p>
-</div>
-</div></div>
-<nav id="primary-navbar" class="navbar"><div class="container">
-<div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
-<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="descriptive_stats_section.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="elemstats.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="probability_section.html" title="Next">Next</a></span>
-</div>
-</div>
-<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="descriptive_stats_section.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="elemstats.html" title="Up">Up</a><a class="next-button button toolbar-item" href="probability_section.html" title="Next">Next</a>
-</div>
-</div></nav></header><div class="page">
-<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
-<nav id="toc"><ul>
-<li class="link frontmatter">
-<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul><li><a href="preface-1.html" data-scroll="preface-1" class="internal">Preface</a></li></ul>
+<div class="ptx-page">
+<div id="ptx-sidebar"><nav id="ptx-toc" class="depth2"><ul class="structural">
+<li>
+<div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="preface-1.html" class="internal"><span class="title">Preface</span></a></div></li></ul>
 </li>
-<li class="link">
-<a href="descriptive_stats_section.html" data-scroll="descriptive_stats_section" class="internal"><span class="codenumber">1</span> <span class="title">Descriptive Statistics</span></a><ul>
-<li><a href="descriptive_stats_section.html#subsection-1" data-scroll="subsection-1" class="internal">The Histogram</a></li>
-<li><a href="descriptive_stats_section.html#subsection-2" data-scroll="subsection-2" class="internal">Average, Median, Percentiles</a></li>
-<li><a href="descriptive_stats_section.html#subsection-3" data-scroll="subsection-3" class="internal">Operations on Lists</a></li>
-<li><a href="descriptive_stats_section.html#subsection-4" data-scroll="subsection-4" class="internal">Standard Deviation and Standard Units</a></li>
-<li><a href="descriptive_stats_section.html#subsection-5" data-scroll="subsection-5" class="internal">The Standard Normal Distribution</a></li>
+<li>
+<div class="toc-item"><a href="essential_clarifications_chapter.html" class="internal"><span class="codenumber">1</span> <span class="title">Essential Clarifications</span></a></div>
+<ul class="structural"><li>
+<div class="toc-item"><a href="essential_clarifications_section.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Commentary</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="essential_clarifications_section.html#subsection-1" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Rounding in calculations</span></a></div></li>
+<li><div class="toc-item"><a href="essential_clarifications_section.html#subsection-2" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Percentile (pp.90—91)</span></a></div></li>
+<li><div class="toc-item"><a href="essential_clarifications_section.html#subsection-3" class="internal"><span class="codenumber">1.1.3</span> <span class="title">The term "football-shaped" (p.120)</span></a></div></li>
+<li><div class="toc-item"><a href="essential_clarifications_section.html#subsection-4" class="internal"><span class="codenumber">1.1.4</span> <span class="title">The terms outcome, event, and "thing"</span></a></div></li>
+<li><div class="toc-item"><a href="essential_clarifications_section.html#subsection-5" class="internal"><span class="codenumber">1.1.5</span> <span class="title">Probability symbols and more terms</span></a></div></li>
+</ul>
+</li></ul>
+</li>
+<li>
+<div class="toc-item"><a href="basic_skills_chapter.html" class="internal"><span class="codenumber">2</span> <span class="title">Basic Skills and Practice</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="basic_algebra_section.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Algebra</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="basic_algebra_section.html#subsection-6" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Solving equations</span></a></div></li>
+<li><div class="toc-item"><a href="basic_algebra_section.html#subsection-7" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Displacement, Deviation</span></a></div></li>
+<li><div class="toc-item"><a href="basic_algebra_section.html#lines_subsection" class="internal"><span class="codenumber">2.1.3</span> <span class="title">Basics for lines</span></a></div></li>
+<li><div class="toc-item"><a href="basic_algebra_section.html#exercises-1" class="internal"><span class="codenumber">2.1.4</span> <span class="title">Algebra practice problems</span></a></div></li>
 </ul>
 </li>
-<li class="link active">
-<a href="regression_section.html" data-scroll="regression_section" class="internal"><span class="codenumber">2</span> <span class="title">Regression</span></a><ul>
-<li><a href="regression_section.html#subsection-6" data-scroll="subsection-6" class="internal">RMS Error of Fit</a></li>
-<li><a href="regression_section.html#subsection-7" data-scroll="subsection-7" class="internal">The Regression Line</a></li>
-<li><a href="regression_section.html#subsection-8" data-scroll="subsection-8" class="internal">The Scatter Diagram</a></li>
-<li><a href="regression_section.html#subsection-9" data-scroll="subsection-9" class="internal">More on Prediction and Error</a></li>
-<li><a href="regression_section.html#subsection-10" data-scroll="subsection-10" class="internal">Facts about the correlation coefficient <span class="process-math">\(r\)</span></a></li>
-<li><a href="regression_section.html#subsection-11" data-scroll="subsection-11" class="internal">The Regression Effect and the Regression Fallacy</a></li>
+<li>
+<div class="toc-item"><a href="basic_text_problems_section.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Basic Problem Types</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="basic_text_problems_section.html#subsection-9" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Basic histogram problems</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="basic_text_problems_section.html#exercises-2" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Histogram  practice problems</span></a></div></li></ul>
+</li>
+<li>
+<div class="toc-item"><a href="basic_text_problems_section.html#subsection-10" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Basic normal curve problems</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="basic_text_problems_section.html#exercises-3" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Normal curve practice problems</span></a></div></li></ul>
+</li>
+<li>
+<div class="toc-item"><a href="basic_text_problems_section.html#subsection-11" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Basic regression problems</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="basic_text_problems_section.html#exercises-4" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Regression practice problems</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="basic_text_problems_section.html#exercises-5" class="internal"><span class="codenumber">2.2.4</span> <span class="title">Sum of Draws Practice Problems</span></a></div></li>
 </ul>
 </li>
-<li class="link">
-<a href="probability_section.html" data-scroll="probability_section" class="internal"><span class="codenumber">3</span> <span class="title">Probability</span></a><ul>
-<li><a href="probability_section.html#subsection-12" data-scroll="subsection-12" class="internal">Box Models</a></li>
-<li><a href="probability_section.html#subsection-13" data-scroll="subsection-13" class="internal">Complement, Intersection, Union of Events</a></li>
-<li><a href="probability_section.html#subsection-14" data-scroll="subsection-14" class="internal">Conditional Probability</a></li>
-<li><a href="probability_section.html#subsection-15" data-scroll="subsection-15" class="internal">Independent and Dependent Events</a></li>
-<li><a href="probability_section.html#subsection-16" data-scroll="subsection-16" class="internal">Probability Rules</a></li>
-<li><a href="probability_section.html#subsection-17" data-scroll="subsection-17" class="internal">The Binomial Formula</a></li>
 </ul>
 </li>
-<li class="link">
-<a href="sampling_section.html" data-scroll="sampling_section" class="internal"><span class="codenumber">4</span> <span class="title">Sampling Theory</span></a><ul>
-<li><a href="sampling_section.html#subsection-18" data-scroll="subsection-18" class="internal">Sampling Vocabulary and Formulas</a></li>
-<li><a href="sampling_section.html#subsection-19" data-scroll="subsection-19" class="internal">The Law of Averages</a></li>
-<li><a href="sampling_section.html#subsection-20" data-scroll="subsection-20" class="internal">The Central Limit Theorem</a></li>
-<li><a href="sampling_section.html#subsection-21" data-scroll="subsection-21" class="internal">Basic prediction problem</a></li>
-<li><a href="sampling_section.html#subsection-22" data-scroll="subsection-22" class="internal">Basic Inference Problem</a></li>
-<li><a href="sampling_section.html#exercises-1" data-scroll="exercises-1" class="internal">Sum of Draws Practice Problems</a></li>
+<li>
+<div class="toc-item"><a href="summary_notes_chapter.html" class="internal"><span class="codenumber">3</span> <span class="title">Summary Notes</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="descriptive_stats_section.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Descriptive Statistics</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="descriptive_stats_section.html#subsection-12" class="internal"><span class="codenumber">3.1.1</span> <span class="title">The Histogram</span></a></div></li>
+<li><div class="toc-item"><a href="descriptive_stats_section.html#subsection-13" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Average, Median, Percentiles</span></a></div></li>
+<li><div class="toc-item"><a href="descriptive_stats_section.html#subsection-14" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Operations on Lists</span></a></div></li>
+<li><div class="toc-item"><a href="descriptive_stats_section.html#subsection-15" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Standard Deviation and Standard Units</span></a></div></li>
+<li><div class="toc-item"><a href="descriptive_stats_section.html#subsection-16" class="internal"><span class="codenumber">3.1.5</span> <span class="title">The Standard Normal Distribution</span></a></div></li>
 </ul>
 </li>
-<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1" class="internal"><span class="title">Back Matter</span></a></li>
-<li class="link"><a href="colophon-1.html" data-scroll="colophon-1" class="internal"><span class="title">Colophon</span></a></li>
-<li class="link"><a href="biography-1.html" data-scroll="biography-1" class="internal"><span class="title">About the author</span></a></li>
-<li class="link"><a href="index-1.html" data-scroll="index-1" class="internal"><span class="title">Index</span></a></li>
-<li class="link"><a href="references-1.html" data-scroll="references-1" class="internal"><span class="title">Notation</span></a></li>
-<li class="link"><a href="references-2.html" data-scroll="references-2" class="internal"><span class="title">References</span></a></li>
-</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
-</div></div>
-<main class="main"><div id="content" class="pretext-content">
+<li class="active">
+<div class="toc-item"><a href="regression_section.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Regression</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="regression_section.html#subsection-17" class="internal"><span class="codenumber">3.2.1</span> <span class="title">RMS Error of Fit</span></a></div></li>
+<li><div class="toc-item"><a href="regression_section.html#subsection-18" class="internal"><span class="codenumber">3.2.2</span> <span class="title">The Regression Line</span></a></div></li>
+<li><div class="toc-item"><a href="regression_section.html#subsection-19" class="internal"><span class="codenumber">3.2.3</span> <span class="title">The Scatter Diagram</span></a></div></li>
+<li><div class="toc-item"><a href="regression_section.html#subsection-20" class="internal"><span class="codenumber">3.2.4</span> <span class="title">More on Prediction and Error</span></a></div></li>
+<li><div class="toc-item"><a href="regression_section.html#subsection-21" class="internal"><span class="codenumber">3.2.5</span> <span class="title">Facts about the correlation coefficient <span class="process-math">\(r\)</span></span></a></div></li>
+<li><div class="toc-item"><a href="regression_section.html#subsection-22" class="internal"><span class="codenumber">3.2.6</span> <span class="title">The Regression Effect and the Regression Fallacy</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="probability_section.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Probability</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="probability_section.html#subsection-23" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Box Models</span></a></div></li>
+<li><div class="toc-item"><a href="probability_section.html#subsection-24" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Complement, Intersection, Union of Events</span></a></div></li>
+<li><div class="toc-item"><a href="probability_section.html#subsection-25" class="internal"><span class="codenumber">3.3.3</span> <span class="title">Conditional Probability</span></a></div></li>
+<li><div class="toc-item"><a href="probability_section.html#subsection-26" class="internal"><span class="codenumber">3.3.4</span> <span class="title">Independent and Dependent Events</span></a></div></li>
+<li><div class="toc-item"><a href="probability_section.html#subsection-27" class="internal"><span class="codenumber">3.3.5</span> <span class="title">Probability Rules</span></a></div></li>
+<li><div class="toc-item"><a href="probability_section.html#subsection-28" class="internal"><span class="codenumber">3.3.6</span> <span class="title">The Binomial Formula</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="sampling_section.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Sampling Theory</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sampling_section.html#subsection-29" class="internal"><span class="codenumber">3.4.1</span> <span class="title">Sampling Vocabulary and Formulas</span></a></div></li>
+<li><div class="toc-item"><a href="sampling_section.html#subsection-30" class="internal"><span class="codenumber">3.4.2</span> <span class="title">The Law of Averages</span></a></div></li>
+<li><div class="toc-item"><a href="sampling_section.html#subsection-31" class="internal"><span class="codenumber">3.4.3</span> <span class="title">The Central Limit Theorem</span></a></div></li>
+<li><div class="toc-item"><a href="sampling_section.html#subsection-32" class="internal"><span class="codenumber">3.4.4</span> <span class="title">Basic prediction problem</span></a></div></li>
+<li><div class="toc-item"><a href="sampling_section.html#subsection-33" class="internal"><span class="codenumber">3.4.5</span> <span class="title">Basic Inference Problem</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="backmatter-1.html" class="internal"><span class="title">Back Matter</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="colophon-1.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li><div class="toc-item"><a href="biography-1.html" class="internal"><span class="title">About the author</span></a></div></li>
+<li><div class="toc-item"><a href="index-1.html" class="internal"><span class="title">Index</span></a></div></li>
+<li><div class="toc-item"><a href="references-1.html" class="internal"><span class="title">Notation</span></a></div></li>
+<li><div class="toc-item"><a href="references-2.html" class="internal"><span class="title">References</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
 <section class="section" id="regression_section"><h2 class="heading hide-type">
-<span class="type">Section</span> <span class="codenumber">2</span> <span class="title">Regression</span>
+<span class="type">Section</span> <span class="codenumber">3.2</span> <span class="title">Regression</span>
 </h2>
-<section class="introduction" id="introduction-2">This section is coordinated with Freedman, <em class="emphasis">Statistics</em> <a href="" class="xref" data-knowl="./knowl/freedman_statistics.html" title="Bibliographic Entry 1: Statistics, 4th edition">[1]</a>, Chapters 8--12.</section><section class="subsection" id="subsection-6"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">2.1</span> <span class="title">RMS Error of Fit</span>
+<section class="introduction" id="introduction-9">This section is coordinated with Freedman, <em class="emphasis">Statistics</em> <a href="" class="xref" data-knowl="./knowl/freedman_statistics.html" title="Bibliographic Entry 1: Statistics, 4th edition">[1]</a>, Chapters 8—12.</section><section class="subsection" id="subsection-17"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.2.1</span> <span class="title">RMS Error of Fit</span>
 </h3>
-<p id="p-10">Given two lists of numbers <span class="process-math">\(X,Y\)</span> with the same number of entries, and given a linear function <span class="process-math">\(y=L(x)=ax+b\)</span> (<span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> are constants), the <dfn class="terminology">rms error for the line <span class="process-math">\(L\)</span></dfn> is the rms of the list <span class="process-math">\(Y-L(X)\text{.}\)</span> (For example, if <span class="process-math">\(A\)</span> is an entry in the list <span class="process-math">\(X\)</span> and <span class="process-math">\(B\)</span> is the corresponding entry in the list <span class="process-math">\(Y\text{,}\)</span> then the corresponding entry in the list <span class="process-math">\(Y-L(X)\)</span> is <span class="process-math">\(B-(aA+b)\text{.}\)</span>) We interpret the rms error for a line as a measure of how well <span class="process-math">\(L\)</span> performs as a tool for predicting the <span class="process-math">\(Y\)</span> value that corresponds to a given <span class="process-math">\(X\)</span> value. Given an <span class="process-math">\(X\)</span> value <span class="process-math">\(A\text{,}\)</span> the value <span class="process-math">\(B=L(A)\)</span> has a "prediction error" equal to <span class="process-math">\(B-L(A)\text{.}\)</span> The line <span class="process-math">\(L\)</span> is a good prediction tool if the rms error for <span class="process-math">\(L\)</span> is low, and the line <span class="process-math">\(L\)</span> is a bad prediction tool if the rms error for <span class="process-math">\(L\)</span> is high. We interpret the rms error for a line <span class="process-math">\(L\)</span> as the size of the typical error that we would observe if we used <span class="process-math">\(L\)</span> to predict an unknown <span class="process-math">\(Y\)</span> value for a given <span class="process-math">\(X\)</span> value.</p></section><section class="subsection" id="subsection-7"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">2.2</span> <span class="title">The Regression Line</span>
+<div class="para" id="p-65">Given two lists of numbers <span class="process-math">\(X,Y\)</span> with the same number of entries, and given a linear function <span class="process-math">\(y=L(x)=ax+b\)</span> (<span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> are constants), the <dfn class="terminology">rms error for the line <span class="process-math">\(L\)</span></dfn> is the rms of the list <span class="process-math">\(Y-L(X)\text{.}\)</span> (For example, if <span class="process-math">\(A\)</span> is an entry in the list <span class="process-math">\(X\)</span> and <span class="process-math">\(B\)</span> is the corresponding entry in the list <span class="process-math">\(Y\text{,}\)</span> then the corresponding entry in the list <span class="process-math">\(Y-L(X)\)</span> is <span class="process-math">\(B-(aA+b)\text{.}\)</span>) We interpret the rms error for a line as a measure of how well <span class="process-math">\(L\)</span> performs as a tool for predicting the <span class="process-math">\(Y\)</span> value that corresponds to a given <span class="process-math">\(X\)</span> value. Given an <span class="process-math">\(X\)</span> value <span class="process-math">\(A\text{,}\)</span> the value <span class="process-math">\(B=L(A)\)</span> has a "prediction error" equal to <span class="process-math">\(B-L(A)\text{.}\)</span> The line <span class="process-math">\(L\)</span> is a good prediction tool if the rms error for <span class="process-math">\(L\)</span> is low, and the line <span class="process-math">\(L\)</span> is a bad prediction tool if the rms error for <span class="process-math">\(L\)</span> is high. We interpret the rms error for a line <span class="process-math">\(L\)</span> as the size of the typical error that we would observe if we used <span class="process-math">\(L\)</span> to predict an unknown <span class="process-math">\(Y\)</span> value for a given <span class="process-math">\(X\)</span> value.</div></section><section class="subsection" id="subsection-18"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.2.2</span> <span class="title">The Regression Line</span>
 </h3>
-<p id="p-11">Among all possible lines, there is one single line with the least possible rms error, called the <dfn class="terminology">regression line for <span class="process-math">\(Y\)</span> on <span class="process-math">\(X\)</span></dfn>. This means that the regression line is the best possible line to use as a prediction tool to guess an unknown corresponding <span class="process-math">\(Y\)</span> value for a given <span class="process-math">\(X\)</span> value. The regression line passes through the point <span class="process-math">\((\AVE(X),\AVE(Y))\text{,}\)</span> called the <dfn class="terminology">point of averages</dfn> for the lists <span class="process-math">\(X,Y\text{,}\)</span> and has slope equal to <span class="process-math">\(r\cdot \SD(Y)/\SD(X)\text{,}\)</span> where <span class="process-math">\(r\)</span> is the number</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
+<div class="para logical" id="p-66">
+<div class="para">Among all possible lines, there is one single line with the least possible rms error, called the <dfn class="terminology">regression line for <span class="process-math">\(Y\)</span> on <span class="process-math">\(X\)</span></dfn>. This means that the regression line is the best possible line to use as a prediction tool to guess an unknown corresponding <span class="process-math">\(Y\)</span> value for a given <span class="process-math">\(X\)</span> value. The regression line passes through the point <span class="process-math">\((\AVE(X),\AVE(Y))\text{,}\)</span> called the <dfn class="terminology">point of averages</dfn> for the lists <span class="process-math">\(X,Y\text{,}\)</span> and has slope equal to <span class="process-math">\(r\cdot \SD(Y)/\SD(X)\text{,}\)</span> where <span class="process-math">\(r\)</span> is the number</div>
+<div class="displaymath process-math">
 \begin{equation*}
 r = \AVE\left(\left(\frac{X-\AVE(X)}{\SD(X)}\right) \left(\frac{Y-\AVE(Y)}{\SD(Y)}\right)\right)
 \end{equation*}
 </div>
-<p class="continuation">called the <dfn class="terminology">correlation coefficient</dfn> for the pair of lists <span class="process-math">\(X,Y\text{.}\)</span> The rms error for the regression line is</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
+<div class="para">called the <dfn class="terminology">correlation coefficient</dfn> for the pair of lists <span class="process-math">\(X,Y\text{.}\)</span> The rms error for the regression line is</div>
+<div class="displaymath process-math">
 \begin{equation*}
 \text{rms error for regression line } = \SD(Y) \cdot \sqrt{1-r^2}.
 \end{equation*}
-</div></section><section class="subsection" id="subsection-8"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">2.3</span> <span class="title">The Scatter Diagram</span>
+</div>
+</div></section><section class="subsection" id="subsection-19"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.2.3</span> <span class="title">The Scatter Diagram</span>
 </h3>
-<p id="p-12">The list <span class="process-math">\((X,Y)\)</span> of pairs of points from the lists <span class="process-math">\(X,Y\)</span> is called the <dfn class="terminology">scatter diagram</dfn> of the lists <span class="process-math">\(X,Y\text{.}\)</span> The scatter diagram is said to show <dfn class="terminology">linear association</dfn> if the points are scattered roughly symmetrically about a linear axis. The size of the correlation coefficient determines the tightness or looseness of scattering of points <span class="process-math">\((X,Y)\)</span> about the regression line. For <span class="process-math">\(|r|\)</span> near 1, points in the scatter diagram are tightly clustered about the regression line. As <span class="process-math">\(|r|\)</span> approaches 0, the scatter diagram is more and more loosely clustered about the regression line. </p>
-<p id="p-13">A <dfn class="terminology">thin vertical strip</dfn> in the scatter diagram is a set of points <span class="process-math">\((X,Y)\)</span> whose <span class="process-math">\(X\)</span>-coordinate lies in a range from <span class="process-math">\(A\pm e\text{,}\)</span> where <span class="process-math">\(A\)</span> is a number within the range of entries of the list <span class="process-math">\(X\)</span> and <span class="process-math">\(e\)</span> is a small increment. If the various sets of <span class="process-math">\(Y\)</span> values in thin vertical strips (for various values of <span class="process-math">\(A\)</span>) has a similar SD as <span class="process-math">\(A\)</span> varies, the scatter diagram is said to be <dfn class="terminology">homoscedastic</dfn>. Otherwise, the scatter diagram is said to be <dfn class="terminology">heteroscedastic</dfn>. </p></section><section class="subsection" id="subsection-9"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">2.4</span> <span class="title">More on Prediction and Error</span>
+<div class="para" id="p-67">The list <span class="process-math">\((X,Y)\)</span> of pairs of points from the lists <span class="process-math">\(X,Y\)</span> is called the <dfn class="terminology">scatter diagram</dfn> of the lists <span class="process-math">\(X,Y\text{.}\)</span> The scatter diagram is said to show <dfn class="terminology">linear association</dfn> if the points are scattered roughly symmetrically about a linear axis. The size of the correlation coefficient determines the tightness or looseness of scattering of points <span class="process-math">\((X,Y)\)</span> about the regression line. For <span class="process-math">\(|r|\)</span> near 1, points in the scatter diagram are tightly clustered about the regression line. As <span class="process-math">\(|r|\)</span> approaches 0, the scatter diagram is more and more loosely clustered about the regression line. </div>
+<div class="para" id="p-68">A <dfn class="terminology">thin vertical strip</dfn> in the scatter diagram is a set of points <span class="process-math">\((X,Y)\)</span> whose <span class="process-math">\(X\)</span>-coordinate lies in a range from <span class="process-math">\(A\pm e\text{,}\)</span> where <span class="process-math">\(A\)</span> is a number within the range of entries of the list <span class="process-math">\(X\)</span> and <span class="process-math">\(e\)</span> is a small increment. If the various sets of <span class="process-math">\(Y\)</span> values in thin vertical strips (for various values of <span class="process-math">\(A\)</span>) has a similar SD as <span class="process-math">\(A\)</span> varies, the scatter diagram is said to be <dfn class="terminology">homoscedastic</dfn>. Otherwise, the scatter diagram is said to be <dfn class="terminology">heteroscedastic</dfn>. </div></section><section class="subsection" id="subsection-20"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.2.4</span> <span class="title">More on Prediction and Error</span>
 </h3>
-<p id="p-14">Let's write <span class="process-math">\(\REGR(A)\)</span> for the <span class="process-math">\(y\)</span>-coordinate of a point on the regression line for the <span class="process-math">\(x\)</span>-value <span class="process-math">\(A\text{.}\)</span> Here's a formula<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-3" id="fn-3"><sup> 1 </sup></a>.</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
+<div class="para logical" id="p-69">
+<div class="para">Let's write <span class="process-math">\(\REGR(A)\)</span> for the <span class="process-math">\(y\)</span>-coordinate of a point on the regression line for the <span class="process-math">\(x\)</span>-value <span class="process-math">\(A\text{.}\)</span> Here's a formula<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-5" id="fn-5"><sup> 1 </sup></a>.</div>
+<div class="displaymath process-math">
 \begin{equation*}
 \REGR(A) = r \cdot \left(\frac{A-\AVE(X)}{\SD(X)}\right) \cdot \SD(Y) + \AVE(Y)
 \end{equation*}
 </div>
-<p class="continuation">A <dfn class="terminology">residual</dfn> is another name for a vertical error <span class="process-math">\(Y-\REGR(X)\)</span> for a data point <span class="process-math">\((X,Y)\text{.}\)</span> The graph of residuals is the set of points <span class="process-math">\((X,Y-\REGR(X))\text{.}\)</span> You can see linear association and homoscedasticity (or the lack of either one) very plainly in the graph of residuals: data lists <span class="process-math">\(X,Y\)</span> have a linear association if the graph of residuals is roughly symmetric across the <span class="process-math">\(X\)</span>-axis; and the <span class="process-math">\(X,Y\)</span> data are homoscedastic if the graph of residuals has fairly even densities and vertical ranges in thin vertical strips across the horizontal range of <span class="process-math">\(X\text{.}\)</span> </p>
-<p id="p-15"><a href="" class="xref" data-knowl="./knowl/linescomparetable.html" title="Table 2.1: Comparison of Lines and Prediction Errors">Table 2.1</a> shows a comparison of three lines and their rms errors. All three lines pass through the point of averages. The SD line is defined to have positive slope if <span class="process-math">\(r\gt 0\)</span> and negative slope if <span class="process-math">\(r\lt 0\text{.}\)</span> <figure class="table table-like" id="linescomparetable"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.1<span class="period">.</span></span><span class="space"> </span>Comparison of Lines and Prediction Errors</figcaption><div class="tabular-box natural-width"><table class="tabular">
+<div class="para">A <dfn class="terminology">residual</dfn> is another name for a vertical error <span class="process-math">\(Y-\REGR(X)\)</span> for a data point <span class="process-math">\((X,Y)\text{.}\)</span> The graph of residuals is the set of points <span class="process-math">\((X,Y-\REGR(X))\text{.}\)</span> You can see linear association and homoscedasticity (or the lack of either one) very plainly in the graph of residuals: data lists <span class="process-math">\(X,Y\)</span> have a linear association if the graph of residuals is roughly symmetric across the <span class="process-math">\(X\)</span>-axis; and the <span class="process-math">\(X,Y\)</span> data are homoscedastic if the graph of residuals has fairly even densities and vertical ranges in thin vertical strips across the horizontal range of <span class="process-math">\(X\text{.}\)</span> </div>
+</div>
+<div class="para" id="p-70">
+<a href="" class="xref" data-knowl="./knowl/linescomparetable.html" title="Table 3.2.1: Comparison of Lines and Prediction Errors">Table 3.2.1</a> shows a comparison of three lines and their rms errors. All three lines pass through the point of averages. The SD line is defined to have positive slope if <span class="process-math">\(r\gt 0\)</span> and negative slope if <span class="process-math">\(r\lt 0\text{.}\)</span> <figure class="table table-like" id="linescomparetable"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.2.1<span class="period">.</span></span><span class="space"> </span>Comparison of Lines and Prediction Errors</figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="c m b3 r1 l1 t1 lines">line</td>
 <td class="c m b3 r1 l0 t1 lines">slope</td>
@@ -226,24 +396,35 @@ r = \AVE\left(\left(\frac{X-\AVE(X)}{\SD(X)}\right) \left(\frac{Y-\AVE(Y)}{\SD(Y
 <td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(0\)</span></td>
 <td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\SD(Y)\)</span></td>
 </tr>
-</table></div></figure></p></section><section class="subsection" id="subsection-10"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">2.5</span> <span class="title">Facts about the correlation coefficient <span class="process-math">\(r\)</span></span>
+</table></div></figure>
+</div></section><section class="subsection" id="subsection-21"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.2.5</span> <span class="title">Facts about the correlation coefficient <span class="process-math">\(r\)</span></span>
 </h3>
-<ul id="p-16" class="disc">
-<li id="li-1"><p id="p-derived-li-1">The value of <span class="process-math">\(r\)</span> is in the range <span class="process-math">\(-1\)</span> to <span class="process-math">\(1\text{.}\)</span> The value of <span class="process-math">\(|r|\)</span> is 1 precisely when all the points <span class="process-math">\((X,Y)\)</span> on the scatter diagram lie on a straight line.</p></li>
-<li id="li-2"><p id="p-derived-li-2">The correlation coefficient is unitless. The value of <span class="process-math">\(r\)</span> does not change if you rescale <span class="process-math">\(X\)</span> or <span class="process-math">\(Y\text{.}\)</span></p></li>
-<li id="li-3"><p id="p-derived-li-3">It is tempting to summarize data using averages, but this has a misleading effect on correlation. Suppose that the points in a scatter diagram are subdivided into subsets, and that each subset is replaced by a single point<div class="displaymath process-math" data-contains-math-knowls="">
+<div class="para logical" id="p-71"><ul class="disc">
+<li id="li-34"><div class="para" id="p-derived-li-34">The value of <span class="process-math">\(r\)</span> is in the range <span class="process-math">\(-1\)</span> to <span class="process-math">\(1\text{.}\)</span> The value of <span class="process-math">\(|r|\)</span> is 1 precisely when all the points <span class="process-math">\((X,Y)\)</span> on the scatter diagram lie on a straight line.</div></li>
+<li id="li-35"><div class="para" id="p-derived-li-35">The correlation coefficient is unitless. The value of <span class="process-math">\(r\)</span> does not change if you rescale <span class="process-math">\(X\)</span> or <span class="process-math">\(Y\text{.}\)</span>
+</div></li>
+<li id="li-36"><div class="para" id="p-derived-li-36">It is tempting to summarize data using averages, but this has a misleading effect on correlation. Suppose that the points in a scatter diagram are subdivided into subsets, and that each subset is replaced by a single point<div class="displaymath process-math">
 \begin{equation*}
 \text{(average of the } X \text{ values in the subset, average
 of the } Y \text{ values in the subset)}.
 \end{equation*}
-</div>The correlation for this smaller data set of average points is usually higher (in absolute value) than the correlation for the original scatter diagram. This phenomenon is called <dfn class="terminology">ecological correlation</dfn>.</p></li>
-<li id="li-4"><p id="p-derived-li-4">A strong correlation provides no evidence of a causal link between the variables <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\text{.}\)</span></p></li>
-</ul></section><section class="subsection" id="subsection-11"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">2.6</span> <span class="title">The Regression Effect and the Regression Fallacy</span>
+</div>The correlation for this smaller data set of average points is usually higher (in absolute value) than the correlation for the original scatter diagram. This phenomenon is called <dfn class="terminology">ecological correlation</dfn>.</div></li>
+<li id="li-37"><div class="para" id="p-derived-li-37">A strong correlation provides no evidence of a causal link between the variables <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\text{.}\)</span>
+</div></li>
+</ul></div></section><section class="subsection" id="subsection-22"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.2.6</span> <span class="title">The Regression Effect and the Regression Fallacy</span>
 </h3>
-<p id="p-17">Start with an <span class="process-math">\(X\)</span>-value <span class="process-math">\(A\text{,}\)</span> somewhere above or below the value <span class="process-math">\(\AVE(X)\text{.}\)</span> Use the regression line for <span class="process-math">\(Y\)</span> on <span class="process-math">\(X\)</span> to predict the average <span class="process-math">\(Y\)</span> value for data points whose <span class="process-math">\(X\)</span> value is near <span class="process-math">\(A\text{.}\)</span> Call this prediction <span class="process-math">\(B\text{.}\)</span> Now use the regression line for <span class="process-math">\(X\)</span> on <span class="process-math">\(Y\)</span> to predict the average <span class="process-math">\(X\)</span> value for data points whose <span class="process-math">\(Y\)</span> value is near <span class="process-math">\(B\text{.}\)</span> Call this prediction <span class="process-math">\(C\text{.}\)</span> It will always turn out that <span class="process-math">\(C\)</span> is between <span class="process-math">\(\AVE(X)\)</span> and <span class="process-math">\(A\text{.}\)</span> This is due simply to the fact that, for real data, the value of <span class="process-math">\(|r|\)</span> is less than 1. This is called the <dfn class="terminology">regression effect</dfn>. Any attempt to explain why <span class="process-math">\(C\)</span> is between <span class="process-math">\(\AVE(X)\)</span> and <span class="process-math">\(A\)</span> by any other reason than simply the fact that <span class="process-math">\(|r|\lt 1\)</span> is called a <dfn class="terminology">regression fallacy</dfn>. </p></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-3"><div class="fn">The notation <span class="process-math">\(\REGR\)</span> is not a standard notation. We use it here merely for convenience.</div></div>
+<div class="para" id="p-72">Start with an <span class="process-math">\(X\)</span>-value <span class="process-math">\(A\text{,}\)</span> somewhere above or below the value <span class="process-math">\(\AVE(X)\text{.}\)</span> Use the regression line for <span class="process-math">\(Y\)</span> on <span class="process-math">\(X\)</span> to predict the average <span class="process-math">\(Y\)</span> value for data points whose <span class="process-math">\(X\)</span> value is near <span class="process-math">\(A\text{.}\)</span> Call this prediction <span class="process-math">\(B\text{.}\)</span> Now use the regression line for <span class="process-math">\(X\)</span> on <span class="process-math">\(Y\)</span> to predict the average <span class="process-math">\(X\)</span> value for data points whose <span class="process-math">\(Y\)</span> value is near <span class="process-math">\(B\text{.}\)</span> Call this prediction <span class="process-math">\(C\text{.}\)</span> It will always turn out that <span class="process-math">\(C\)</span> is between <span class="process-math">\(\AVE(X)\)</span> and <span class="process-math">\(A\text{.}\)</span> This is due simply to the fact that, for real data, the value of <span class="process-math">\(|r|\)</span> is less than 1. This is called the <dfn class="terminology">regression effect</dfn>. Any attempt to explain why <span class="process-math">\(C\)</span> is between <span class="process-math">\(\AVE(X)\)</span> and <span class="process-math">\(A\)</span> by any other reason than simply the fact that <span class="process-math">\(|r|\lt 1\)</span> is called a <dfn class="terminology">regression fallacy</dfn>. </div></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-5"><div class="fn">The notation <span class="process-math">\(\REGR\)</span> is not a standard notation. We use it here merely for convenience.</div></div>
+</div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="descriptive_stats_section.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="probability_section.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>
+</div>
+<div class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org"><div class="name">Authored in PreTeXt</div>
+<div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259 "></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0  472  9732 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496 A 4241 4241  0  0  1  4724  3590 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259 A 4507 4507  0  0  1  4724  9448 "></path><polyline points="5385,4299 4062,8125 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8598,3496 8598,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="850,3496 850,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="4960,9685 4488,9685 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="3070,4582 1889,6141 3070,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="6418,4582 7600,6141 6418,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8976,3590 8976,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732 "></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy"><div class="name">Powered by Runestone</div>
+<img class="logo" title="Powered by Runestone" src="https://runestone.academy/runestone/static/rectangle_badge.png" alt="Powered by Runestone"></a><a class="mathjax-logo" href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a>
 </div>
 </body>
 </html>
