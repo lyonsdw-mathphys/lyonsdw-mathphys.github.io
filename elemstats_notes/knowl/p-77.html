@@ -12,7 +12,30 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para">Start with an <span class="process-math">\(X\)</span>-value <span class="process-math">\(A\text{,}\)</span> somewhere above or below the value <span class="process-math">\(\AVE(X)\text{.}\)</span> Use the regression line for <span class="process-math">\(Y\)</span> on <span class="process-math">\(X\)</span> to predict the average <span class="process-math">\(Y\)</span> value for data points whose <span class="process-math">\(X\)</span> value is near <span class="process-math">\(A\text{.}\)</span> Call this prediction <span class="process-math">\(B\text{.}\)</span> Now use the regression line for <span class="process-math">\(X\)</span> on <span class="process-math">\(Y\)</span> to predict the average <span class="process-math">\(X\)</span> value for data points whose <span class="process-math">\(Y\)</span> value is near <span class="process-math">\(B\text{.}\)</span> Call this prediction <span class="process-math">\(C\text{.}\)</span> It will always turn out that <span class="process-math">\(C\)</span> is between <span class="process-math">\(\AVE(X)\)</span> and <span class="process-math">\(A\text{.}\)</span> This is due simply to the fact that, for real data, the value of <span class="process-math">\(|r|\)</span> is less than 1. This is called the <dfn class="terminology">regression effect</dfn>. Any attempt to explain why <span class="process-math">\(C\)</span> is between <span class="process-math">\(\AVE(X)\)</span> and <span class="process-math">\(A\)</span> by any other reason than simply the fact that <span class="process-math">\(|r|\lt 1\)</span> is called a <dfn class="terminology">regression fallacy</dfn>. </div>
+<div class="para">
+<a href="" class="xref" data-knowl="./knowl/linescomparetable.html" title="Table 3.2.1: Comparison of Lines and Prediction Errors">Table 3.2.1</a> shows a comparison of three lines and their rms errors. All three lines pass through the point of averages. The SD line is defined to have positive slope if <span class="process-math">\(r\gt 0\)</span> and negative slope if <span class="process-math">\(r\lt 0\text{.}\)</span> <figure class="table table-like"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.2.1<span class="period">.</span></span><span class="space"> </span>Comparison of Lines and Prediction Errors</figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b3 r1 l1 t1 lines">line</td>
+<td class="c m b3 r1 l0 t1 lines">slope</td>
+<td class="c m b3 r1 l0 t1 lines">rms error</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">regression line</td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(r\cdot \SD(Y)/\SD(X)\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\SD(Y) \sqrt{1-r^2}\)</span></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">SD line</td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\pm \SD(Y)/\SD(X)\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\SD(Y)  \sqrt{2(1-|r|)}\)</span></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">average line</td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\SD(Y)\)</span></td>
+</tr>
+</table></div></figure>
+</div>
 <span class="incontext"><a href="regression_section.html#p-77" class="internal">in-context</a></span>
 </body>
 </html>
