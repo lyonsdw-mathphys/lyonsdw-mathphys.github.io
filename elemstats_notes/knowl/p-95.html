@@ -12,15 +12,7 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para logical">
-<div class="para">The sample sum, the sample average, and the sample percentage of 1's are examples of <dfn class="terminology">statistics</dfn>. A <dfn class="terminology">statistic</dfn> is any number that is computed from a sample. Another important statistic is the sample SD (the SD of the list of draws). By contrast, any number that can be computed from the numbers in the box is called a <dfn class="terminology">parameter</dfn>. For example, the average and the SD of the numbers in the box are parameters. Sampling theory is the art of exploiting the relationships between parameters and statistics to do these two kinds of tasks.</div>
-<ul class="disc">
-<li><div class="para">
-<dfn class="terminology">Prediction:</dfn> If you know what is in a given box, calculate the probability that a given statistic will fall in a given range of values.</div></li>
-<li><div class="para">
-<dfn class="terminology">Inference:</dfn> If you do not know all the details of the contents of a box, but you have access to one or more samples from the box, make educated guesses about the parameters of the box.</div></li>
-</ul>
-</div>
-<span class="incontext"><a href="sampling_section.html#p-95" class="internal">in-context</a></span>
+<div class="para">Here is the reasoning for why the binomial formula works, in brief: There are <span class="process-math">\(n \choose k\)</span> outcomes with <span class="process-math">\(k\)</span> <span class="process-math">\(W\)</span>'s and <span class="process-math">\((n-k)\)</span> <span class="process-math">\(L\)</span>'s. All of these outcomes are mutually exclusive to one another, so the probability of getting a outcome sequence with exactly <span class="process-math">\(k\)</span> <span class="process-math">\(W\)</span>'s in in draws is the sum of the probabilities of each individual outcome (by the addition rule). Any particular sequence of <span class="process-math">\(k\)</span> <span class="process-math">\(W\)</span>'s and <span class="process-math">\((n-k)\)</span> <span class="process-math">\(L\)</span>'s has a probability of <span class="process-math">\(p^k (1-p)^{n-k}\)</span> (by the multiplication rule for independent events). Put all this together and you get the binomial formula.</div>
+<span class="incontext"><a href="probability_section.html#p-95" class="internal">in-context</a></span>
 </body>
 </html>

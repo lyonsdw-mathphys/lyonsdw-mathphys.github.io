@@ -799,7 +799,7 @@ Z \amp\spacer\amp \text{percentile rank}\\
 <span class="type">Exercises</span> <span class="codenumber">2.2.4</span> <span class="title">Probability Practice Problems</span>
 </h3>
 <section class="introduction" id="introduction-6"><div class="para logical" id="p-41">
-<div class="para">A box contains five tickets, labeled <span class="process-math">\(a,b,c,d,e,f,g\text{.}\)</span> In Game 1, tickets are drawn from the box with replacement. In Game 2, tickets are drawn without replacement. On any given draw, every ticket remaining in the box is equally likely to be selected on the next draw. Consider the following events.</div>
+<div class="para">Problems 1 and 2 are about the following situation: A box contains five tickets, labeled <span class="process-math">\(a,b,c,d,e,f,g\text{.}\)</span> In Game 1, tickets are drawn from the box with replacement. In Game 2, tickets are drawn without replacement. On any given draw, every ticket remaining in the box is equally likely to be selected on the next draw. Consider the following events.</div>
 <div class="displaymath process-math" id="md-24">
 \begin{align*}
 E \amp= \text{get the ticket } a \text{ on draw 1}\\
@@ -808,6 +808,8 @@ G \amp= \text{get two vowels in the first two draws}\\
 H \amp= \text{get exactly two vowels in the first seven draws}
 \end{align*}
 </div>
+</div></section><article class="exercise exercise-like" id="exercise-8"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
+<div class="para logical" id="p-42">
 <div class="para">Find the probabilities in the table below. Give your answer as a percent, correct to the nearest <span class="process-math">\(0.01\)</span> (that is, rounded to the two decimal places). Two entries have been filled in as examples.</div>
 <div class="displaymath process-math" id="md-25">
 \begin{align*}
@@ -839,8 +841,8 @@ P(H)
 \amp\spacer\amp
 \end{align*}
 </div>
-<div class="para">
-<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-8" id="answer-8"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-8"><div class="answer solution-like"><div class="para logical" id="p-42"><div class="displaymath process-math" id="md-26">
+</div>
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-8" id="answer-8"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-8"><div class="answer solution-like"><div class="para logical" id="p-43"><div class="displaymath process-math" id="md-26">
 \begin{align*}
 \amp\spacer\amp \text{Game 1}
 \amp\spacer\amp \text{Game 2}	  \\
@@ -869,14 +871,24 @@ P(H)
 \amp\spacer\amp {7 \choose 2} (2/7)^2 (5/7)^5 = 31.87\%
 \amp\spacer\amp 100.00\%
 \end{align*}
-</div></div></div></div>
+</div></div></div></div></article><article class="exercise exercise-like" id="exercise-9"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
+<div class="para" id="p-44">Are events <span class="process-math">\(G,H\)</span> independent or dependent in Game 1? In Game 2? Explain.</div>
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-9" id="answer-9"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-9"><div class="answer solution-like"><div class="para logical" id="p-45">
+<div class="para">In Game 1, we have <span class="process-math">\(P(H)={7\choose 2} (2/7)^2
+(5/7)^5\approx 31.87\%\text{,}\)</span> while</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P(H|G)=P(G)\cdot P(\text{no vowels in 5 draws}) =
+(2/7)^2(5/7)^5\approx 1.52\% \lt P(H).
+\end{equation*}
 </div>
-</div></section></section><section class="exercises" id="exercises-6"><h3 class="heading hide-type">
+<div class="para">Since <span class="process-math">\(P(H)\neq P(H|G)\text{,}\)</span> we conclude that <span class="process-math">\(G,H\)</span> are <em class="emphasis">dependent</em> in Game 1. In Game 2, we have <span class="process-math">\(P(H)=100\%\text{,}\)</span> <span class="process-math">\(P(H|G)=100\%\text{.}\)</span> We conclude that <span class="process-math">\(G,H\)</span> are <em class="emphasis">independent</em> in Game 2.</div>
+</div></div></div></article></section><section class="exercises" id="exercises-6"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber">2.2.5</span> <span class="title">Sum of Draws Practice Problems</span>
 </h3>
-<section class="introduction" id="introduction-7"><div class="para" id="p-43">Problems 1--9 below are about the following game. A fair die is rolled 600 times.  On each roll, you win $4 if you get a 6.  You lose $1 if you get something different from a 6.</div></section><article class="exercise exercise-like" id="exercise-8"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
-<div class="para" id="p-44">The total winnings will be about $<span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> give or take $<span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> or so.</div>
-<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-9" id="answer-9"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-9"><div class="answer solution-like"><div class="para logical" id="p-45">
+<section class="introduction" id="introduction-7"><div class="para" id="p-46">Problems 1--9 below are about the following game. A fair die is rolled 600 times.  On each roll, you win $4 if you get a 6.  You lose $1 if you get something different from a 6.</div></section><article class="exercise exercise-like" id="exercise-10"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
+<div class="para" id="p-47">The total winnings will be about $<span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> give or take $<span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> or so.</div>
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-10" id="answer-10"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-10"><div class="answer solution-like"><div class="para logical" id="p-48">
 <div class="para">The box model has six tickets: (1) 4 and (5) <span class="process-math">\(-1\)</span>'s.</div>
 <div class="displaymath process-math" id="md-27">
 \begin{align*}
@@ -886,16 +898,16 @@ P(H)
 \text{SE(sum) } \amp \approx 45.64
 \end{align*}
 </div>
-</div></div></div></article><article class="exercise exercise-like" id="exercise-9"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
-<div class="para" id="p-46">The chance of breaking even or better is about <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</div>
-<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-10" id="answer-10"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-10"><div class="answer solution-like"><div class="para logical" id="p-47"><div class="displaymath process-math" id="md-28">
+</div></div></div></article><article class="exercise exercise-like" id="exercise-11"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
+<div class="para" id="p-49">The chance of breaking even or better is about <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</div>
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-11" id="answer-11"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-11"><div class="answer solution-like"><div class="para logical" id="p-50"><div class="displaymath process-math" id="md-28">
 \begin{align*}
 z \amp \approx \frac{0 - (-100)}{45.64} \approx 2.19\\
 P\amp \approx 1.5\%
 \end{align*}
-</div></div></div></div></article><article class="exercise exercise-like" id="exercise-10"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
-<div class="para" id="p-48">The number of sixes rolled will be about <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> give or take <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</div>
-<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-11" id="answer-11"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-11"><div class="answer solution-like"><div class="para logical" id="p-49">
+</div></div></div></div></article><article class="exercise exercise-like" id="exercise-12"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
+<div class="para" id="p-51">The number of sixes rolled will be about <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> give or take <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</div>
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-12" id="answer-12"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-12"><div class="answer solution-like"><div class="para logical" id="p-52">
 <div class="para">The box model has (1) 1 and (5) 0's.</div>
 <div class="displaymath process-math" id="md-29">
 \begin{align*}
@@ -905,16 +917,16 @@ P\amp \approx 1.5\%
 \text{SE(sum) }\amp \approx 9.13
 \end{align*}
 </div>
-</div></div></div></article><article class="exercise exercise-like" id="exercise-11"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
-<div class="para" id="p-50">The chance that the number of sixes will be ten or more above the expected number is about <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</div>
-<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-12" id="answer-12"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-12"><div class="answer solution-like"><div class="para logical" id="p-51"><div class="displaymath process-math" id="md-30">
+</div></div></div></article><article class="exercise exercise-like" id="exercise-13"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
+<div class="para" id="p-53">The chance that the number of sixes will be ten or more above the expected number is about <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</div>
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-13" id="answer-13"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-13"><div class="answer solution-like"><div class="para logical" id="p-54"><div class="displaymath process-math" id="md-30">
 \begin{align*}
 z \amp \approx \frac{110 - 100}{9.13} \approx 1.1\\
 P \amp \approx 14\%
 \end{align*}
-</div></div></div></div></article><article class="exercise exercise-like" id="exercise-12"><h4 class="heading"><span class="codenumber">5<span class="period">.</span></span></h4>
-<div class="para" id="p-52">The sum of the numbers on the die face on all the rolls will be about <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> give or take <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</div>
-<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-13" id="answer-13"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-13"><div class="answer solution-like"><div class="para logical" id="p-53">
+</div></div></div></div></article><article class="exercise exercise-like" id="exercise-14"><h4 class="heading"><span class="codenumber">5<span class="period">.</span></span></h4>
+<div class="para" id="p-55">The sum of the numbers on the die face on all the rolls will be about <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> give or take <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</div>
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-14" id="answer-14"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-14"><div class="answer solution-like"><div class="para logical" id="p-56">
 <div class="para">The box model has the tickets 1,2,3,4,5,6.</div>
 <div class="displaymath process-math" id="md-31">
 \begin{align*}
@@ -924,23 +936,23 @@ P \amp \approx 14\%
 \text{SE(sum) } \amp \approx 41.83
 \end{align*}
 </div>
-</div></div></div></article><article class="exercise exercise-like" id="exercise-13"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
-<div class="para" id="p-54">The chance that the sum will be in the range 2050--2150 is about <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</div>
-<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-14" id="answer-14"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-14"><div class="answer solution-like"><div class="para logical" id="p-55"><div class="displaymath process-math" id="md-32">
+</div></div></div></article><article class="exercise exercise-like" id="exercise-15"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
+<div class="para" id="p-57">The chance that the sum will be in the range 2050--2150 is about <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</div>
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-15" id="answer-15"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-15"><div class="answer solution-like"><div class="para logical" id="p-58"><div class="displaymath process-math" id="md-32">
 \begin{align*}
 z \amp \approx \frac{2150 - 2100}{41.83} \approx 1.2\\
 P \amp \approx 77\%
 \end{align*}
-</div></div></div></div></article><article class="exercise exercise-like" id="exercise-14"><h4 class="heading"><span class="codenumber">7<span class="period">.</span></span></h4>
-<div class="para" id="p-56">There is about a 50% chance that the sum will be in the range 2100 plus or minus <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</div>
-<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-15" id="answer-15"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-15"><div class="answer solution-like"><div class="para logical" id="p-57"><div class="displaymath process-math" id="md-33">
+</div></div></div></div></article><article class="exercise exercise-like" id="exercise-16"><h4 class="heading"><span class="codenumber">7<span class="period">.</span></span></h4>
+<div class="para" id="p-59">There is about a 50% chance that the sum will be in the range 2100 plus or minus <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</div>
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-16" id="answer-16"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-16"><div class="answer solution-like"><div class="para logical" id="p-60"><div class="displaymath process-math" id="md-33">
 \begin{gather*}
 z \text{ for 50% is about } .67\\
 \text{range is } 2100 \pm 28
 \end{gather*}
-</div></div></div></div></article><article class="exercise exercise-like" id="exercise-15"><h4 class="heading"><span class="codenumber">8<span class="period">.</span></span></h4>
-<div class="para" id="p-58">The total number of even rolls will be about <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> give or take <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</div>
-<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-16" id="answer-16"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-16"><div class="answer solution-like"><div class="para logical" id="p-59">
+</div></div></div></div></article><article class="exercise exercise-like" id="exercise-17"><h4 class="heading"><span class="codenumber">8<span class="period">.</span></span></h4>
+<div class="para" id="p-61">The total number of even rolls will be about <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> give or take <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</div>
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-17" id="answer-17"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-17"><div class="answer solution-like"><div class="para logical" id="p-62">
 <div class="para">One possible box model has (3) 1's and (3) 0's.  A simpler box model has (1) 1 and (1) 0 with equal probabilities of 1/2 each.</div>
 <div class="displaymath process-math" id="md-34">
 \begin{align*}
@@ -950,16 +962,16 @@ z \text{ for 50% is about } .67\\
 \text{SE(sum) } \amp \approx 12.25
 \end{align*}
 </div>
-</div></div></div></article><article class="exercise exercise-like" id="exercise-16"><h4 class="heading"><span class="codenumber">9<span class="period">.</span></span></h4>
-<div class="para" id="p-60">The chance that the number of even rolls will be off by 20 or more from the expected number is about <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</div>
-<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-17" id="answer-17"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-17"><div class="answer solution-like"><div class="para logical" id="p-61"><div class="displaymath process-math" id="md-35">
+</div></div></div></article><article class="exercise exercise-like" id="exercise-18"><h4 class="heading"><span class="codenumber">9<span class="period">.</span></span></h4>
+<div class="para" id="p-63">The chance that the number of even rolls will be off by 20 or more from the expected number is about <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</div>
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-18" id="answer-18"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-18"><div class="answer solution-like"><div class="para logical" id="p-64"><div class="displaymath process-math" id="md-35">
 \begin{align*}
 z \amp \approx \frac{320 - 300}{12.25} \approx 1.63\\
 P \amp \approx 10\%
 \end{align*}
-</div></div></div></div></article><article class="exercise exercise-like" id="exercise-17"><h4 class="heading"><span class="codenumber">10<span class="period">.</span></span></h4>
-<div class="para" id="p-62">On every 6th roll (that is, on roll numbers 6, 12, 18, etc) you win a blue marble if exactly half of the last 6 rolls came up even. The chance that you win 35 or more blue marbles in 600 rolls is <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>. Use the continuity correction to be as precise as possible.</div>
-<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-18" id="answer-18"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-18"><div class="answer solution-like"><div class="para logical" id="p-63">
+</div></div></div></div></article><article class="exercise exercise-like" id="exercise-19"><h4 class="heading"><span class="codenumber">10<span class="period">.</span></span></h4>
+<div class="para" id="p-65">On every 6th roll (that is, on roll numbers 6, 12, 18, etc) you win a blue marble if exactly half of the last 6 rolls came up even. The chance that you win 35 or more blue marbles in 600 rolls is <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>. Use the continuity correction to be as precise as possible.</div>
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-19" id="answer-19"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-19"><div class="answer solution-like"><div class="para logical" id="p-66">
 <div class="para">The probability of exactly 3 evens in 6 rolls is <span class="process-math">\({6 \choose
 3}\left(\frac{1}{2}\right)^6 = 31.25\%\)</span> (using the binomial probability formula). A box model has 3125 1's and 6875 0's, with 100 draws. The average of the box is <span class="process-math">\(.3125\)</span> and the SD of the box is <span class="process-math">\(\sqrt{.3125\cdot .6875} \approx .464\text{.}\)</span> The expected sum is <span class="process-math">\(31.25\)</span> and the SE for the sum is <span class="process-math">\(4.64\text{.}\)</span> The <span class="process-math">\(z\)</span> value for 35 blues is</div>
 <div class="displaymath process-math">
