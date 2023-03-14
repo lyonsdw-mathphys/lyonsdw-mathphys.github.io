@@ -13,3 +13,9 @@ hacking css to make the clock appear in a right-hand column, works
   filename right now is quiz_instr2.xhtml
 we should clean this up after testing, keep just one version, archive
   the old ones
+
+3/3/2023
+
+now we are up to quiz_instr3.xhtml
+makes a countdown clock instead of a normal clock
+got the code from ChatGPT !!
