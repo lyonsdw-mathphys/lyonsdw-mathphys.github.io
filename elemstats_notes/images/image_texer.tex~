@@ -1,0 +1,179 @@
+% tex image files
+
+\documentclass[leqno]{article}
+\pdfoutput=1
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\input xy
+\xyoption{all}
+
+
+%this sets up gill (blackboard) letters for reals, complexes, ets.
+%  this is appropriate for 10pt (default) document
+\font\tengill=msbm10 %scaled 1000
+\font\sevengill=msbm7 %scaled 900
+\font\fivegill=msbm5 % scaled 700
+\newfam\gillfam 
+\textfont\gillfam=\tengill
+\scriptfont\gillfam=\sevengill
+\scriptscriptfont\gillfam=\fivegill
+\def\gill{\fam\gillfam}
+\def\R{{\gill R}}
+\def\C{{\gill C}}
+\def\Z{{\gill Z}}
+\def\Q{{\gill Q}}
+
+%%%%%%%%%%%%%%%%%%% placement of figures in the margin %%%%%%%%%%%%%%%%%%%%%%%%%
+\newcounter{figurecount}
+%\renewcommand{\thefigurecount}{\thesection .\arabic{figurecount}}
+
+% command for figures in the margin
+% arguments: figure input file name, reference label, figure horizontal
+% offset, figure vertical offset, ``Figure'' label horizontal offset,
+% ``Figure'' label vertical offset, caption
+
+\newcommand{\marginfig}[7]{
+\marginpar{
+\refstepcounter{figurecount}      % increment margin figure counter
+\label{#2}                        % label the figure
+\vspace*{#4}                      % vertical adjustment for figure
+\spacer\\
+\hspace*{#3}                      % horizontal adjustment for figure
+\input{#1}\\
+\vspace*{#6}                      % vertical adjustment for ``Figure'' label
+\spacer\\
+\hspace*{#5}                      % horizontal adjustment for ``Figure'' label
+\shortstack{
+Figure~\ref{#2}\\ #7
+}
+\spacer}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% definitions for algeom text
+\newcommand{\Quat}{\mathbb{H}} % <!-- quaternions -->
+\newcommand{\Sgroup}{{\rm \bf S}}  % <!-- group of elliptic geometry transformations -->
+\DeclareMathOperator{\Rot}{Rot}
+
+%Aut, End, etc. commands
+\newcommand{\Aut}{\makebox{Aut}}
+\newcommand{\End}{\makebox{End}}
+\newcommand{\Hom}{\makebox{Hom}}
+
+% short cut trial
+\def\hey{heybaba}
+
+% mapping arrow and isomorphism arrow
+\newcommand{\map}{\longrightarrow}
+\newcommand{\isomap}{\hspace{1ex}\widetilde{\map}\hspace{1ex}}
+\newcommand{\extC}{\hat{\C}}
+
+% ivisible text ``spacer''
+\newcommand{\spacer}{\rule[0cm]{0cm}{0cm}}
+
+% load x-y pic
+% \input xypic
+
+\newcommand{\ket}[1]{\left| #1 \right\rangle}
+
+\font\biggill=msbm10 scaled  2000
+\begin{document}
+
+
+\begin{center}
+{\Large This is for trying out stuff in \LaTeX\ .}
+\end{center}
+
+
+\vspace*{1in}
+
+\medskip
+
+%\input{ngonsymm.pspdftex}
+%\input{stereoproj.pspdftex}
+%\input{stereoproj2.pspdftex}
+%\spacer\hspace*{-1.5in}\input{rotrefl.pspdftex}
+
+\medskip
+
+%%%% commutative diagram for "welldefinedness" proposition
+%% \hfill
+%% \xymatrix{
+%% X \ar[r]^{f} \ar[d]_{\pi} & Y \\
+%% X/\!\!\sim \ar@{-->}[ur]_{\overline{f}}
+%% }
+%% \hfill\spacer
+
+%%%% directed graph example
+%% \hfill
+%% \xymatrix{
+%%   & b & \\
+%% a \ar[ur] \ar[dr]  & & c \ar[ul]\ar[ll]\\  
+%%   & d \ar[ur] & 
+%% }
+%% \hfill\spacer
+
+%%%% commutative diagram for conjugate transformation definition
+%% \hfill
+%% \xymatrix{
+%% X \ar[r]^{f} \ar[d]_{\mu} & X \ar[d]^{\mu}\\
+%% Y \ar[r]^{g} & Y
+%% }
+%% \hfill\spacer
+
+%% %%%% commutative diagram for conjugate transformation definition
+%% \hfill
+%% \xymatrix{
+%%   SU(2) \ar[r]^{C_{iH}} \ar[d] & SU(2)\ar[d]\\
+%%   \Sgroup \ar[d] & U(\Quat) \ar[d]\\
+%% \Rot(S^2) \ar@{<->}[r] & \Rot(S^2_\Quat)
+%% }
+%% \hfill\spacer
+
+%% %%%% no maps labeled, commutative diagram for integers mod n distributive law
+%% \hfill
+%% \xymatrix{
+%%   \Z_n\times \Z_n \ar[r] \ar[d] & \Z_n\ar[d]\\
+%%   \Z_n\times \Z_n \ar[r] & \Z_n 
+%% }
+%% \hfill\spacer
+
+%% %%%% commutative diagram for integers mod n distributive law
+%% \hfill
+%% \xymatrix{
+%%   \Z_n\times \Z_n \ar[r]^{\text{  add}} \ar[d]_{(\text{times }[x]) \times
+%%     (\text{times }[x])} & \Z_n\ar[d]^{\text{times }[x]}\\
+%%   \Z_n\times \Z_n \ar[r]_{\text{  add}} & \Z_n 
+%% }
+%% \hfill\spacer
+
+%%%% lift of complex inversion via stereographic projection
+\hfill
+\xymatrix{
+  S^2 \ar[r]^{R_{X,\pi}} \ar[d]_{s} & S^2 \ar[d]^{s}\\
+  \extC \ar[r]_{\text{ inversion }} & \extC
+}
+\hfill\spacer
+
+\hfill
+\xymatrix{
+  (a,b,c) \ar[r]^{R_{X,\pi}} \ar[d]_{s} & (a,-b,-c) \ar[d]^{s}\\
+  \frac{a+bi}{1-c} \ar[r]_{\text{ inversion }} & \frac{a-bi}{1+c}
+}
+\hfill\spacer
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
