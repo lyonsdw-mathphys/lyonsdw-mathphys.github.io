@@ -11,14 +11,28 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<article class="li"><h5 class="heading">
-<span class="type">Item</span><span class="space"> </span><span class="codenumber">2.2.4.2.c</span><span class="period">.</span>
-</h5>In Game 1, we have <span class="process-math">\(P(H)={7\choose 2} (2/7)^2
-(5/7)^5\approx 31.87\%\text{,}\)</span> while<div class="displaymath process-math">
+<article class="li"><h3 class="heading">
+<span class="type">Item</span><span class="space"> </span><span class="codenumber">4</span><span class="period">.</span>
+</h3>First, we find the <span class="process-math">\(z\)</span> value that has 70th percentile rank. Let's call that value <span class="process-math">\(A\text{.}\)</span> Starting with the observation that<div class="displaymath process-math">
+\begin{align*}
+100\% \amp = (\text{area to the left of }A)\\
+\amp + (\text{area to the right of }A)\\
+\amp = 70 + (\text{area to the right of }A)
+\end{align*}
+</div>we conclude that the area to the right of <span class="process-math">\(A\)</span> is <span class="process-math">\(30\%\text{.}\)</span> By mirror symmetry, it must be that the area to the left of <span class="process-math">\(-A\)</span> is also <span class="process-math">\(30\%\text{,}\)</span> so the area between <span class="process-math">\(-A\)</span> and <span class="process-math">\(+A\)</span> must be <span class="process-math">\(100 - 2(30)
+= 40\%\text{.}\)</span> Using the normal curve table, we find that <span class="process-math">\(A\approx .52\text{.}\)</span> This converts to an <span class="process-math">\(X\)</span> value of <span class="process-math">\(X=(.52)(6.7)+72.3\approx 75.8\text{.}\)</span> Next, we find a <span class="process-math">\(z\)</span> value that has 35th percentile rank. Let's call that value <span class="process-math">\(-B\)</span> (so that <span class="process-math">\(-B\)</span> is to the left of average, and <span class="process-math">\(+B\)</span> is to the right of average). Starting with<div class="displaymath process-math">
+\begin{align*}
+100\% \amp = (\text{area to the left of }-B)\\
+\amp + (\text{area
+between }-B \text{ and }B)\\
+\amp + (\text{area to the right of }B)
+\end{align*}
+</div>By mirror symmetry, we have<div class="displaymath process-math">
 \begin{equation*}
-P(H|G)=P(G)\cdot P(\text{no vowels in 5 draws}) =
-(2/7)^2(5/7)^5\approx 1.52\% \lt P(H).
+(\text{area to the left of }-B) = (\text{area to the right
+of }B).
 \end{equation*}
-</div>Since <span class="process-math">\(P(H)\neq P(H|G)\text{,}\)</span> we conclude that <span class="process-math">\(G,H\)</span> are <em class="emphasis">dependent</em> in Game 1. In Game 2, we have <span class="process-math">\(P(H)=100\% =P(H|G)\text{.}\)</span> We conclude that <span class="process-math">\(G,H\)</span> are <em class="emphasis">independent</em> in Game 2.</article><span class="incontext"><a href="basic_text_problems_section.html#li-39" class="internal">in-context</a></span>
+</div>It follows that both sides of this equation are <span class="process-math">\(35\%\text{,}\)</span> so we conclude that <span class="process-math">\((\text{area between
+}-B \text{ and }B)= 100 - 2(35)=30\%\text{.}\)</span> From the normal table, we get <span class="process-math">\(-B\approx -.385\text{.}\)</span> This converts to an <span class="process-math">\(X\)</span> value of <span class="process-math">\(X=(-.385)(6.7)+72.3\approx 69.7\text{.}\)</span></article><span class="incontext"><a href="section-8.html#li-39" class="internal">in-context</a></span>
 </body>
 </html>
