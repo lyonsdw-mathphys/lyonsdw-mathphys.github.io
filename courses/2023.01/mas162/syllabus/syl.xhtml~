@@ -1,6 +1,6 @@
 <html> 
 <head>
-  <title>MAS 170 Elementary Statistics Spring 2023 Syllabus</title>
+  <title>MAS 162 Calculus Spring 2023 Syllabus</title>
   <style>
     .boxed {
       border: 1px solid black ;
@@ -15,7 +15,7 @@ body {
 
 <body>
 
-<h1>MAS 170 Elementary Statistics Spring 2023<br>
+<h1>MAS 162 Calculus 2 Spring 2023<br>
     Course Syllabus
 </h1>
 
@@ -24,38 +24,43 @@ body {
 
 <!--@insert_toc-->
 
-<!--@include "description.html"-->
-<!--@include "prerequisites.html"-->
-<!--@include "requirements_met.html"-->
-<!--@include "texts_etc.html"-->
-<!--@include "../../syllabus_common/technology.html"-->
+<h2>Basics</h2>
+
 <!--@include "../../syllabus_common/instructor.html"-->
 <!--@include "../../syllabus_common/meetings_times_locations.html"-->
 <!--@include "../../syllabus_common/course_calendar.html"-->
 <!--@include "exam_dates_tentative.html"-->
+<!--@include "prerequisites.html"-->
+<!--@include "requirements_met.html"-->
+<!--@include "texts_etc.html"-->
+<!--@include "../../syllabus_common/technology.html"-->
+
+<h2>Course Content</h2>
+<!--@include "description.html"-->
 <!--@include "reading_and_problems.html"-->
 <!--@include "../../syllabus_common/goals.html"-->
 
-<h2>Learning and Study</h2>
 
-<!--@include "../../syllabus_common/learning.html"-->
-
-<h2>Grades and Other Policies</h2>
+<h2>Grades</h2>
 
 <!--@include "../../syllabus_common/grade_categories_1XX.html"-->
-<!-- will use Canvas gradebook spring 2022 -->
-<!--@DONOTinclude "../../syllabus_common/gradebook.html"-->
 <!--@include "../../syllabus_common/graded_hmwk_1XX.html"-->
 <!--@include "../../syllabus_common/quiz_1XX.html"-->
 <!--@include "../../syllabus_common/make_up.html"-->
 <!--@include "../../syllabus_common/letter_grades.html"-->
+
+<h2>Policies</h2>
+
 <!--@include "../../syllabus_common/attendance.html"-->
-<!-- DISCUSSION BOARD SECTION TURNED OFF 8/2021 -->
+<!-- class discussion turned off -->
 <!--@DONOTinclude "../../syllabus_common/class_discussion.html"-->
 <!--@include "../../syllabus_common/class_engagement.html"-->
 <!--@include "../../syllabus_common/collaboration.html"-->
 <!--@include "../../syllabus_common/honor_policy.html"-->
 
+<h2>Learning and Study</h2>
+
+<!--@include "../../syllabus_common/learning.html"-->
 
 <h2>LVC Official Syllabus Material</h2>
 
