@@ -1,0 +1,21 @@
+Quiz Instructions
+Notes 8/2022
+
+1. edit "content.txt"
+2. run script ~/a/web/make_quiz_instr
+3. this makes two output files
+    a. quiz_instr.html (for displaying on classroom screen during quiz)
+    b. quiz_instr_noclock.pdf (for including in packet sent to CAR)
+
+8/30/2022
+
+hacking css to make the clock appear in a right-hand column, works
+  filename right now is quiz_instr2.xhtml
+we should clean this up after testing, keep just one version, archive
+  the old ones
+
+3/3/2023
+
+now we are up to quiz_instr3.xhtml
+makes a countdown clock instead of a normal clock
+got the code from ChatGPT !!

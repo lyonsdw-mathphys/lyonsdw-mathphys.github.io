@@ -1,0 +1,82 @@
+<HTML>
+
+<HEAD>
+  <TITLE>David Lyons (Mathematics, LVC) Course Documents</TITLE>
+    <style>
+    .boxed {
+      border: 1px solid black ;
+      max-width: 600px ;
+  }
+body {
+   max-width:800px;
+   margin:10 auto;
+}
+
+</style>
+
+</HEAD>
+
+
+<body>
+  <h2>Spring 2023 Course Documents<br>David W. Lyons</h2>
+
+  <i>These pages are periodically updated.  Course policies are subject to
+    change at the discretion of the instructor.</i>
+
+  <p>
+    
+  This page contains links to course syllabi and other course
+  documents. Log in
+  to <a href="https://lvc.instructure.com/login/ldap">Canvas</a> for the
+  main course web pages, including the course calendar, assignments, and
+  more (including links back to this page).
+  
+  <p>
+
+<!--    
+  <b>Syllabus Update Log</b>
+<ul>
+  <li>
+</ul>
+
+<p>
+-->
+
+
+
+
+<h3>MAS 170 Elementary Statistics</h3>
+<ul>
+  <li><a href="mas170/syllabus/syl.html">Course Syllabus</a>
+        <li><a href="../../sample_text/frontmatter.html">Sample
+	    Textbook</a>
+	  for Assignment 0 and Quiz 0	
+  <li><a href="../../elemstats_notes/frontmatter.html"/>Supplementary
+  Notes</a> (Note 2/26/2023: The "Essential Clarifications" course
+  document has been updated and merged into the Supplementary Notes.)
+</ul>
+
+</ul>
+
+<h3>MAS 162 Calculus 2</h3>
+<ul>
+  <li><a href="mas162/syllabus/syl.html">Course Syllabus</a>
+      <li><a href="https://activecalculus.org/single/frontmatter.html">Active Calculus, single
+      variable</a></i>, 2020 edition
+        <li><a href="../../sample_text/frontmatter.html">Sample
+	    Textbook</a>
+	  for Assignment 0 and Quiz 0	
+</ul>
+
+<h3>MAS 323 Introduction to Modern Algebra and Geometry</h3>
+<ul>
+  <li><a href="mas323/syllabus/syl.html">Course Syllabus</a>
+      <li>Lyons, <a href="https://mathvista.org/algeom_text_files/frontmatter.html"><i>Introduction
+  to Groups and Geometries</i></a>
+
+</ul>
+
+</body>
+</html>
+
+
