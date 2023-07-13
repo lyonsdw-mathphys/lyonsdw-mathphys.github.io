@@ -93,8 +93,7 @@ Here is the rubric for each quiz problem solution. Exceptions will be announced 
 advance.
 
 <p>
-
-<a name="quiz_grading_rubric"></a>  
+  
   <table border=1 cellpadding=10>
     <tr>
       <th colspan="2">Quiz Grading Rubric</th>
@@ -108,9 +107,7 @@ advance.
     <td>Complete and correct</td>
     <td> The solution is complete and correct, shows appropriate
       supporting work, and uses appropriate
-      vocabulary. Calculations and logical reasoning are
-      correct. Solutions to problems marked "<b>DISCUSSION</b>" are written
-      using one or more complete sentences.
+      vocabulary. Calculations and logical reasoning are correct. 
     </td>
     </tr>
 
