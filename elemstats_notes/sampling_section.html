@@ -5,7 +5,7 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Sampling Theory</title>
@@ -14,68 +14,97 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Elementary Statistics Supplementary Notes">
 <meta property="book:author" content="David W. Lyons">
-<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
   },
-  chtml: {
-    scale: 0.98,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
   },
-  startup: {
+  "startup": {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
       rsMathReady();
       }
     )}
-  },
+  }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://unpkg.com/lunr/lunr.js"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.2/pretext_search.js"></script><link href="https://pretextbook.org/css/0.6/pretext_search.css" rel="stylesheet" type="text/css">
-<script>js_version = 0.2</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.2/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.2/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.2/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.8/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
-<link href="https://pretextbook.org/css/0.6/pretext.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.6/pretext_add_on.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.6/shell_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.6/banner_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.6/navbar_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.6/toc_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.6/knowls_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.6/style_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.6/colors_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.6/setcolors.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+<link href="https://pretextbook.org/css/0.8/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.8/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.8/shell_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.8/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.8/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.8/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.8/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.8/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.8/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.8/setcolors.css" rel="stylesheet" type="text/css">
 </head>
 <body class="pretext book ignore-math">
-<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead"><div class="ptx-banner">
-<a id="logo-link" href=""></a><div class="title-container">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" href=""></a><div class="title-container">
 <h1 class="heading"><a href="elemstats.html"><span class="title">Elementary Statistics Supplementary Notes</span></a></h1>
 <p class="byline">David W. Lyons</p>
 </div>
-<div id="searchresultsplaceholder" style="display: none">
-<button id="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms"></span>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<button id="closesearchresults" class="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms" class="searchterms"></span>
 </h2>
-<div id="searchempty"><span>No results.</span></div>
-<ol id="searchresults"></ol>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
 </div>
-</div></header><nav id="ptx-navbar" class="navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><a class="index-button button" href="index-1.html" title="Index"><span class="name">Index</span></a><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="theavatarbutton" class="name">You!</span><div id="preferences_menu_holder" class="hidden"><ol id="preferences_menu" style="font-family: 'Roboto Serif', serif;">
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="index-1.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="probability_section.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="summary_notes_chapter.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="basic_skills_chapter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span><div class="searchbox"><div class="searchwidget">
+<input id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" class="searchbutton" type="button" onclick="doSearch()" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button>
+</div></div>
+<span class="nav-runestone-controls"><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="avatarbutton" class="avatarbutton name">You!</span><div id="preferences_menu_holder" class="preferences_menu_holder hidden"><ol id="preferences_menu" class="preferences_menu" style="font-family: 'Roboto Serif', serif;">
 <li data-env="avatar" tabindex="-1">Choose avatar<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
 <ol class="hidden avatar">
 <li data-val="You!" tabindex="-1">
@@ -177,9 +206,7 @@ window.MathJax = {
 <span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
 </ol>
 </li>
-</ol></div></button><span class="treebuttons"><a class="previous-button button" href="probability_section.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="summary_notes_chapter.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="basic_skills_chapter.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
-<input id="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" type="button" onclick="doSearch()">🔍</button>
-</div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(      \DeclareMathOperator{\AVE}{AVE}
+</ol></div></button></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(      \DeclareMathOperator{\AVE}{AVE}
       \DeclareMathOperator{\SD}{SD}
       \DeclareMathOperator{\rms}{rms}
       \DeclareMathOperator{\REGR}{REGR}
@@ -227,7 +254,7 @@ window.MathJax = {
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
 <div class="ptx-page">
-<div id="ptx-sidebar"><nav id="ptx-toc" class="depth2"><ul class="structural">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural">
 <li>
 <div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
 <ul class="structural"><li><div class="toc-item"><a href="preface-1.html" class="internal"><span class="title">Preface</span></a></div></li></ul>
@@ -364,12 +391,12 @@ window.MathJax = {
 </li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sampling_section"><h2 class="heading hide-type">
-<span class="type">Section</span> <span class="codenumber">3.4</span> <span class="title">Sampling Theory</span>
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">3.4</span><span class="space"> </span><span class="title">Sampling Theory</span>
 </h2>
 <section class="introduction" id="introduction-8">This section is coordinated with Freedman, <em class="emphasis">Statistics</em> <a href="" class="xref" data-knowl="./knowl/freedman_statistics.html" title="Bibliographic Entry 1: Statistics, 4th edition">[1]</a>, Chapters 16–21,23.</section><section class="subsection" id="subsection-25"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">3.4.1</span> <span class="title">Sampling Vocabulary and Formulas</span>
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.4.1</span><span class="space"> </span><span class="title">Sampling Vocabulary and Formulas</span>
 </h3>
-<div class="para" id="p-52">A sequence of random draws from a box model is called a <dfn class="terminology">sample</dfn> from the box. A sequence of random draws taken without replacement is called a <dfn class="terminology">simple random sample</dfn>. The <dfn class="terminology">sample sum</dfn> is the sum of the draws. The <dfn class="terminology">sample average</dfn> is the average of the draws. For a box whose tickets are labeled with 0's and 1's, the percentage of 1's drawn in a sample is called the <dfn class="terminology">sample percentage of 1's</dfn>.</div>
+<div class="para" id="p-52">A sequence of random draws from a box model is called a <dfn class="terminology">sample</dfn> from the box. A sequence of random draws taken without replacement is called a <dfn class="terminology">simple random sample</dfn>. The <dfn class="terminology">sample sum</dfn> is the sum of the draws. The <dfn class="terminology">sample average</dfn> is the average of the draws. For a box whose tickets are labeled with 0’s and 1’s, the percentage of 1’s drawn in a sample is called the <dfn class="terminology">sample percentage of 1’s</dfn>.</div>
 <article class="example example-like" id="samplingeg1"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-samplingeg1"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.1</span><span class="period">.</span>
 </h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-samplingeg1"><article class="example example-like"><div class="para logical" id="p-53">
@@ -399,7 +426,7 @@ window.MathJax = {
 </div>
 </div></article></div>
 <div class="para logical" id="p-54">
-<div class="para">The sample sum, the sample average, and the sample percentage of 1's are examples of <dfn class="terminology">statistics</dfn>. A <dfn class="terminology">statistic</dfn> is any number that is computed from a sample. Another important statistic is the sample SD (the SD of the list of draws). By contrast, any number that can be computed from the numbers in the box is called a <dfn class="terminology">parameter</dfn>. For example, the average and the SD of the numbers in the box are parameters. Sampling theory is the art of exploiting the relationships between parameters and statistics to do these two kinds of tasks.</div>
+<div class="para">The sample sum, the sample average, and the sample percentage of 1’s are examples of <dfn class="terminology">statistics</dfn>. A <dfn class="terminology">statistic</dfn> is any number that is computed from a sample. Another important statistic is the sample SD (the SD of the list of draws). By contrast, any number that can be computed from the numbers in the box is called a <dfn class="terminology">parameter</dfn>. For example, the average and the SD of the numbers in the box are parameters. Sampling theory is the art of exploiting the relationships between parameters and statistics to do these two kinds of tasks.</div>
 <ul class="disc">
 <li id="li-14"><div class="para" id="p-derived-li-14">
 <dfn class="terminology">Prediction:</dfn> If you know what is in a given box, calculate the probability that a given statistic will fall in a given range of values.</div></li>
@@ -407,7 +434,7 @@ window.MathJax = {
 <dfn class="terminology">Inference:</dfn> If you do not know all the details of the contents of a box, but you have access to one or more samples from the box, make educated guesses about the parameters of the box.</div></li>
 </ul>
 </div>
-<div class="para" id="p-55">Sampling theory relies on the key formulas <a href="" class="xref" data-knowl="./knowl/expectedsumformula.html" title="Equation 3.4.1">(3.4.1)</a> and <a href="" class="xref" data-knowl="./knowl/sesumformula.html" title="Equation 3.4.2">(3.4.2)</a> below that express the fundamental relationships between the contents of a box model and samples coming out of the box. First we have to introduce the quantities involved. The average of the list of all possible sample sums is called the <dfn class="terminology">expected sum</dfn> of the sample draws, which we will denote by "expected(sum)". The SD of the list of all sample sums is called the <dfn class="terminology">standard error (SE) for the sum</dfn> of the sample draws, which we will denote by "SE(sum)". Similarly, the average of the list of all sample averages is called the <dfn class="terminology">expected average</dfn> of the sample draws (denoted "expected(ave)") and the SD of the list of all sample averages is called the <dfn class="terminology">SE for the average</dfn> of the sample draws (denoted "SE(ave)"). For a box containing only 0's and 1's, the average of all the sample percentages of 1's is called the <dfn class="terminology">expected percentage of 1's</dfn> (denoted "expected(%1's)") and the SD of the list of all sample percentages of 1's is called the <dfn class="terminology">SE for the percentage of 1's</dfn> (denoted "SE(%1s)").</div>
+<div class="para" id="p-55">Sampling theory relies on the key formulas <a href="" class="xref" data-knowl="./knowl/expectedsumformula.html" title="Equation 3.4.1">(3.4.1)</a> and <a href="" class="xref" data-knowl="./knowl/sesumformula.html" title="Equation 3.4.2">(3.4.2)</a> below that express the fundamental relationships between the contents of a box model and samples coming out of the box. First we have to introduce the quantities involved. The average of the list of all possible sample sums is called the <dfn class="terminology">expected sum</dfn> of the sample draws, which we will denote by "expected(sum)". The SD of the list of all sample sums is called the <dfn class="terminology">standard error (SE) for the sum</dfn> of the sample draws, which we will denote by "SE(sum)". Similarly, the average of the list of all sample averages is called the <dfn class="terminology">expected average</dfn> of the sample draws (denoted "expected(ave)") and the SD of the list of all sample averages is called the <dfn class="terminology">SE for the average</dfn> of the sample draws (denoted "SE(ave)"). For a box containing only 0’s and 1’s, the average of all the sample percentages of 1’s is called the <dfn class="terminology">expected percentage of 1’s</dfn> (denoted "expected(%1’s)") and the SD of the list of all sample percentages of 1’s is called the <dfn class="terminology">SE for the percentage of 1’s</dfn> (denoted "SE(%1s)").</div>
 <article class="example example-like" id="example-5"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-5"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.2</span><span class="period">.</span>
 </h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-5"><article class="example example-like">For <a href="" class="xref" data-knowl="./knowl/samplingeg1.html" title="Example 3.4.1">Example 3.4.1</a>, we have the following.<div class="displaymath process-math" data-contains-math-knowls="./knowl/samplingeg1.html" id="md-13">
@@ -460,7 +487,7 @@ n \amp = \text{the number of draws in the sample}.
 </div>
 </div>
 <div class="para logical" id="p-57">
-<div class="para">The reason we say that <a href="" class="xref" data-knowl="./knowl/expectedsumformula.html" title="Equation 3.4.1">(3.4.1)</a> and <a href="" class="xref" data-knowl="./knowl/sesumformula.html" title="Equation 3.4.2">(3.4.2)</a> are just two equations and not six is because of the simple relationships between sum, average, and percentage of 1's. The average of a list of numbers is the sum of that list of numbers divided by the number of items in the list; the percentage of 1's (in a list of 0's and 1's) is the average of that same list of 0's and 1's times 100%. Applying these simple relationships (summarized in equation <a href="" class="xref" data-knowl="./knowl/avesumpctrelation.html" title="Equation 3.4.5">(3.4.5)</a>, below) to the first of the three equations in each of <a href="" class="xref" data-knowl="./knowl/expectedsumformula.html" title="Equation 3.4.1">(3.4.1)</a> and <a href="" class="xref" data-knowl="./knowl/sesumformula.html" title="Equation 3.4.2">(3.4.2)</a> produces the rest of the equations in <a href="" class="xref" data-knowl="./knowl/expectedsumformula.html" title="Equation 3.4.1">(3.4.1)</a> and <a href="" class="xref" data-knowl="./knowl/sesumformula.html" title="Equation 3.4.2">(3.4.2)</a>.</div>
+<div class="para">The reason we say that <a href="" class="xref" data-knowl="./knowl/expectedsumformula.html" title="Equation 3.4.1">(3.4.1)</a> and <a href="" class="xref" data-knowl="./knowl/sesumformula.html" title="Equation 3.4.2">(3.4.2)</a> are just two equations and not six is because of the simple relationships between sum, average, and percentage of 1’s. The average of a list of numbers is the sum of that list of numbers divided by the number of items in the list; the percentage of 1’s (in a list of 0’s and 1’s) is the average of that same list of 0’s and 1’s times 100%. Applying these simple relationships (summarized in equation <a href="" class="xref" data-knowl="./knowl/avesumpctrelation.html" title="Equation 3.4.5">(3.4.5)</a>, below) to the first of the three equations in each of <a href="" class="xref" data-knowl="./knowl/expectedsumformula.html" title="Equation 3.4.1">(3.4.1)</a> and <a href="" class="xref" data-knowl="./knowl/sesumformula.html" title="Equation 3.4.2">(3.4.2)</a> produces the rest of the equations in <a href="" class="xref" data-knowl="./knowl/expectedsumformula.html" title="Equation 3.4.1">(3.4.1)</a> and <a href="" class="xref" data-knowl="./knowl/sesumformula.html" title="Equation 3.4.2">(3.4.2)</a>.</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/expectedsumformula.html ./knowl/sesumformula.html ./knowl/avesumpctrelation.html ./knowl/expectedsumformula.html ./knowl/sesumformula.html ./knowl/expectedsumformula.html ./knowl/sesumformula.html" id="mdn-3">
 \begin{align}
 \text{average(list) }\amp = \frac{\text{sum(list)}}{\text{#items in the list}}\tag{3.4.5}\\
@@ -487,13 +514,13 @@ X=A,A,A,\ldots,A,B,B,B,\ldots, B
 </div>
 <div class="para">In the Freedman text (p.298), the number <span class="process-math">\(B\)</span> is called the "big number", the number <span class="process-math">\(A\)</span> is called the "small number", the fraction <span class="process-math">\(s/(r+s)\)</span> is called the "fraction with the big number" and the fraction <span class="process-math">\(r/(r+s)\)</span> is called the "fraction with the small number".</div>
 </div></section><section class="subsection" id="subsection-26"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">3.4.2</span> <span class="title">The Law of Averages</span>
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.4.2</span><span class="space"> </span><span class="title">The Law of Averages</span>
 </h3>
-<div class="para" id="p-60">The "law of averages" is an intuitive statement, confirmed by the SE formulas <a href="" class="xref" data-knowl="./knowl/sesumformula.html" title="Equation 3.4.2">(3.4.2)</a>, that the sample percentage of 1's becomes a more and more accurate approximation of the percentage of 1's in a box as the number of draws increases. In statistics terms, "more accurate" means a smaller SE. [The summary at the end of Chapter 16 of our text is stated for the special case of a fair coin box, that is, a box containing half 0's and half 1's. Despite this restriction in the exposition, the authors expect the student to apply the law of averages for arbitrary 0-1 boxes. It should be noted that no SE formulas appear in the text before or in Chapter 16. The authors use the term "absolute error" to refer to the SE for the sum of draws, and use the term "relative error" to mean the fraction SE(sum)/(number of draws). In these terms, the law of averages says that absolute error increases as the number of draws increases, and relative error decreases as the number of draws increases. The authors imply that the law of averages is intuitively clear, whether you are aware of SE formulas or not.]</div></section><section class="subsection" id="subsection-27"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">3.4.3</span> <span class="title">The Central Limit Theorem</span>
+<div class="para" id="p-60">The "law of averages" is an intuitive statement, confirmed by the SE formulas <a href="" class="xref" data-knowl="./knowl/sesumformula.html" title="Equation 3.4.2">(3.4.2)</a>, that the sample percentage of 1’s becomes a more and more accurate approximation of the percentage of 1’s in a box as the number of draws increases. In statistics terms, "more accurate" means a smaller SE. [The summary at the end of Chapter 16 of our text is stated for the special case of a fair coin box, that is, a box containing half 0’s and half 1’s. Despite this restriction in the exposition, the authors expect the student to apply the law of averages for arbitrary 0-1 boxes. It should be noted that no SE formulas appear in the text before or in Chapter 16. The authors use the term "absolute error" to refer to the SE for the sum of draws, and use the term "relative error" to mean the fraction SE(sum)/(number of draws). In these terms, the law of averages says that absolute error increases as the number of draws increases, and relative error decreases as the number of draws increases. The authors imply that the law of averages is intuitively clear, whether you are aware of SE formulas or not.]</div></section><section class="subsection" id="subsection-27"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.4.3</span><span class="space"> </span><span class="title">The Central Limit Theorem</span>
 </h3>
-<div class="para" id="p-61">Sampling theory derives its power from a fact called the <dfn class="terminology">Central Limit Theorem</dfn>. The Central Limit Theorem says that, no matter what numbers are in a box model, the histogram of all possible (standardized) sample sums (which is the same as the standardized sample average or the standardized sample percentage of 1's) is close to the standard normal distribution, as long as the number of draws is sufficiently large. [Our textbook is vague about how large is "sufficiently large". For a box with a uniform distribution (that is, a histogram for which all the blocks are close to even in height), 25 draws or more is sufficiently large. For a box that is very uneven (that is, a histogram with blocks of very different heights), sufficiently large might be 100 or more draws.]</div></section><section class="subsection" id="subsection-28"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">3.4.4</span> <span class="title">Basic prediction problem</span>
+<div class="para" id="p-61">Sampling theory derives its power from a fact called the <dfn class="terminology">Central Limit Theorem</dfn>. The Central Limit Theorem says that, no matter what numbers are in a box model, the histogram of all possible (standardized) sample sums (which is the same as the standardized sample average or the standardized sample percentage of 1’s) is close to the standard normal distribution, as long as the number of draws is sufficiently large. [Our textbook is vague about how large is "sufficiently large". For a box with a uniform distribution (that is, a histogram for which all the blocks are close to even in height), 25 draws or more is sufficiently large. For a box that is very uneven (that is, a histogram with blocks of very different heights), sufficiently large might be 100 or more draws.]</div></section><section class="subsection" id="subsection-28"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.4.4</span><span class="space"> </span><span class="title">Basic prediction problem</span>
 </h3>
 <div class="para logical" id="p-62">
 <div class="para">Armed with the facts and formulas above, here is the skeleton of the basic prediction problem.</div>
@@ -509,11 +536,11 @@ X=A,A,A,\ldots,A,B,B,B,\ldots, B
 <ul class="circle">
 <li id="li-20"><div class="para" id="p-derived-li-20">ave(box)</div></li>
 <li id="li-21"><div class="para" id="p-derived-li-21">SD(box)</div></li>
-<li id="li-22"><div class="para" id="p-derived-li-22">expected(sum,ave,%1's) (using <a href="" class="xref" data-knowl="./knowl/expectedsumformula.html" title="Equation 3.4.1">(3.4.1)</a>)</div></li>
-<li id="li-23"><div class="para" id="p-derived-li-23">SE(sum,ave,%1's) (using <a href="" class="xref" data-knowl="./knowl/sesumformula.html" title="Equation 3.4.2">(3.4.2)</a> and also <a href="" class="xref" data-knowl="./knowl/sewithcorrfact.html" title="Equation 3.4.3">(3.4.3)</a> if draws are without replacement)</div></li>
+<li id="li-22"><div class="para" id="p-derived-li-22">expected(sum,ave,%1’s) (using <a href="" class="xref" data-knowl="./knowl/expectedsumformula.html" title="Equation 3.4.1">(3.4.1)</a>)</div></li>
+<li id="li-23"><div class="para" id="p-derived-li-23">SE(sum,ave,%1’s) (using <a href="" class="xref" data-knowl="./knowl/sesumformula.html" title="Equation 3.4.2">(3.4.2)</a> and also <a href="" class="xref" data-knowl="./knowl/sewithcorrfact.html" title="Equation 3.4.3">(3.4.3)</a> if draws are without replacement)</div></li>
 </ul>
 </div></li>
-<li id="li-24"><div class="para" id="p-derived-li-24">Sketch a normal curve (justified by the Central Limit Theorem) and shade an area that answers the question. The center of the horizontal axis is expected(sum,ave,%1's)) (depending on the question). Find the <span class="process-math">\(z\)</span> values needed for your shaded area.<div class="displaymath process-math">
+<li id="li-24"><div class="para" id="p-derived-li-24">Sketch a normal curve (justified by the Central Limit Theorem) and shade an area that answers the question. The center of the horizontal axis is expected(sum,ave,%1’s)) (depending on the question). Find the <span class="process-math">\(z\)</span> values needed for your shaded area.<div class="displaymath process-math">
 \begin{equation*}
 z =  \frac{\text{(sum,ave,%1's in the question)} - (\text{expected(sum,ave,%1's)})}{\text{SE(sum,ave,%1's)}}
 \end{equation*}
@@ -522,11 +549,11 @@ z =  \frac{\text{(sum,ave,%1's in the question)} - (\text{expected(sum,ave,%1's)
 <li id="li-25"><div class="para" id="p-derived-li-25">Finally, use the normal distribution table to find the area that answers the given question.</div></li>
 </ul>
 </div></section><section class="subsection" id="subsection-29"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">3.4.5</span> <span class="title">Basic Inference Problem</span>
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.4.5</span><span class="space"> </span><span class="title">Basic Inference Problem</span>
 </h3>
 <div class="para" id="p-64">The basic inferential statistics problem in our text goes like this: you are given information about a sample from a box with unknown contents. You are asked to estimate the average of the box, and to make an educated statement about how far off that estimate might be from the actual value.</div>
 <div class="para logical" id="p-65">
-<div class="para">Let's write ave(observed) and SD(observed) to denote the average and SD of the list of numbers in the given sample. By virtue of Equation <a href="" class="xref" data-knowl="./knowl/expectedsumformula.html" title="Equation 3.4.1">(3.4.1)</a>, it is intuitively reasonable to use ave(observed) to estimate ave(box). It is not so clear, but it turns out to be okay for large enough samples, to use SD(observed) to estimate SD(box). By <a href="" class="xref" data-knowl="./knowl/sesumformula.html" title="Equation 3.4.2">(3.4.2)</a>, it makes sense that our actual ave(observed) will be off from the ave(box) by SE(ave), which we can estimate by</div>
+<div class="para">Let’s write ave(observed) and SD(observed) to denote the average and SD of the list of numbers in the given sample. By virtue of Equation <a href="" class="xref" data-knowl="./knowl/expectedsumformula.html" title="Equation 3.4.1">(3.4.1)</a>, it is intuitively reasonable to use ave(observed) to estimate ave(box). It is not so clear, but it turns out to be okay for large enough samples, to use SD(observed) to estimate SD(box). By <a href="" class="xref" data-knowl="./knowl/sesumformula.html" title="Equation 3.4.2">(3.4.2)</a>, it makes sense that our actual ave(observed) will be off from the ave(box) by SE(ave), which we can estimate by</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/expectedsumformula.html ./knowl/sesumformula.html ./knowl/bootstrap.html" id="bootstrap">
 \begin{equation}
 \text{SE(ave) } \approx
@@ -542,7 +569,7 @@ z =  \frac{\text{(sum,ave,%1's in the question)} - (\text{expected(sum,ave,%1's)
 \text{ave(observed)} \pm \text{(estimated SE(ave))}
 \end{equation*}
 </div>
-<div class="para">For a positive number <span class="process-math">\(z\text{,}\)</span> let's write Area(<span class="process-math">\(z\)</span>) to denote the area under the normal curve in the range <span class="process-math">\(-z\)</span> to <span class="process-math">\(+z\text{.}\)</span> The interval</div>
+<div class="para">For a positive number <span class="process-math">\(z\text{,}\)</span> let’s write Area(<span class="process-math">\(z\)</span>) to denote the area under the normal curve in the range <span class="process-math">\(-z\)</span> to <span class="process-math">\(+z\text{.}\)</span> The interval</div>
 <div class="displaymath process-math" id="confinterval">
 \begin{equation}
 \text{ave(observed)} \pm z\cdot \text{(estimated SE(ave))}\tag{3.4.8}
@@ -552,10 +579,10 @@ z =  \frac{\text{(sum,ave,%1's in the question)} - (\text{expected(sum,ave,%1's)
 </div>
 <div class="para" id="p-67">By virtue of the Central Limit Theorem, we can make a precise probability statement about the interval <a href="" class="xref" data-knowl="./knowl/confinterval.html" title="Equation 3.4.8">(3.4.8)</a>. We can say that approximately Area(<span class="process-math">\(z\)</span>) (time 100 percent) of all Area(<span class="process-math">\(z\)</span>) confidence intervals (imagine many samples of the given sample size) will contain the average of the box. For example, approximately 95% of all 95% confidence intervals (calculated from many samples) will contain the box average.</div></section></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="probability_section.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="basic_skills_chapter.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
+<a class="previous-button button" href="probability_section.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="basic_skills_chapter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
-<div id="ptx-page-footer">
+<div id="ptx-page-footer" class="ptx-page-footer">
 <a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
 </div>
 </body>
