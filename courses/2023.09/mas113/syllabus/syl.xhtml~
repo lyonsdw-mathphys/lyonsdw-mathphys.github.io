@@ -1,6 +1,6 @@
 <html> 
 <head>
-  <title>MAS 311 Real Analysis Fall 2023 Syllabus</title>
+  <title>MAS 113 Mathematical Thinking 1 Fall 2023 Syllabus</title>
   <style>
     .boxed {
       border: 1px solid black ;
@@ -15,7 +15,7 @@ body {
 
 <body>
 
-<h1>MAS 311 Real Analysis Fall 2023<br>
+<h1>MAS 113 Mathematical Thinking 1 Fall 2023<br>
     Course Syllabus
 </h1>
 
@@ -26,7 +26,7 @@ body {
 
 <!--@include "description.html"-->
 <!--@include "prerequisites.html"-->
-<!--@include "requirements_met.html"-->
+<!--@DONOTinclude "requirements_met.html"-->
 <!--@include "texts_etc.html"-->
 <!--@include "../../syllabus_common/technology.html"-->
 <!--@include "../../syllabus_common/instructor.html"-->
@@ -47,8 +47,10 @@ body {
 <!--@include "../../syllabus_common/graded_hmwk_top.html"-->
 <!--@include "graded_hmwk_insert_3XX.html"-->
 <!--@include "../../syllabus_common/graded_hmwk_bottom.html"-->
-<!--@include "exams_3XX.html"-->
-<!--@include "make_up_3XX.html"-->
+<!--@include "../../syllabus_common/written_work_grading.html"-->
+<!--@include "../../syllabus_common/quiz.html"-->
+<!--@include "../../syllabus_common/quizexam_grading_rubric.html"-->
+<!--@include "../../syllabus_common/make_up.html"-->
 <!--@include "../../syllabus_common/equivalent_instructional_activities.html"-->
 <!--@include "../../syllabus_common/letter_grades.html"-->
 <!--@include "../../syllabus_common/attendance.html"-->
