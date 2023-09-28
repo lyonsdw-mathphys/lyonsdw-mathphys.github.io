@@ -12,20 +12,14 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para logical">
-<div class="para">Among all possible lines, there is one single line with the least possible rms error, called the <dfn class="terminology">regression line for <span class="process-math">\(Y\)</span> on <span class="process-math">\(X\)</span></dfn>. This means that the regression line is the best possible line to use as a prediction tool to guess an unknown corresponding <span class="process-math">\(Y\)</span> value for a given <span class="process-math">\(X\)</span> value. The regression line passes through the point <span class="process-math">\((\AVE(X),\AVE(Y))\text{,}\)</span> called the <dfn class="terminology">point of averages</dfn> for the lists <span class="process-math">\(X,Y\text{,}\)</span> and has slope equal to <span class="process-math">\(r\cdot \SD(Y)/\SD(X)\text{,}\)</span> where <span class="process-math">\(r\)</span> is the number</div>
-<div class="displaymath process-math">
-\begin{equation*}
-r = \AVE\left(\left(\frac{X-\AVE(X)}{\SD(X)}\right) \left(\frac{Y-\AVE(Y)}{\SD(Y)}\right)\right)
-\end{equation*}
-</div>
-<div class="para">called the <dfn class="terminology">correlation coefficient</dfn> for the pair of lists <span class="process-math">\(X,Y\text{.}\)</span> The rms error for the regression line is</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\text{rms error for regression line } = \SD(Y) \cdot \sqrt{1-r^2}.
-\end{equation*}
-</div>
-</div>
-<span class="incontext"><a href="regression_section.html#p-32" class="internal">in-context</a></span>
+<div class="para logical"><ol class="lower-alpha">
+<li><div class="para">Use the facts that the regression line passes close to vertical centers of thin vertical strips, that the regression line passes through the point of averages <span class="process-math">\((\AVE(X),\AVE(Y))\text{,}\)</span> and has slope equal to <span class="process-math">\(r\frac{\SD(Y)}{\SD(X)}\text{.}\)</span> Let <span class="process-math">\((A,B)=(\AVE(X),\AVE(Y))\)</span> be the point of averages and let <span class="process-math">\((P,Q)\)</span> be the point on the regression line with <span class="process-math">\(P=24.8\text{,}\)</span> so that <span class="process-math">\(Q\)</span> is the <span class="process-math">\(Y\)</span>-coordinate we are looking for. The run is <span class="process-math">\(P-A=4.67\text{,}\)</span> the rise is <span class="process-math">\(\text{(slope)(run)}=.82\frac{4.90}{3.65}(4.67)\approx
+5.137\text{,}\)</span> and <span class="process-math">\(Q=\text{rise } + B \approx
+21.0\text{.}\)</span>
+</div></li>
+<li><div class="para">We switch the horizontal and vertical roles of <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\)</span> so that we can find the desired <span class="process-math">\(X\)</span> value as the center of a thin vertical strip. Use the point of averages <span class="process-math">\((\AVE(Y),\AVE(X))\)</span> and the slope <span class="process-math">\(r\frac{\SD(X)}{\SD(Y)}\approx .611\text{.}\)</span> The run is <span class="process-math">\(21.0-15.86= 5.14\text{,}\)</span> the rise is <span class="process-math">\(\text{(slope)(run)} =(.611)(5.14)\approx 3.14 \text{,}\)</span> and the desired prediction is <span class="process-math">\(20.13+3.14= 23.27\text{.}\)</span>
+</div></li>
+</ol></div>
+<span class="incontext"><a href="basic_regression.html#p-32" class="internal">in-context</a></span>
 </body>
 </html>

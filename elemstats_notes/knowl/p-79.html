@@ -13,31 +13,19 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">Here are some basic problem types about regression.</div>
-<ol class="decimal">
-<li>
-<div class="para logical">
-<div class="para">(Ch 10) The scatter diagram for data called <span class="process-math">\(X,Y\)</span> shows a linear association, with the following summary statistics.</div>
+<div class="para">Among all possible lines, there is one single line with the least possible rms error, called the <dfn class="terminology">regression line for <span class="process-math">\(Y\)</span> on <span class="process-math">\(X\)</span></dfn>. This means that the regression line is the best possible line to use as a prediction tool to guess an unknown corresponding <span class="process-math">\(Y\)</span> value for a given <span class="process-math">\(X\)</span> value. The regression line passes through the point <span class="process-math">\((\AVE(X),\AVE(Y))\text{,}\)</span> called the <dfn class="terminology">point of averages</dfn> for the lists <span class="process-math">\(X,Y\text{,}\)</span> and has slope equal to <span class="process-math">\(r\cdot \SD(Y)/\SD(X)\text{,}\)</span> where <span class="process-math">\(r\)</span> is the number</div>
 <div class="displaymath process-math">
-\begin{align*}
-\AVE(X)\amp =20.13 \amp \amp \amp  \AVE(Y)\amp =15.86\\
-\SD(X)\amp =3.65  \amp  \amp \amp \SD(Y)\amp
-=4.90\\
-\amp  \amp r\amp=.82 \amp  \amp
-\end{align*}
+\begin{equation*}
+r = \AVE\left(\left(\frac{X-\AVE(X)}{\SD(X)}\right) \left(\frac{Y-\AVE(Y)}{\SD(Y)}\right)\right)
+\end{equation*}
+</div>
+<div class="para">called the <dfn class="terminology">correlation coefficient</dfn> for the pair of lists <span class="process-math">\(X,Y\text{.}\)</span> The rms error for the regression line is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{rms error for regression line } = \SD(Y) \cdot \sqrt{1-r^2}.
+\end{equation*}
 </div>
 </div>
-<div class="para logical"><ol class="lower-alpha">
-<li><div class="para">Estimate the average <span class="process-math">\(Y\)</span> value for data whose <span class="process-math">\(X\)</span> value is near <span class="process-math">\(24.8\text{.}\)</span>
-</div></li>
-<li><div class="para">Estimate the average <span class="process-math">\(X\)</span> value for data whose <span class="process-math">\(Y\)</span> value is near <span class="process-math">\(21.0\text{.}\)</span>
-</div></li>
-</ol></div>
-</li>
-<li><div class="para">(Ch 11) Continuing the previous problem, suppose now that the <span class="process-math">\(Y\)</span> data is normally distributed within each thin vertical strip, and that the scatter diagram is homoscedastic. For data whose <span class="process-math">\(X\)</span> value is near <span class="process-math">\(24.8\text{,}\)</span> estimate the percent of <span class="process-math">\(Y\)</span> data in the range <span class="process-math">\(15.86\)</span> and higher.</div></li>
-<li><div class="para">(Ch 10) Suppose that data called <span class="process-math">\(V,W\)</span> have a linear association with a correlation of <span class="process-math">\(r=.65\text{,}\)</span> and that  <span class="process-math">\(V,W\)</span> are both approximately normally distributed. Estimate the average percentile rank for <span class="process-math">\(W\)</span> data whose <span class="process-math">\(V\)</span> value is close to 80th percentile.</div></li>
-</ol>
-</div>
-<span class="incontext"><a href="section-9.html#p-79" class="internal">in-context</a></span>
+<span class="incontext"><a href="regression_section.html#p-79" class="internal">in-context</a></span>
 </body>
 </html>

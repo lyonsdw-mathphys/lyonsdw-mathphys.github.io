@@ -11,17 +11,22 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h6 class="heading"><span class="type">Paragraph</span></h6>
+<h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">The probability of exactly 3 evens in 6 rolls is <span class="process-math">\({6 \choose
-3}\left(\frac{1}{2}\right)^6 = 31.25\%\)</span> (using the binomial probability formula). A box model has 3125 1’s and 6875 0’s, with 100 draws. The average of the box is <span class="process-math">\(.3125\)</span> and the SD of the box is <span class="process-math">\(\sqrt{.3125\cdot .6875} \approx .464\text{.}\)</span> The expected sum is <span class="process-math">\(31.25\)</span> and the SE for the sum is <span class="process-math">\(4.64\text{.}\)</span> The <span class="process-math">\(z\)</span> value for 35 blues is</div>
+<div class="para">It makes intuitive sense to report our estimate of ave(box) as follows.</div>
 <div class="displaymath process-math">
 \begin{equation*}
-z = \frac{34.5-31.25}{4.64}\approx .70.
+\text{ave(observed)} \pm \text{(estimated SE(ave))}
 \end{equation*}
 </div>
-<div class="para">The normal curve table has an area of about <span class="process-math">\(52\%\)</span> for <span class="process-math">\(z=.70\text{,}\)</span> so the probability is about <span class="process-math">\((100-52)/2=24\%\)</span> (if you do not use the continuity correction, you get <span class="process-math">\(z=.81\)</span> and a probability of about <span class="process-math">\(21\%\)</span>).</div>
+<div class="para">For a positive number <span class="process-math">\(z\text{,}\)</span> let’s write Area(<span class="process-math">\(z\)</span>) to denote the area under the normal curve in the range <span class="process-math">\(-z\)</span> to <span class="process-math">\(+z\text{.}\)</span> The interval</div>
+<div class="displaymath process-math">
+\begin{equation}
+\text{ave(observed)} \pm z\cdot \text{(estimated SE(ave))}\tag{2.4.8}
+\end{equation}
 </div>
-<span class="incontext"><a href="section-11.html#p-113" class="internal">in-context</a></span>
+<div class="para">is called an <dfn class="terminology">Area(<span class="process-math">\(z\)</span>) confidence interval for ave(box)</dfn>. For example, a 95% confidence interval for the average of the box is the observed sample average plus or minus 2 times the estimated SE for the sample average.</div>
+</div>
+<span class="incontext"><a href="sampling_section.html#p-113" class="internal">in-context</a></span>
 </body>
 </html>
