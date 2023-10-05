@@ -60,4 +60,6 @@ Fri  <date>2023-12-01</date> <title>7.3</title> <hw/>
 
 Mon  <date>2023-12-04</date> <title>7.4</title> <hw/>
 Wed  <date>2023-12-06</date> <title>7.5</title> <hw/>
-Fri  <date>2023-12-08</date> <title>Review</title> <hw/>
+Fri  <date>2023-12-08</date> <title>Review</title> 
+
+<!-- built to here 10/5/2023 -->
