@@ -38,7 +38,7 @@ body {
 		var x;
 
 		function startTimer() {
-			countDownDate = new Date().getTime() + 30*60*1000; // Set the timer for 30 minutes
+			countDownDate = new Date().getTime() + 25*60*1000; // Set the timer for 25 minutes
 
 			// Update the countdown every 1 second
 			x = setInterval(function() {
@@ -93,7 +93,7 @@ body {
   <li>Scan and upload your finished quiz.
 <!--    <i>Exception: No scanning and
       no Canvas upload for students taking the quiz at CAR.</i>-->
-    <li>After uploading to Canvas, <b>CHECK your upload</b> by logging in to
+    <li><b>CHECK your upload</b> by logging in to
     Canvas and viewing your uploaded file. Files that are not uploaded
     correctly cannot be considered for grading.
 </ul>
@@ -127,7 +127,7 @@ body {
 </ul>
     </div>
     <div class="column">
-      	<h2>30 Minute Countdown Clock</h2>
+      	<h2>25 Minute Countdown Clock</h2>
 	<p class="large-font">Time remaining: <span id="countdown"></span></p>
 	<button onclick="startTimer()">Start</button>
 	<button onclick="stopTimer()">Stop</button>
