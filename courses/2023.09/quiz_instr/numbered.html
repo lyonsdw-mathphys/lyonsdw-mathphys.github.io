@@ -26,47 +26,7 @@ body {
    margin:10 auto;
 }
 </style>
-
-    <style>
-		.large-font {
-			font-size: 36px;
-		}
-    </style>
-    
-    <script type="text/javascript">
-		var countDownDate;
-		var x;
-
-		function startTimer() {
-			countDownDate = new Date().getTime() + 30*60*1000; // Set the timer for 30 minutes
-
-			// Update the countdown every 1 second
-			x = setInterval(function() {
-				var now = new Date().getTime();
-				var distance = countDownDate - now;
-
-				// Calculate minutes and seconds remaining
-				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-				// Output the result in an element with id="countdown"
-				document.getElementById("countdown").innerHTML = minutes + "m " + seconds + "s ";
-
-				// If the countdown is finished, display a message
-				if (distance < 0) {
-					clearInterval(x);
-					document.getElementById("countdown").innerHTML = "EXPIRED";
-				}
-			}, 1000);
-		}
-
-		function stopTimer() {
-			clearInterval(x);
-			document.getElementById("countdown").innerHTML = "STOPPED";
-		}
-	</script>
-
-    
+  
 </head>
 
 <body>
@@ -91,7 +51,10 @@ body {
 <li>      express the main idea
 	  <li>use appropriate vocabulary</ul>
   <li>Scan and upload your finished quiz. <i>Exception: No scanning and
-  no Canvas upload for students taking the quiz at CAR.</i>
+      no Canvas upload for students taking the quiz at CAR.</i>
+    <li>After uploading to Canvas, <b>CHECK your upload</b> by logging in to
+    Canvas and viewing your uploaded file. Files that are not uploaded
+    correctly cannot be considered for grading.
 </ul>
 
 <h4>Rules</h4>
@@ -123,10 +86,8 @@ body {
 </ul>
     </div>
     <div class="column">
-      	<h2><a name="30 Minute Countdown Clock"></a> 30 Minute Countdown Clock</h2>
-	<p class="large-font">Time remaining: <span id="countdown"></span></p>
-	<button onclick="startTimer()">Start</button>
-	<button onclick="stopTimer()">Stop</button>
+    <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=medium&timezone=America%2FNew_York"
+	    width="100%" height="115" frameborder="0" seamless></iframe>
     </div>
 </div>
 
