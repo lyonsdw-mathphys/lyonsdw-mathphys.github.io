@@ -12,7 +12,20 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para">A <dfn class="terminology">thin vertical strip</dfn> in the scatter diagram is a set of points <span class="process-math">\((X,Y)\)</span> whose <span class="process-math">\(X\)</span>-coordinate lies in a range from <span class="process-math">\(A\pm e\text{,}\)</span> where <span class="process-math">\(A\)</span> is a number within the range of entries of the list <span class="process-math">\(X\)</span> and <span class="process-math">\(e\)</span> is a small increment. If the various sets of <span class="process-math">\(Y\)</span> values in thin vertical strips (for various values of <span class="process-math">\(A\)</span>) has a similar SD as <span class="process-math">\(A\)</span> varies, the scatter diagram is said to be <dfn class="terminology">homoscedastic</dfn>. Otherwise, the scatter diagram is said to be <dfn class="terminology">heteroscedastic</dfn>. </div>
+<div class="para logical">
+<div class="para">Among all possible lines, there is one single line with the least possible rms error, called the <dfn class="terminology">regression line for <span class="process-math">\(Y\)</span> on <span class="process-math">\(X\)</span></dfn>. This means that the regression line is the best possible line to use as a prediction tool to guess an unknown corresponding <span class="process-math">\(Y\)</span> value for a given <span class="process-math">\(X\)</span> value. The regression line passes through the point <span class="process-math">\((\AVE(X),\AVE(Y))\text{,}\)</span> called the <dfn class="terminology">point of averages</dfn> for the lists <span class="process-math">\(X,Y\text{,}\)</span> and has slope equal to <span class="process-math">\(r\cdot \SD(Y)/\SD(X)\text{,}\)</span> where <span class="process-math">\(r\)</span> is the number</div>
+<div class="displaymath process-math">
+\begin{equation*}
+r = \AVE\left(\left(\frac{X-\AVE(X)}{\SD(X)}\right) \left(\frac{Y-\AVE(Y)}{\SD(Y)}\right)\right)
+\end{equation*}
+</div>
+<div class="para">called the <dfn class="terminology">correlation coefficient</dfn> for the pair of lists <span class="process-math">\(X,Y\text{.}\)</span> The rms error for the regression line is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{rms error for regression line } = \SD(Y) \cdot \sqrt{1-r^2}.
+\end{equation*}
+</div>
+</div>
 <span class="incontext"><a href="regression_section.html#p-81" class="internal">in-context</a></span>
 </body>
 </html>

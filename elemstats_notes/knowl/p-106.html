@@ -13,22 +13,13 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">
-<em class="alert">A special case SD formula:</em> Suppose that all of the entries of a list</div>
-<div class="displaymath process-math">
-\begin{equation*}
-X=A,A,A,\ldots,A,B,B,B,\ldots, B
-\end{equation*}
+<div class="para">The reason we say that <a href="" class="xref" data-knowl="./knowl/expectedsumformula.html" title="Equation 2.4.1">(2.4.1)</a> and <a href="" class="xref" data-knowl="./knowl/sesumformula.html" title="Equation 2.4.2">(2.4.2)</a> are just two equations and not six is because of the simple relationships between sum, average, and percentage of 1’s. The average of a list of numbers is the sum of that list of numbers divided by the number of items in the list; the percentage of 1’s (in a list of 0’s and 1’s) is the average of that same list of 0’s and 1’s times 100%. Applying these simple relationships (summarized in equation <a href="" class="xref" data-knowl="./knowl/avesumpctrelation.html" title="Equation 2.4.5">(2.4.5)</a>, below) to the first of the three equations in each of <a href="" class="xref" data-knowl="./knowl/expectedsumformula.html" title="Equation 2.4.1">(2.4.1)</a> and <a href="" class="xref" data-knowl="./knowl/sesumformula.html" title="Equation 2.4.2">(2.4.2)</a> produces the rest of the equations in <a href="" class="xref" data-knowl="./knowl/expectedsumformula.html" title="Equation 2.4.1">(2.4.1)</a> and <a href="" class="xref" data-knowl="./knowl/sesumformula.html" title="Equation 2.4.2">(2.4.2)</a>.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/expectedsumformula.html ./knowl/sesumformula.html ./knowl/avesumpctrelation.html ./knowl/expectedsumformula.html ./knowl/sesumformula.html ./knowl/expectedsumformula.html ./knowl/sesumformula.html">
+\begin{align}
+\text{average(list) }\amp = \frac{\text{sum(list)}}{\text{#items in the list}}\tag{2.4.5}\\
+\text{percent 1's in a list of 0's and 1's }\amp = (\text{average of the list}) \cdot 100\%\notag
+\end{align}
 </div>
-<div class="para">are one of two values <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{,}\)</span> with <span class="process-math">\(A\lt B\text{,}\)</span> and suppose there are <span class="process-math">\(r\)</span> entries with value <span class="process-math">\(A\)</span> and <span class="process-math">\(s\)</span> entries with value <span class="process-math">\(B\text{,}\)</span> so that the total number of entries in the list <span class="process-math">\(X\)</span> is <span class="process-math">\(r+s\text{.}\)</span> The SD of the list <span class="process-math">\(X\)</span> is given by the following formula.</div>
-<div class="displaymath process-math">
-\begin{equation}
-\text{SD}(X)=
-(B-A)\sqrt{\left(\frac{r}{r+s}\right)\left(\frac{s}{r+s}\right)} =
-(B-A)\frac{\sqrt{rs}}{r+s}\tag{2.4.6}
-\end{equation}
-</div>
-<div class="para">In the Freedman text (p.298), the number <span class="process-math">\(B\)</span> is called the "big number", the number <span class="process-math">\(A\)</span> is called the "small number", the fraction <span class="process-math">\(s/(r+s)\)</span> is called the "fraction with the big number" and the fraction <span class="process-math">\(r/(r+s)\)</span> is called the "fraction with the small number".</div>
 </div>
 <span class="incontext"><a href="sampling_section.html#p-106" class="internal">in-context</a></span>
 </body>

@@ -11,8 +11,34 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para">The <dfn class="terminology">opposite</dfn> of an event <span class="process-math">\(U\)</span> (also called the <dfn class="terminology">complement</dfn> of <span class="process-math">\(U\)</span>) is the event that consists of all the outcomes not in <span class="process-math">\(U\text{.}\)</span> For two events <span class="process-math">\(U,V\text{,}\)</span> the event "<span class="process-math">\(U \AND V\)</span>" (also called the <dfn class="terminology">intersection</dfn> of <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span>) is the set of all the outcomes shared by both <span class="process-math">\(U\)</span> and <span class="process-math">\(V\text{.}\)</span> The event "<span class="process-math">\(U \OR V\)</span>" (also called the <dfn class="terminology">union</dfn> of <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span>) is the set of all the outcomes that are in <span class="process-math">\(U\)</span> or in <span class="process-math">\(V\)</span> or both. Events <span class="process-math">\(U,V\)</span> are called <dfn class="terminology">mutually exclusive</dfn> if the event "<span class="process-math">\(U \AND V\)</span>" is empty.</div>
+<h5 class="heading"><span class="type">Paragraph</span></h5>
+<div class="para logical">
+<div class="para">Consider the box with tickets labeled <span class="process-math">\(x,y,z\)</span> and consider the chance process that selects two tickets, without replacement, from the box. The set of all possible outcomes is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\{(x,y), (x,z), (y,x), (y,z), (z,x), (z,y)\}
+\end{equation*}
+</div>
+<div class="para">where the pair <span class="process-math">\((y,x)\text{,}\)</span> for example, denotes the outcome where <span class="process-math">\(y\)</span> is selected on the first draw, and <span class="process-math">\(x\)</span> is selected on the second draw. The event <span class="process-math">\(A = \text{ "get an } x \text{"}\)</span> is the set</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A=\{(x,y), (x,z), (z,x), (y,x)\}
+\end{equation*}
+</div>
+<div class="para">and the event <span class="process-math">\(B = \text{ "get an } x \text{ on draw 1"}\)</span> is the set</div>
+<div class="displaymath process-math">
+\begin{equation*}
+B=\{(x,y), (x,z)\}.
+\end{equation*}
+</div>
+<div class="para">We have the following probabilities.</div>
+<div class="displaymath process-math">
+\begin{align*}
+P(A) \amp = P(\text{get an } x) = 4/6 = 2/3\\
+P(B) \amp = P(\text{get an } x \text{ on draw 1}) = 2/6 = 1/3
+\end{align*}
+</div>
+</div>
 <span class="incontext"><a href="probability_section.html#p-90" class="internal">in-context</a></span>
 </body>
 </html>
