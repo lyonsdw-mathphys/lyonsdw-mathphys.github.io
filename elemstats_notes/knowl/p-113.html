@@ -12,7 +12,16 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para">The basic inferential statistics problem in our text goes like this: you are given information about a sample from a box with unknown contents. You are asked to estimate the average of the box, and to make an educated statement about how far off that estimate might be from the actual value.</div>
+<div class="para logical">
+<div class="para">Let’s write ave(observed) and SD(observed) to denote the average and SD of the list of numbers in the given sample. By virtue of Equation <a href="" class="xref" data-knowl="./knowl/expectedsumformula.html" title="Equation 2.4.1">(2.4.1)</a>, it is intuitively reasonable to use ave(observed) to estimate ave(box). It is not so clear, but it turns out to be okay for large enough samples, to use SD(observed) to estimate SD(box). By <a href="" class="xref" data-knowl="./knowl/sesumformula.html" title="Equation 2.4.2">(2.4.2)</a>, it makes sense that our actual ave(observed) will be off from the ave(box) by SE(ave), which we can estimate by</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/expectedsumformula.html ./knowl/sesumformula.html ./knowl/bootstrap.html">
+\begin{equation}
+\text{SE(ave) } \approx
+\frac{\text{SD(observed)}}{\sqrt{\text{number of draws}}} \;\;\text{(estimated)}\tag{2.4.6}
+\end{equation}
+</div>
+<div class="para">(times the correction factor, if sampling without replacement). Equation <a href="" class="xref" data-knowl="./knowl/bootstrap.html" title="Equation 2.4.6">(2.4.6)</a> is called the <dfn class="terminology">bootstrap estimate</dfn> for the SE of the sample average.</div>
+</div>
 <span class="incontext"><a href="sampling_section.html#p-113" class="internal">in-context</a></span>
 </body>
 </html>

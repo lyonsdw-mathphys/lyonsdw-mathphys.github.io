@@ -13,14 +13,19 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">Let’s write ave(observed) and SD(observed) to denote the average and SD of the list of numbers in the given sample. By virtue of Equation <a href="" class="xref" data-knowl="./knowl/expectedsumformula.html" title="Equation 2.4.1">(2.4.1)</a>, it is intuitively reasonable to use ave(observed) to estimate ave(box). It is not so clear, but it turns out to be okay for large enough samples, to use SD(observed) to estimate SD(box). By <a href="" class="xref" data-knowl="./knowl/sesumformula.html" title="Equation 2.4.2">(2.4.2)</a>, it makes sense that our actual ave(observed) will be off from the ave(box) by SE(ave), which we can estimate by</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/expectedsumformula.html ./knowl/sesumformula.html ./knowl/bootstrap.html">
+<div class="para">It makes intuitive sense to report our estimate of ave(box) as follows.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{ave(observed)} \pm \text{(estimated SE(ave))}
+\end{equation*}
+</div>
+<div class="para">For a positive number <span class="process-math">\(z\text{,}\)</span> let’s write Area(<span class="process-math">\(z\)</span>) to denote the area under the normal curve in the range <span class="process-math">\(-z\)</span> to <span class="process-math">\(+z\text{.}\)</span> The interval</div>
+<div class="displaymath process-math">
 \begin{equation}
-\text{SE(ave) } \approx
-\frac{\text{SD(observed)}}{\sqrt{\text{number of draws}}} \;\;\text{(estimated)}\tag{2.4.6}
+\text{ave(observed)} \pm z\cdot \text{(estimated SE(ave))}\tag{2.4.7}
 \end{equation}
 </div>
-<div class="para">(times the correction factor, if sampling without replacement). Equation <a href="" class="xref" data-knowl="./knowl/bootstrap.html" title="Equation 2.4.6">(2.4.6)</a> is called the <dfn class="terminology">bootstrap estimate</dfn> for the SE of the sample average.</div>
+<div class="para">is called an <dfn class="terminology">Area(<span class="process-math">\(z\)</span>) confidence interval for ave(box)</dfn>. For example, a 95% confidence interval for the average of the box is the observed sample average plus or minus 2 times the estimated SE for the sample average.</div>
 </div>
 <span class="incontext"><a href="sampling_section.html#p-114" class="internal">in-context</a></span>
 </body>
