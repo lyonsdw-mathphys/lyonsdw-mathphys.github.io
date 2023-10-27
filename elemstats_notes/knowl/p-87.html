@@ -12,7 +12,19 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para">Start with an <span class="process-math">\(X\)</span>-value <span class="process-math">\(A\text{,}\)</span> somewhere above or below the value <span class="process-math">\(\AVE(X)\text{.}\)</span> Use the regression line for <span class="process-math">\(Y\)</span> on <span class="process-math">\(X\)</span> to predict the average <span class="process-math">\(Y\)</span> value for data points whose <span class="process-math">\(X\)</span> value is near <span class="process-math">\(A\text{.}\)</span> Call this prediction <span class="process-math">\(B\text{.}\)</span> Now use the regression line for <span class="process-math">\(X\)</span> on <span class="process-math">\(Y\)</span> to predict the average <span class="process-math">\(X\)</span> value for data points whose <span class="process-math">\(Y\)</span> value is near <span class="process-math">\(B\text{.}\)</span> Call this prediction <span class="process-math">\(C\text{.}\)</span> It will always turn out that <span class="process-math">\(C\)</span> is between <span class="process-math">\(\AVE(X)\)</span> and <span class="process-math">\(A\text{.}\)</span> This is due simply to the fact that, for real data, the value of <span class="process-math">\(|r|\)</span> is less than 1. This is called the <dfn class="terminology">regression effect</dfn>. Any attempt to explain why <span class="process-math">\(C\)</span> is between <span class="process-math">\(\AVE(X)\)</span> and <span class="process-math">\(A\)</span> by any other reason than simply the fact that <span class="process-math">\(|r|\lt 1\)</span> is called a <dfn class="terminology">regression fallacy</dfn>. </div>
+<div class="para logical"><ul class="disc">
+<li><div class="para">The value of <span class="process-math">\(r\)</span> is in the range <span class="process-math">\(-1\)</span> to <span class="process-math">\(1\text{.}\)</span> The value of <span class="process-math">\(|r|\)</span> is 1 precisely when all the points <span class="process-math">\((X,Y)\)</span> on the scatter diagram lie on a straight line.</div></li>
+<li><div class="para">The correlation coefficient is unitless. The value of <span class="process-math">\(r\)</span> does not change if you rescale <span class="process-math">\(X\)</span> or <span class="process-math">\(Y\text{.}\)</span>
+</div></li>
+<li><div class="para">It is tempting to summarize data using averages, but this has a misleading effect on correlation. Suppose that the points in a scatter diagram are subdivided into subsets, and that each subset is replaced by a single point<div class="displaymath process-math">
+\begin{equation*}
+\text{(average of the } X \text{ values in the subset, average
+of the } Y \text{ values in the subset)}.
+\end{equation*}
+</div>The correlation for this smaller data set of average points is usually higher (in absolute value) than the correlation for the original scatter diagram. This phenomenon is called <dfn class="terminology">ecological correlation</dfn>.</div></li>
+<li><div class="para">A strong correlation provides no evidence of a causal link between the variables <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\text{.}\)</span>
+</div></li>
+</ul></div>
 <span class="incontext"><a href="regression_section.html#p-87" class="internal">in-context</a></span>
 </body>
 </html>

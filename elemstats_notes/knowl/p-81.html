@@ -12,20 +12,7 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para logical">
-<div class="para">Among all possible lines, there is one single line with the least possible rms error, called the <dfn class="terminology">regression line for <span class="process-math">\(Y\)</span> on <span class="process-math">\(X\)</span></dfn>. This means that the regression line is the best possible line to use as a prediction tool to guess an unknown corresponding <span class="process-math">\(Y\)</span> value for a given <span class="process-math">\(X\)</span> value. The regression line passes through the point <span class="process-math">\((\AVE(X),\AVE(Y))\text{,}\)</span> called the <dfn class="terminology">point of averages</dfn> for the lists <span class="process-math">\(X,Y\text{,}\)</span> and has slope equal to <span class="process-math">\(r\cdot \SD(Y)/\SD(X)\text{,}\)</span> where <span class="process-math">\(r\)</span> is the number</div>
-<div class="displaymath process-math">
-\begin{equation*}
-r = \AVE\left(\left(\frac{X-\AVE(X)}{\SD(X)}\right) \left(\frac{Y-\AVE(Y)}{\SD(Y)}\right)\right)
-\end{equation*}
-</div>
-<div class="para">called the <dfn class="terminology">correlation coefficient</dfn> for the pair of lists <span class="process-math">\(X,Y\text{.}\)</span> The rms error for the regression line is</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\text{rms error for regression line } = \SD(Y) \cdot \sqrt{1-r^2}.
-\end{equation*}
-</div>
-</div>
+<div class="para">Given two lists of numbers <span class="process-math">\(X,Y\)</span> with the same number of entries, and given a linear function <span class="process-math">\(y=L(x)=ax+b\)</span> (<span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> are constants), the <dfn class="terminology">rms error for the line <span class="process-math">\(L\)</span></dfn> is the rms of the list <span class="process-math">\(Y-L(X)\text{.}\)</span> (For example, if <span class="process-math">\(A\)</span> is an entry in the list <span class="process-math">\(X\)</span> and <span class="process-math">\(B\)</span> is the corresponding entry in the list <span class="process-math">\(Y\text{,}\)</span> then the corresponding entry in the list <span class="process-math">\(Y-L(X)\)</span> is <span class="process-math">\(B-(aA+b)\text{.}\)</span>) We interpret the rms error for a line as a measure of how well <span class="process-math">\(L\)</span> performs as a tool for predicting the <span class="process-math">\(Y\)</span> value that corresponds to a given <span class="process-math">\(X\)</span> value. Given an <span class="process-math">\(X\)</span> value <span class="process-math">\(A\text{,}\)</span> the value <span class="process-math">\(B=L(A)\)</span> has a "prediction error" equal to <span class="process-math">\(B-L(A)\text{.}\)</span> The line <span class="process-math">\(L\)</span> is a good prediction tool if the rms error for <span class="process-math">\(L\)</span> is low, and the line <span class="process-math">\(L\)</span> is a bad prediction tool if the rms error for <span class="process-math">\(L\)</span> is high. We interpret the rms error for a line <span class="process-math">\(L\)</span> as the size of the typical error that we would observe if we used <span class="process-math">\(L\)</span> to predict an unknown <span class="process-math">\(Y\)</span> value for a given <span class="process-math">\(X\)</span> value.</div>
 <span class="incontext"><a href="regression_section.html#p-81" class="internal">in-context</a></span>
 </body>
 </html>

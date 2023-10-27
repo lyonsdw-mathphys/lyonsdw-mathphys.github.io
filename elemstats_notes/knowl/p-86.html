@@ -12,19 +12,30 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para logical"><ul class="disc">
-<li><div class="para">The value of <span class="process-math">\(r\)</span> is in the range <span class="process-math">\(-1\)</span> to <span class="process-math">\(1\text{.}\)</span> The value of <span class="process-math">\(|r|\)</span> is 1 precisely when all the points <span class="process-math">\((X,Y)\)</span> on the scatter diagram lie on a straight line.</div></li>
-<li><div class="para">The correlation coefficient is unitless. The value of <span class="process-math">\(r\)</span> does not change if you rescale <span class="process-math">\(X\)</span> or <span class="process-math">\(Y\text{.}\)</span>
-</div></li>
-<li><div class="para">It is tempting to summarize data using averages, but this has a misleading effect on correlation. Suppose that the points in a scatter diagram are subdivided into subsets, and that each subset is replaced by a single point<div class="displaymath process-math">
-\begin{equation*}
-\text{(average of the } X \text{ values in the subset, average
-of the } Y \text{ values in the subset)}.
-\end{equation*}
-</div>The correlation for this smaller data set of average points is usually higher (in absolute value) than the correlation for the original scatter diagram. This phenomenon is called <dfn class="terminology">ecological correlation</dfn>.</div></li>
-<li><div class="para">A strong correlation provides no evidence of a causal link between the variables <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\text{.}\)</span>
-</div></li>
-</ul></div>
+<div class="para">
+<a href="" class="xref" data-knowl="./knowl/linescomparetable.html" title="Table 2.2.1: Comparison of Lines and Prediction Errors">Table 2.2.1</a> shows a comparison of three lines and their rms errors. All three lines pass through the point of averages. The SD line is defined to have positive slope if <span class="process-math">\(r\gt 0\)</span> and negative slope if <span class="process-math">\(r\lt 0\text{.}\)</span> <figure class="table table-like"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.2.1<span class="period">.</span></span><span class="space"> </span>Comparison of Lines and Prediction Errors</figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b3 r1 l1 t1 lines">line</td>
+<td class="c m b3 r1 l0 t1 lines">slope</td>
+<td class="c m b3 r1 l0 t1 lines">rms error</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">regression line</td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(r\cdot \SD(Y)/\SD(X)\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\SD(Y) \sqrt{1-r^2}\)</span></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">SD line</td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\pm \SD(Y)/\SD(X)\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\SD(Y)  \sqrt{2(1-|r|)}\)</span></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">average line</td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\SD(Y)\)</span></td>
+</tr>
+</table></div></figure>
+</div>
 <span class="incontext"><a href="regression_section.html#p-86" class="internal">in-context</a></span>
 </body>
 </html>
