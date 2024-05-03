@@ -1,0 +1,52 @@
+  <p>
+
+<a name="quizexam_grading_rubric"></a>  
+  <table border=1 cellpadding=10>
+    <tr>
+      <th colspan="2">Quiz Grading Rubric</th>
+      </tr>
+  <tr>
+    <th>Category</th>
+    <th>Description</th>
+  </tr>
+
+    <tr>
+    <td>Complete and correct</td>
+    <td> The solution is complete and correct, shows appropriate
+      supporting work, and uses appropriate
+      vocabulary. Calculations and logical reasoning are
+      correct.
+<!--      Solutions to problems marked "<b>DISCUSSION</b>" are written
+      using one or more complete sentences.-->
+    </td>
+    </tr>
+
+    <tr>
+    <td>Substantive progress</td>
+    <td> The solution shows understanding of facts, methods, and issues
+      involved, but does not meet the description of "complete and
+      correct".
+    </td>
+    </tr>
+
+    <tr>
+    <td>Some progress</td>
+    <td> The response shows plausible
+    evidence that some aspect of the problem is grasped, but does not
+    meet the description of "substantive progress".
+    </td>
+    </tr>
+
+    <tr>
+    <td>No progress</td>
+    <td> The response is blank, illegible, or shows
+    no plausible evidence that some key aspect of the solution is grasped.</td>
+    </td>
+    </tr>
+
+</table>  
+
+
+
+
+  
