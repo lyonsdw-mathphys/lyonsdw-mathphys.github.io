@@ -48,9 +48,8 @@ body {
 <!--@include "../../syllabus_common/graded_exercises.html"-->
 <!--@include "../../syllabus_common/participation.html"-->
 <!--@include "../../syllabus_common/written_work_grading.html"-->
-<!--@include "../../syllabus_common/quiz_top.html"-->
-<!--@include "quiz_calculator.html"-->
-<!--@include "../../syllabus_common/quiz_bottom.html"-->
+<!--@include "../../syllabus_common/quiz.html"-->
+<!--@DONOTinclude "../../quiz_instr/content.html"--> <!--TESTING 4/2024 -->
 <!--@include "../../syllabus_common/quizexam_grading_rubric.html"-->
 
 <h2>Course Policies</h2>
