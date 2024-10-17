@@ -28,6 +28,7 @@ body {
 
 <!--@include "description.html"-->
 <!--@include "reading_and_exercises.html"-->
+<!--@include "calculator.html"-->
 <!--@include "../../syllabus_common/technology.html"-->
 <!--@include "../../syllabus_common/goals.html"-->
 <!--@include "../../syllabus_common/course_calendar.html"-->
@@ -43,7 +44,9 @@ body {
 <!--@include "grade_categories.html"-->
 <!--@include "../../syllabus_common/graded_exercises.html"-->
 <!--@include "../../syllabus_common/participation.html"-->
-<!--@include "../../syllabus_common/quiz.html"-->
+<!--@include "../../syllabus_common/quiz_top.html"-->
+<!--@include "quiz_calculator.html"-->
+<!--@include "../../syllabus_common/quiz_bottom.html"-->
 <!--@include "../../syllabus_common/quizexam_grading_rubric.html"-->
 
 
