@@ -19,7 +19,8 @@ body {
 
   <h1>
 <!--@include "course_title.html"-->    
-MAS 114 Mathematical Thinking 1 Spring 2025
+MAS 323 Spring 2025 <br>
+Introduction to Modern Algebra and Geometry 
   <br>
   Course Syllabus
 </h1>
@@ -47,20 +48,20 @@ last update: 2024-12-05
   discretion of the instructor.</i>
 
 <p>
+  
+<!--Update Log:
 
-<!--
 <pre>
-  Update Log:
-    date comment
+
 </pre>
--->
+ -->
 <!--@insert_toc-->
 <div class="boxed">
 <h2>Table of Contents</h2>
 <p><a href="#Course Information"></a> <b>Course Information</b><br>
 <p>
 &nbsp <a href="#Course Description">1</a> Course Description<br>
-&nbsp <a href="#Reading and Exercises">2</a> Reading and Exercises<br>
+&nbsp <a href="#Required Texts, Reading and Exercises">2</a> Required Texts, Reading and Exercises<br>
 &nbsp <a href="#Required Technology">3</a> Required Technology<br>
 &nbsp <a href="#Course Goals, Objectives, and Learning Outcomes">4</a> Course Goals, Objectives, and Learning Outcomes<br>
 &nbsp <a href="#Course Calendar">5</a> Course Calendar<br>
@@ -92,47 +93,94 @@ last update: 2024-12-05
 <!--@include "description.html"-->
 <h3><a name="Course Description">1</a> Course Description</h3>
 
-This course is an introduction to mathematical argument through problem
-solving using basic tools. Topics include sets and functions, basic
-facts about integers, and linear and exponential growth.
+This course is an introduction to group theory combined with an
+introduction to modern geometries. Group theory topics include
+properties of groups and homomorphisms and actions of groups on
+sets. Geometry topics include the basic theory of Möbius, hyperbolic,
+elliptic, and projective geometries.
 
 <pre>
-  Credits: 1
-  Co-requisite: MAS 111
-  Prerequisite(s): (none)
+  Prerequisites: MAS 202 and MAS 222
+  Credit Hours: 3
 </pre>
 
 <!--@include "reading_and_exercises.html"-->
 <a name="reading_and_exercises"></a>
-<h3><a name="Reading and Exercises">2</a> Reading and Exercises</h3>
+<h3><a name="Required Texts, Reading and Exercises">2</a> Required Texts, Reading and Exercises</h3>
 
+<!--<h4>Texts</h4>-->
+<ul>
+  <li>[IGG] Lyons, <a href="https://mathvista.org/algeom_text_files/frontmatter.html"><i>Introduction to Groups and Geometries</i></a>
+  <li>[L] Lyons, <a href="https://mathvista.org/not_just_calculus/frontmatter.html"><i>Not Just Calculus</i></a> 
+</ul>
 
+<h4>[NJC] Background aterial for first two class meetings</h4>
 <pre>
-Text: Lyons, <i>Not Just Calculus</i>
+Reading: [NJC] Section 2.3
+Exercises for first class meeting: [NJC] Sec. 2.3 Exer. 1,2,3,4,5
+Exercises for seocond class meeting: [NJC] Sec. 2.3 Exer. 6,7,8
+</pre>
 
-             Graded Exercises
+<h4>[IGG] Starting in the second class meeting</h4>
+<pre>
 Reading  Checkpoint      Exercise
 -------  ----------      --------
-2.1a     1,2,3,4,5
-2.1b                     1,2,3,4
-2.1c                     5,6,7,8,9
+1.1                      1,2,3
 
-2.2a     1,2,3,4,5
-2.2b                     1,2,3,4,5
+1.2a     2,3,4,5,6,7,8  
+1.2b                     1,2
 
-2.3a     1,2,3,5,6
-2.3b                     1,2,3,4
+1.3a     2,4             1,2
+1.3b                     3,4,5,6,7
+
+1.4a     1,3             1
+1.4b                     2,3,4,5
+
+2.1a     2,6,9,10        
+2.1b                     1,2
+2.1c                     3,4,5
+
+2.2a                     1,2,3,4,5,6
+2.2b                     7,8
+2.2c                     9,10
+
+2.3a     2,3,7,8         1,2
+2.3b                     3,4
 2.3c                     5,6,7,8
 
-2.4.1                    1,2,3
-2.4.2                    1,2,3,4,5,6
-2.4.3a                   1,2,3,4
-2.4.3b                   5,6,7,8
-2.4.4                    1,2,3,4,5
+2.4a     2,4             1,2,3,4,5,6
+2.4b                     7,8,9
+2.4c                     10,11,12,13,14,15
 
-a,b,c = section split over multiple class meetings and exercise sets
+2.5a     2,3,5           1
+2.5b                     2,3
+2.5c                     4,5,6,7
 
+3.1a     2               1,2,3,4
+3.1b                     5,6
+3.1c                     7,8
+
+3.2a     1,2,4,6,8
+3.2b     9,11,13
+3.2c     18,20,22,24
+3.2d                     1,2,3,4,5
+3.2e                     6,7,8,9
+
+3.3a     3,7,8,9,11
+3.3b     15,16,17,19
+3.3c     21,22,23
+3.3d                     1,2,3,4,5
+3.3e                     6,7,8,9,10
+
+3.4a     1,2,4,6,11
+3.4b     13,21,22,23
+3.4c                     1,2
+3.4d                     3,4
+
+3.5a                     1,2,3,4
+3.5b                     5,6,7
 </pre>
+
 <!--@include "../../syllabus_common/technology.html"-->
 <h3><a name="Required Technology">3</a> Required Technology</h3>
 
@@ -313,10 +361,10 @@ Canvas. Details and instructions are given in the sections that follow.
 
 <!--@include "grade_categories.html"-->
 <pre>
-  Graded Exercises        5%
-  Class Participation     5%
-  Writing Assignments    20%
-  Quizzes                70%
+  Graded Exercises       10%
+  Daily Participation    10%
+  Written Assignments    20%
+  Quizzes                60%
 </pre>
 
 
