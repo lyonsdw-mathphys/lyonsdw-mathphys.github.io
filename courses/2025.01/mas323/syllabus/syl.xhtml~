@@ -30,6 +30,7 @@ body {
 <h2>Course Information</h2>
 
 <!--@include "description.html"-->
+<!--@include "texts_etc.html"-->
 <!--@include "reading_and_exercises.html"-->
 <!--@include "../../syllabus_common/goals.html"-->
 <!--@include "../../syllabus_common/course_calendar.html"-->
