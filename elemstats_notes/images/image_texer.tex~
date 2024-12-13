@@ -90,7 +90,8 @@ Figure~\ref{#2}\\ #7
 
 \medskip
 
-%\input{ngonsymm.pspdftex}
+%\input{displacement.pdf_t}
+\input{rise_run.pdf_t}
 %\input{stereoproj.pspdftex}
 %\input{stereoproj2.pspdftex}
 %\spacer\hspace*{-1.5in}\input{rotrefl.pspdftex}
@@ -147,6 +148,9 @@ Figure~\ref{#2}\\ #7
 %%   \Z_n\times \Z_n \ar[r]_{\text{  add}} & \Z_n 
 %% }
 %% \hfill\spacer
+
+\spacer
+\vspace*{1in}
 
 %%%% lift of complex inversion via stereographic projection
 \hfill

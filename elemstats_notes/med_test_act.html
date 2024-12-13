@@ -299,7 +299,8 @@ window.MathJax = {
 <ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-section active"><div class="toc-title-box"><a href="med_test_act.html" class="internal"><span class="codenumber">A.1</span> <span class="title">Activity on Medical Testing</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="batt_ave_act.html" class="internal"><span class="codenumber">A.2</span> <span class="title">Batting Average Puzzle</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="ave_sd_act.html" class="internal"><span class="codenumber">A.3</span> <span class="title">Intuition for Average and SD</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="rect_areas_act.html" class="internal"><span class="codenumber">A.3</span> <span class="title">Rectangle Area Puzzle</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ave_sd_act.html" class="internal"><span class="codenumber">A.4</span> <span class="title">Intuition for Average and SD</span></a></div></li>
 </ul>
 </li>
 </ul></nav></div>
@@ -341,52 +342,7 @@ window.MathJax = {
 <li id="med_test_act-5-2-3"><div class="para" id="p-derived-med_test_act-5-2-3">Would your answer change if you thought about a population of <span class="process-math">\(10\)</span> million instead of <span class="process-math">\(100\)</span> million?</div></li>
 <li id="med_test_act-5-2-4"><div class="para" id="p-derived-med_test_act-5-2-4">Would your answer change if mutation M occurs in <span class="process-math">\(10\%\)</span> of the population, instead of <span class="process-math">\(1\)</span> in <span class="process-math">\(100,000\)</span> ?</div></li>
 </ol>
-</div>
-<details id="med_test_act-6" class="solution solution-like born-hidden-knowl"><summary><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like"><ol class="decimal">
-<li id="med_test_act-6-1-1"><div class="para" id="p-derived-med_test_act-6-1-1"><div class="displaymath process-math" id="med_test_act-6-1-1-1">
-\begin{align*}
-|A| \amp = (1/100000) \cdot 100,000,000 = 1000\\
-|B| \amp = 100,000,000 - 1000 = 99,999,000\\
-|AP| \amp = .95 \cdot 1000 = 950\\
-|BP| \amp  = .05 \cdot  99,999,000 = 4,999,950\\
-|P|  \amp = |AP| + |BP| = 5,000,900\\
-|AN| \amp = .05 \cdot 1000 = 50\\
-|BN| \amp = .95 \cdot 99,999,000 = 94,999,050\\
-|N| \amp = |AN| + |BN| = 94,999,100
-\end{align*}
-</div></div></li>
-<li id="med_test_act-6-1-2"><div class="para" id="p-derived-med_test_act-6-1-2">
-<div class="displaymath process-math">
-\begin{equation*}
-|AP| / |P| = 950 / 5,000,900 \approx .00019 = .019\%
-\end{equation*}
-</div>(about <span class="process-math">\(200\)</span> times <span class="process-math">\(1/100000\)</span> )</div></li>
-<li id="med_test_act-6-1-3"><div class="para logical" id="med_test_act-6-1-3-1">
-<div class="para">No change. Both results are equal to</div>
-<div class="displaymath process-math" id="med_test_act-6-1-3-1-1">
-\begin{align*}
-P( \text{mut} | \text{pos}) \amp = \frac{P( \text{mut} \AND \text{pos})}{P(\text{pos})}\\
-\amp = \frac{P( \text{mut} \AND \text{pos})}{P( \text{pos} \AND \text{mut}) + P( \text{pos} \AND \text{nomut})}\\
-\amp = \frac{P( \text{pos} | \text{mut})  P(\text{mut})}{P(\text{pos} | \text{mut})  P(\text{mut}) + P(\text{pos} |  \text{nomut})  P(\text{nomut})}\\
-\amp =    \frac{ .95  \cdot 1/1000000}{.95 \cdot 1/1000000  +  .05  \cdot 99999/1000000}\\
-\amp \approx .00019 = .019\%
-\end{align*}
-</div>
-<div class="para">where events “mut”, “nomut”, and “pos” are</div>
-<ul class="disc">
-<li id="med_test_act-6-1-3-1-2-1"><div class="para" id="p-derived-med_test_act-6-1-3-1-2-1">mut     = “a randomly selected individual has mutation M”</div></li>
-<li id="med_test_act-6-1-3-1-2-2"><div class="para" id="p-derived-med_test_act-6-1-3-1-2-2">nomut = “a randomly selected individual does not have mutation M”</div></li>
-<li id="med_test_act-6-1-3-1-2-3"><div class="para" id="p-derived-med_test_act-6-1-3-1-2-3">pos     = “a randomly selected individual tests positive”.</div></li>
-</ul>
-</div></li>
-<li id="med_test_act-6-1-4"><div class="para" id="p-derived-med_test_act-6-1-4">Answer becomes<div class="displaymath process-math">
-\begin{equation*}
-( .95  \cdot 1/10) / ( .95 \cdot 1/10  +  .05 \cdot 9/10)
-\approx .679 = 67.9\%.
-\end{equation*}
-</div>
-</div></li>
-</ol></div></details></section></div>
+</div></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="pr_act_appdx.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="batt_ave_act.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
