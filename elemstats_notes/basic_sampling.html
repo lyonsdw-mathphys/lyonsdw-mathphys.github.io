@@ -232,7 +232,7 @@ window.MathJax = {
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="basic_sampling.html#basic_sampling-3" class="internal"><span class="codenumber">1.8.2</span> <span class="title">A special case SD formula (Ch 17)</span></a></div></li>
 <li class="toc-item toc-subsection">
 <div class="toc-title-box"><a href="basic_sampling.html#basic_sampling-4" class="internal"><span class="codenumber">1.8.3</span> <span class="title">Sum of Draws Practice Problems (Ch 16–18)</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="basic_sampling.html#basic_sampling-4-2" class="internal"><span class="codenumber">1.8.3</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="basic_sampling.html#sum_of_draws_practice_exer" class="internal"><span class="codenumber">1.8.3</span> <span class="title">Exercises</span></a></div></li></ul>
 </li>
 </ul>
 </li>
@@ -380,104 +380,20 @@ X=A,A,A,\ldots,A,B,B,B,\ldots, B
 </div></section><section class="subsection" id="basic_sampling-4"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.8.3</span><span class="space"> </span><span class="title">Sum of Draws Practice Problems (Ch 16–18)</span>
 </h3>
-<section class="exercises" id="basic_sampling-4-2"><h4 class="heading hide-type">
+<section class="exercises" id="sum_of_draws_practice_exer"><h4 class="heading hide-type">
 <span class="type">Exercises</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Exercises</span>
 </h4>
-<section class="introduction" id="basic_sampling-4-2-1"><div class="para" id="basic_sampling-4-2-1-1">Problems 1–10 below are about the following game. A fair die is rolled 600 times.  On each roll, you win $4 if you get a 6.  You lose $1 if you get something different from a 6.</div></section><article class="exercise exercise-like" id="basic_sampling-4-2-2"><h5 class="heading"><span class="codenumber">1<span class="period">.</span></span></h5>
-<div class="para" id="basic_sampling-4-2-2-1">The total winnings will be about $<span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> give or take $<span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> or so.</div>
-<details id="basic_sampling-4-2-2-2" class="answer solution-like born-hidden-knowl"><summary><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like"><div class="para logical" id="basic_sampling-4-2-2-2-1">
-<div class="para">The box model has six tickets: (1) 4 and (5) <span class="process-math">\(-1\)</span>’s.</div>
-<div class="displaymath process-math" id="basic_sampling-4-2-2-2-1-2">
-\begin{align*}
-\AVE(\text{box}) \amp = -1/6\\
-\SD(\text{box}) \amp = 5\sqrt{\frac{1}{6}\cdot \frac{5}{6}} \approx 1.86\\
-\text{expected(sum) }\amp = -100\\
-\text{SE(sum) } \amp \approx 45.64
-\end{align*}
-</div>
-</div></div></details></article><article class="exercise exercise-like" id="basic_sampling-4-2-3"><h5 class="heading"><span class="codenumber">2<span class="period">.</span></span></h5>
-<div class="para" id="basic_sampling-4-2-3-1">The chance of breaking even or better is about <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</div>
-<details id="basic_sampling-4-2-3-2" class="answer solution-like born-hidden-knowl"><summary><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like"><div class="para logical" id="basic_sampling-4-2-3-2-1"><div class="displaymath process-math" id="basic_sampling-4-2-3-2-1-1">
-\begin{align*}
-z \amp \approx \frac{0 - (-100)}{45.64} \approx 2.19\\
-P\amp \approx 1.5\%
-\end{align*}
-</div></div></div></details></article><article class="exercise exercise-like" id="basic_sampling-4-2-4"><h5 class="heading"><span class="codenumber">3<span class="period">.</span></span></h5>
-<div class="para" id="basic_sampling-4-2-4-1">The number of sixes rolled will be about <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> give or take <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</div>
-<details id="basic_sampling-4-2-4-2" class="answer solution-like born-hidden-knowl"><summary><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like"><div class="para logical" id="basic_sampling-4-2-4-2-1">
-<div class="para">The box model has (1) 1 and (5) 0’s.</div>
-<div class="displaymath process-math" id="basic_sampling-4-2-4-2-1-1">
-\begin{align*}
-\AVE(\text{box}) \amp = 1/6\\
-\SD(\text{box}) \amp = \sqrt{\frac{1}{6}\cdot \frac{5}{6}} \approx .373\\
-\text{expected(sum) } \amp = 100\\
-\text{SE(sum) }\amp \approx 9.13
-\end{align*}
-</div>
-</div></div></details></article><article class="exercise exercise-like" id="basic_sampling-4-2-5"><h5 class="heading"><span class="codenumber">4<span class="period">.</span></span></h5>
-<div class="para" id="basic_sampling-4-2-5-1">The chance that the number of sixes will be ten or more above the expected number is about <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</div>
-<details id="basic_sampling-4-2-5-2" class="answer solution-like born-hidden-knowl"><summary><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like"><div class="para logical" id="basic_sampling-4-2-5-2-1"><div class="displaymath process-math" id="basic_sampling-4-2-5-2-1-1">
-\begin{align*}
-z \amp \approx \frac{110 - 100}{9.13} \approx 1.1\\
-P \amp \approx 14\%
-\end{align*}
-</div></div></div></details></article><article class="exercise exercise-like" id="basic_sampling-4-2-6"><h5 class="heading"><span class="codenumber">5<span class="period">.</span></span></h5>
-<div class="para" id="basic_sampling-4-2-6-1">The sum of the numbers on the die face on all the rolls will be about <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> give or take <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</div>
-<details id="basic_sampling-4-2-6-2" class="answer solution-like born-hidden-knowl"><summary><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like"><div class="para logical" id="basic_sampling-4-2-6-2-1">
-<div class="para">The box model has the tickets 1,2,3,4,5,6.</div>
-<div class="displaymath process-math" id="basic_sampling-4-2-6-2-1-1">
-\begin{align*}
-\AVE(\text{box}) \amp = 3.5\\
-\SD(\text{box}) \amp \approx 1.71 \text{ (no shortcut!!)}\\
-\text{expected(sum) } \amp = 2100\\
-\text{SE(sum) } \amp \approx 41.83
-\end{align*}
-</div>
-</div></div></details></article><article class="exercise exercise-like" id="basic_sampling-4-2-7"><h5 class="heading"><span class="codenumber">6<span class="period">.</span></span></h5>
-<div class="para" id="basic_sampling-4-2-7-1">The chance that the sum will be in the range 2050--2150 is about <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</div>
-<details id="basic_sampling-4-2-7-2" class="answer solution-like born-hidden-knowl"><summary><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like"><div class="para logical" id="basic_sampling-4-2-7-2-1"><div class="displaymath process-math" id="basic_sampling-4-2-7-2-1-1">
-\begin{align*}
-z \amp \approx \frac{2150 - 2100}{41.83} \approx 1.2\\
-P \amp \approx 77\%
-\end{align*}
-</div></div></div></details></article><article class="exercise exercise-like" id="basic_sampling-4-2-8"><h5 class="heading"><span class="codenumber">7<span class="period">.</span></span></h5>
-<div class="para" id="basic_sampling-4-2-8-1">There is about a 50% chance that the sum will be in the range 2100 plus or minus <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</div>
-<details id="basic_sampling-4-2-8-2" class="answer solution-like born-hidden-knowl"><summary><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like"><div class="para logical" id="basic_sampling-4-2-8-2-1"><div class="displaymath process-math" id="basic_sampling-4-2-8-2-1-1">
-\begin{gather*}
-z \text{ for 50% is about } .67\\
-\text{range is } 2100 \pm 28
-\end{gather*}
-</div></div></div></details></article><article class="exercise exercise-like" id="basic_sampling-4-2-9"><h5 class="heading"><span class="codenumber">8<span class="period">.</span></span></h5>
-<div class="para" id="basic_sampling-4-2-9-1">The total number of even rolls will be about <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> give or take <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</div>
-<details id="basic_sampling-4-2-9-2" class="answer solution-like born-hidden-knowl"><summary><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like"><div class="para logical" id="basic_sampling-4-2-9-2-1">
-<div class="para">One possible box model has (3) 1’s and (3) 0’s.  A simpler box model has (1) 1 and (1) 0 with equal probabilities of 1/2 each.</div>
-<div class="displaymath process-math" id="basic_sampling-4-2-9-2-1-1">
-\begin{align*}
-\AVE(\text{box}) \amp = 1/2\\
-\SD(\text{box})\amp = 1/2\\
-\text{expected(sum) } \amp = 300\\
-\text{SE(sum) } \amp \approx 12.25
-\end{align*}
-</div>
-</div></div></details></article><article class="exercise exercise-like" id="basic_sampling-4-2-10"><h5 class="heading"><span class="codenumber">9<span class="period">.</span></span></h5>
-<div class="para" id="basic_sampling-4-2-10-1">The chance that the number of even rolls will be off by 20 or more from the expected number is about <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</div>
-<details id="basic_sampling-4-2-10-2" class="answer solution-like born-hidden-knowl"><summary><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like"><div class="para logical" id="basic_sampling-4-2-10-2-1"><div class="displaymath process-math" id="basic_sampling-4-2-10-2-1-1">
-\begin{align*}
-z \amp \approx \frac{320 - 300}{12.25} \approx 1.63\\
-P \amp \approx 10\%
-\end{align*}
-</div></div></div></details></article><article class="exercise exercise-like" id="basic_sampling-4-2-11"><h5 class="heading"><span class="codenumber">10<span class="period">.</span></span></h5>
-<div class="para" id="basic_sampling-4-2-11-1">On every 6th roll (that is, on roll numbers 6, 12, 18, etc) you win a blue marble if exactly half of the last 6 rolls came up even. The chance that you win 35 or more blue marbles in 600 rolls is <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>. Use the continuity correction to be as precise as possible.</div>
-<details id="basic_sampling-4-2-11-2" class="answer solution-like born-hidden-knowl"><summary><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like"><div class="para logical" id="basic_sampling-4-2-11-2-1">
-<div class="para">The probability of exactly 3 evens in 6 rolls is <span class="process-math">\({6 \choose
-3}\left(\frac{1}{2}\right)^6 = 31.25\%\)</span> (using the binomial probability formula). A box model has 3125 1’s and 6875 0’s, with 100 draws. The average of the box is <span class="process-math">\(.3125\)</span> and the SD of the box is <span class="process-math">\(\sqrt{.3125\cdot .6875} \approx .464\text{.}\)</span> The expected sum is <span class="process-math">\(31.25\)</span> and the SE for the sum is <span class="process-math">\(4.64\text{.}\)</span> The <span class="process-math">\(z\)</span> value for 35 blues is</div>
-<div class="displaymath process-math">
-\begin{equation*}
-z = \frac{34.5-31.25}{4.64}\approx .70.
-\end{equation*}
-</div>
-<div class="para">The normal curve table has an area of about <span class="process-math">\(52\%\)</span> for <span class="process-math">\(z=.70\text{,}\)</span> so the probability is about <span class="process-math">\((100-52)/2=24\%\)</span> (if you do not use the continuity correction, you get <span class="process-math">\(z=.81\)</span> and a probability of about <span class="process-math">\(21\%\)</span>).</div>
-</div></div></details></article></section></section></section></div>
+<section class="introduction" id="sum_of_draws_practice_exer-1"><div class="para" id="sum_of_draws_practice_exer-1-1">Problems 1–10 below are about the following game. A fair die is rolled 600 times.  On each roll, you win $4 if you get a 6.  You lose $1 if you get something different from a 6.</div></section><article class="exercise exercise-like" id="sum_of_draws_practice_exer-2"><h5 class="heading"><span class="codenumber">1<span class="period">.</span></span></h5>
+<div class="para" id="sum_of_draws_practice_exer-2-1">The total winnings will be about $<span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> give or take $<span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> or so.</div></article><article class="exercise exercise-like" id="sum_of_draws_practice_exer-3"><h5 class="heading"><span class="codenumber">2<span class="period">.</span></span></h5>
+<div class="para" id="sum_of_draws_practice_exer-3-1">The chance of breaking even or better is about <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</div></article><article class="exercise exercise-like" id="sum_of_draws_practice_exer-4"><h5 class="heading"><span class="codenumber">3<span class="period">.</span></span></h5>
+<div class="para" id="sum_of_draws_practice_exer-4-1">The number of sixes rolled will be about <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> give or take <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</div></article><article class="exercise exercise-like" id="sum_of_draws_practice_exer-5"><h5 class="heading"><span class="codenumber">4<span class="period">.</span></span></h5>
+<div class="para" id="sum_of_draws_practice_exer-5-1">The chance that the number of sixes will be ten or more above the expected number is about <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</div></article><article class="exercise exercise-like" id="sum_of_draws_practice_exer-6"><h5 class="heading"><span class="codenumber">5<span class="period">.</span></span></h5>
+<div class="para" id="sum_of_draws_practice_exer-6-1">The sum of the numbers on the die face on all the rolls will be about <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> give or take <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</div></article><article class="exercise exercise-like" id="sum_of_draws_practice_exer-7"><h5 class="heading"><span class="codenumber">6<span class="period">.</span></span></h5>
+<div class="para" id="sum_of_draws_practice_exer-7-1">The chance that the sum will be in the range 2050--2150 is about <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</div></article><article class="exercise exercise-like" id="sum_of_draws_practice_exer-8"><h5 class="heading"><span class="codenumber">7<span class="period">.</span></span></h5>
+<div class="para" id="sum_of_draws_practice_exer-8-1">There is about a 50% chance that the sum will be in the range 2100 plus or minus <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</div></article><article class="exercise exercise-like" id="sum_of_draws_practice_exer-9"><h5 class="heading"><span class="codenumber">8<span class="period">.</span></span></h5>
+<div class="para" id="sum_of_draws_practice_exer-9-1">The total number of even rolls will be about <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> give or take <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</div></article><article class="exercise exercise-like" id="sum_of_draws_practice_exer-10"><h5 class="heading"><span class="codenumber">9<span class="period">.</span></span></h5>
+<div class="para" id="sum_of_draws_practice_exer-10-1">The chance that the number of even rolls will be off by 20 or more from the expected number is about <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.</div></article><article class="exercise exercise-like" id="sum_of_draws_practice_exer-11"><h5 class="heading"><span class="codenumber">10<span class="period">.</span></span></h5>
+<div class="para" id="sum_of_draws_practice_exer-11-1">On every 6th roll (that is, on roll numbers 6, 12, 18, etc) you win a blue marble if exactly half of the last 6 rolls came up even. The chance that you win 35 or more blue marbles in 600 rolls is <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>. Use the continuity correction to be as precise as possible.</div></article></section></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="basic_probability.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="summary_notes_chapter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
