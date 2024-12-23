@@ -1,11 +1,9 @@
 <a name="reading_and_exercises"></a>
 <h3>Reading and Exercises</h3>
 
-
 <pre>
-Text: Lyons, <i>Not Just Calculus</i>
+Text: Lyons, <a href="https://mathvista.org/not_just_calculus/frontmatter.html"/><i>Not Just Calculus</i></a>
 
-             Graded Exercises
 Reading  Checkpoint      Exercise
 -------  ----------      --------
 2.1a     1,2,3,4,5
@@ -24,7 +22,4 @@ Reading  Checkpoint      Exercise
 2.4.3a                   1,2,3,4
 2.4.3b                   5,6,7,8
 2.4.4                    1,2,3,4,5
-
-a,b,c = section split over multiple class meetings and exercise sets
-
 </pre>
