@@ -1,0 +1,38 @@
+		       =========================
+			  Quantum Information 
+		       A Very Basic Introduction
+		       =========================
+
+What is the most basic unit of information?  What does it mean to
+communicate information?  The answer is illustrated in Longfellow's poem
+"The Midnight Ride of Paul Revere," in which Revere's friend is
+instructed to shine signal lanterns from the tower of Boston's North Church
+
+ "One if by land, and two if by sea"
+
+to alert the patriot defense forces of the direction of the imperial
+enemy's attack.
+
+What Revere's friend is sending is a {\em bit}---the most basic unit of
+information.  The bit represents one of two possibilites that can be yes
+or no, on or off, 0 or 1, or in the case of this poem, land or sea.
+
+
+
+The simplest communication scenario has a
+sender, who we call Alice, and a receiver, who we call Bob.  The
+simplest message Alice can send to Bob is a  "yes"
+or "no".  This yes/no information is the most basic unit of i
+
+What does it mean to communicate?  The most basic
+unit of information is the {\em bit}
+
+In our everyday familiar world, the basic unit of information is the
+{\em bit}.  A bit has two possible states that we call 1 and 0, on and
+off, yes and no.  Your computer stores letters as strings of bits, words
+as longer strings of bits, and documents, song recordings and videos as
+even longer strings of bits.
+
+In the quantum world, more is possible.  Where a bit has only two
+possible states, a {\em quantum bit} can be 
+any point on the surface of a ball.

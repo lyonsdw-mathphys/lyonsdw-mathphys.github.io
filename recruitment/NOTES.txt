@@ -1,0 +1,13 @@
+Recruitment web pages
+for summer student assistant research positions
+LVC Mathematical Physics Research Group
+
+Notes
+2/11/2021
+
+Each January or February
+  * choose dates for application deadline and summer position offers
+  * edit index.html
+  * edit application.html
+  * archive current recruitment.html >> recuritement/recruitment.202X.html
+  * edit recruitment.html

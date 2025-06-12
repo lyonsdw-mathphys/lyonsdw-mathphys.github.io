@@ -1,0 +1,14 @@
+		       =========================
+			  Quantum Information
+		       A Very Basic Introduction
+		       =========================
+
+In our everyday familiar world, the basic unit of information is the
+{\em bit}.  A bit has two possible states that we call 1 and 0, on and
+off, yes and no.  Your computer stores letters as strings of bits, words
+as longer strings of bits, and documents, song recordings and videos as
+even longer strings of bits.
+
+In the quantum world, more is possible.  Where a bit has only two
+possible states, a {\em quantum bit} can be 
+any point on the surface of a ball.
