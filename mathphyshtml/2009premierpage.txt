@@ -1,0 +1,72 @@
+% premier pages submission
+
+1.  Names: David Lyons and Scott Walck
+
+2.  Departments: Mathematical Sciences and Physics
+
+3. Describe your recently completed (no earlier than Spring 2008)
+research project, publication, creative work or performance: 
+
+Since spring 2008, the LVC Mathematical Physics Research Group has
+published 4 papers in research journals and given 11 presentations at
+regional, national, and international conferences, colloquia and
+seminars.  
+            (a) using language of specialists in your field;  
+
+Work in the last 18 months continues the group's program of stabilizer
+classification for the local unitary group action on multiparty quantum
+states, and also settles a question of which pure states are uniquely
+determined by a given set of reduced density matrices.  The stabilizer
+program is concerned with the classification of multiparty entanglement,
+and the latter result is related to the N-representability problem.
+
+      and (b) in plain language for a general reader. 
+
+Work in the last 18 months continues the group's program of studying the
+phenomenon of quantum entanglement as it pertains to applications in
+quantum computing and communications.  Loosely speaking, we seek to
+identify quantum states that will be especially useful for applications
+of quantum information theory.  We also study the relation between
+information contained in quantum states and information contained in
+subsystems.  Both of these lines of investigation are of active interest
+to researchers in mathematics, physics, computer science, and chemistry.
+
+4.  Explain how this work fits into the larger context of intellectual
+inquiry in your discipline(s).
+
+Quantum information theory seeks to understand the computational and
+communication power of quantum systems.  Applied quantum information
+science works to solve engineering problems to construct new devices
+called quantum computers.  The phenomenon of quantum entanglement plays
+a key role in theory and applications, yet it is poorly understood at
+present.  Lyons and Walck have pursued a program that achieves a partial
+classification of entanglement types using the mathematical tools of Lie
+theory. 
+
+5.  When appropriate, explain how this accomplishment fits into your
+broader program of ongoing research, performance and/or creative work. 
+
+Lyons and Walck have just been awarded (as of September 2009) a National
+Science Foundation (NSF) grant, renewable for 3 years, that continues
+the work funded by their previous NSF grant.  The current project is a
+series of investigations that follows naturally from previous work in
+entanglement classification.
+
+6.  List bibliographic data for publications, presentations,
+performances, etc. arising from this work.  Are there links to other
+websites, etc. that display the work?   If you can include any
+electronic images, etc. that would be helpful, please do. 
+
+See http://quantum.lvc.edu/mathphys/pubs2.html
+
+7.  When appropriate, list collaborators, if any, and describe the
+nature of the collaboration.  
+
+Lyons' and Walck's collaborators are their student research assistants.
+Recent student researchers have been Stephanie Blanda '09, Curt Cenci
+'11, Laura Snyder '11, and Adam Hansell '11.
+
+8.  Give any additional information that would help make this an
+interesting story for a web page.
+
+See http://quantum.lvc.edu/mathphys
