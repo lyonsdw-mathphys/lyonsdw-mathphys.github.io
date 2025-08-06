@@ -1,11 +1,11 @@
 Quiz Instructions
-Notes 8/2022
+Notes 8/2025
 
 1. edit "content.txt"  (archive previous semester's version first)
 2. run script ~/a/web/make_quiz_instr
-3. this makes two output files
-    a. quiz_instr.html (for displaying on classroom screen during quiz)
-    b. quiz_instr_noclock.pdf (for including in packet sent to CAR)
+3. this makes output files
+    a. quiz_exam_instr.html (for displaying on classroom screen during quiz)
+    b. quiz_exam_instr_noclock.pdf (for including in packet sent to CAR)
 4. edit links in chrome bookmarks to point to current semester
     ~/a/web/html/courses/20XX.XX/quiz_instr/filename
 
