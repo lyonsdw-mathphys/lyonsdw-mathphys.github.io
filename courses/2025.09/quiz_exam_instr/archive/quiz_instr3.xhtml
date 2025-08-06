@@ -1,0 +1,91 @@
+<html> 
+<head>
+  <title>Quiz Instructions</title>
+  
+    <style>
+    .boxed {
+      border: 1px solid black ;
+      max-width: 600px ;
+    }
+    .row {
+  display: flex;
+    }
+.column {
+  float: left;
+}
+
+.left {
+  width: 75%;
+}
+
+.right {
+  width: 25%;
+}    
+body {
+   max-width:800px;
+   margin:10 auto;
+}
+</style>
+
+    <style>
+		.large-font {
+			font-size: 36px;
+		}
+    </style>
+    
+    <script type="text/javascript">
+		var countDownDate;
+		var x;
+
+		function startTimer() {
+			countDownDate = new Date().getTime() + 25*60*1000; // Set the timer for 25 minutes
+
+			// Update the countdown every 1 second
+			x = setInterval(function() {
+				var now = new Date().getTime();
+				var distance = countDownDate - now;
+
+				// Calculate minutes and seconds remaining
+				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+				// Output the result in an element with id="countdown"
+				document.getElementById("countdown").innerHTML = minutes + "m " + seconds + "s ";
+
+				// If the countdown is finished, display a message
+				if (distance < 0) {
+					clearInterval(x);
+					document.getElementById("countdown").innerHTML = "EXPIRED";
+				}
+			}, 1000);
+		}
+
+		function stopTimer() {
+			clearInterval(x);
+			document.getElementById("countdown").innerHTML = "STOPPED";
+		}
+	</script>
+
+    
+</head>
+
+<body>
+
+  <div class="row">
+    <div class="column">
+      <!--@include "content.html"-->
+    </div>
+    <div class="column">
+      	<h2>25 Minute Countdown Clock</h2>
+	<p class="large-font">Time remaining: <span id="countdown"></span></p>
+	<button onclick="startTimer()">Start</button>
+	<button onclick="stopTimer()">Stop</button>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>
+
