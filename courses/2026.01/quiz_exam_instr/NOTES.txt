@@ -1,0 +1,28 @@
+Quiz Instructions
+Notes 8/2025
+
+1. edit "content.txt"  (archive previous semester's version first)
+2. run script ~/a/web/make_quiz_instr
+3. this makes output files
+    a. quiz_exam_instr.html (for displaying on classroom screen during quiz)
+    b. quiz_exam_instr_noclock.pdf (for including in packet sent to CAR)
+4. edit links in chrome bookmarks to point to current semester
+    ~/a/web/html/courses/20XX.XX/quiz_instr/filename
+
+8/30/2022
+
+hacking css to make the clock appear in a right-hand column, works
+  filename right now is quiz_instr2.xhtml
+we should clean this up after testing, keep just one version, archive
+  the old ones
+
+3/3/2023
+
+now we are up to quiz_instr3.xhtml
+makes a countdown clock instead of a normal clock
+got the code from ChatGPT !!
+
+9/5/2023
+
+quiz_instr4.xhtml
+has 30 minute countdown clock for MAS 113
