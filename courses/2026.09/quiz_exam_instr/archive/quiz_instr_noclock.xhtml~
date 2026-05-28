@@ -1,0 +1,23 @@
+<html> 
+<head>
+  <title>MAS 170 Elementary Statistics Fall 2022 Syllabus</title>
+  <style>
+    .boxed {
+      border: 1px solid black ;
+      max-width: 600px ;
+  }
+body {
+   max-width:800px;
+   margin:10 auto;
+}
+</style>
+</head>
+
+<body>
+
+
+<!--@include "content.html"-->
+
+</body>
+</html>
+
